@@ -1,0 +1,58 @@
+:root {
+	--colors--background: #fff;
+	--colors--foreground: #000;
+	--colors--separator: #ddd;
+	--colors--link: #80755c;
+
+	--font-families--copy: "Jost", sans-serif;
+	--font-families--heading: "Jost", sans-serif;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+	:root {
+		--colors--background: #111;
+		--colors--foreground: #fff;
+		--colors--separator: rgba(255, 255, 255, 0.25);
+		--colors--link: #d7c69d;
+	}
+}
+
+body {
+	background-color: var(--colors--background, #fff);
+	color: var(--colors--foreground);
+	font-family: var(--font-families--copy);
+	line-height: 1;
+	margin: 0;
+}
+
+h1,
+h2 {
+	font-weight: 200;
+}
+
+p {
+	line-height: 1.666;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 700px;
+}
+
+a {
+	color: var(--colors--link);
+}
+
+.align-wide {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1000px;
+	padding: 0 2em;
+	width: 100%;
+}
+
+.align-full {
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}

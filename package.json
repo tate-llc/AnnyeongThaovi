@@ -1,0 +1,31 @@
+{
+	"name": "@tate-media/annyeong-thaovi",
+	"version": "0.1.0",
+	"description": "",
+	"homepage": "https://www.annyeongthaovi.com",
+	"license": "UNLICENSED",
+	"author": "Griffen Schwiesow <griffen@tate.ee>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tate-media/AnnyeongThaovi"
+	},
+	"scripts": {
+		"build": "astro build",
+		"clean": "astro clean",
+		"dev": "astro dev",
+		"preview": "astro preview",
+		"start": "astro dev"
+	},
+	"dependencies": {
+		"@astrojs/lit": "^1.0.2",
+		"@fontsource/jost": "^4.5.12",
+		"@prismicio/client": "^6.7.3",
+		"@prismicio/helpers": "^2.3.8",
+		"astro": "^1.9.2",
+		"lit": "^2.6.1"
+	},
+	"devDependencies": {
+		"typescript": "^4.9.4"
+	},
+	"private": true
+}

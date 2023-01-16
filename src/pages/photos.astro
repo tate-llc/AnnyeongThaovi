@@ -1,0 +1,23 @@
+---
+import Document from "layouts/document.astro";
+import { Gallery } from "components/Gallery";
+import { Page } from "components/Page";
+import { client } from "utils/prismic";
+import * as prismicH from "@prismicio/helpers";
+
+const site = await client.getSingle("site");
+---
+<Document title="Photos">
+	<Page>
+		<h1 slot="header">Photos</h1>
+
+		<Gallery
+			client:load="lit"
+			images={site.data.images.map((image) => ({
+				alt: image.image.alt,
+				caption: prismicH.asText(image.caption),
+				src: image.image.url,
+			}))}
+		/>
+	</Page>
+</Document>

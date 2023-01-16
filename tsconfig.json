@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"experimentalDecorators": true,
+		"paths": {
+			"components/*": ["src/components/*"],
+			"constants/*": ["src/constants/*"],
+			"layouts/*": ["src/layouts/*"],
+			"styles/*": ["src/styles/*"],
+			"types/*": ["src/types/*"],
+			"utils/*": ["src/utils/*"]
+		},
+		"useDefineForClassFields": false
+	},
+	"extends": "astro/tsconfigs/strict",
+	"exclude": ["node_modules"]
+}

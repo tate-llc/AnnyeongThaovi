@@ -1,0 +1,14 @@
+# Node
+node_modules
+
+# Environment
+.env.*
+
+# Jest
+coverage
+
+# Package
+dist
+
+# Misc
+.DS_Store

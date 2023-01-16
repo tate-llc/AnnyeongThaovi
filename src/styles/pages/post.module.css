@@ -1,0 +1,10 @@
+.title {
+	font-size: 3em;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.header {
+	margin: 4em auto;
+	text-align: center;
+}

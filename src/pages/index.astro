@@ -1,0 +1,53 @@
+---
+import type { HomepageDocument, PostDocument } from "types/prismic";
+import Document from "layouts/document.astro";
+import { FeaturedImage } from "components/FeaturedImage";
+import { LatestPosts } from "components/LatestPosts";
+import { client, getPermalink } from "utils/prismic";
+import * as prismicH from "@prismicio/helpers";
+import styles from "styles/pages/index.module.css";
+
+const homepage = await client.getSingle<HomepageDocument>("homepage");
+const latestPosts = await client.getByType<PostDocument>("post", {
+	orderings: {
+		direction: "desc",
+		field: "my.post.publish_date",
+	},
+	page: 1,
+	pageSize: homepage.data.number_of_latest_posts ?? 3,
+});
+---
+<Document>
+	<FeaturedImage
+		src={latestPosts.results[0]?.data.featured_image?.url}
+		visible={!!homepage.data.show_featured_image}
+	/>
+
+	<div class="align-wide">
+		<div class={styles.columns}>
+		{homepage.data.content_image?.url ? (
+			<img
+				alt={homepage.data.content_image.alt ?? ""}
+				src={homepage.data.content_image.url}
+			/>
+		) : null}
+		<div
+			class={styles.intro}
+			set:html={prismicH.asHTML(homepage.data.content)}
+		/>
+		</div>
+
+		<LatestPosts
+			posts={latestPosts.results.map((post) => ({
+				date: post.data.publish_date,
+				image: post.data.featured_image?.url,
+				permalink: getPermalink({
+					date: post.data.publish_date,
+					type: "post",
+					uid: post.uid,
+				}),
+				title: prismicH.asText(post.data.title),
+			}))}
+		/>
+	</div>
+</Document>
