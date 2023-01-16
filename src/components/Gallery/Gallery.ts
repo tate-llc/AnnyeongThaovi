@@ -129,6 +129,7 @@ class Gallery extends LitElement {
 			}
 
 			.grid {
+				gap: 1em;
 				grid-template-columns: repeat(3, 1fr);
 			}
 		}
@@ -213,6 +214,7 @@ class Gallery extends LitElement {
 					<figure class="grid-figure">
 						<img
 							alt="${image.alt ?? ""}"
+							loading="${i > 2 ? "lazy" : "eager"}"
 							class="grid-image"
 							data-caption="${image.caption ?? ""}"
 							src="${image.src}"
