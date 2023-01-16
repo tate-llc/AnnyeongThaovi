@@ -32,6 +32,23 @@ class PostPreview extends LitElement {
 	};
 
 	static styles = css`
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
 		.button {
 			background-color: var(--colors--foreground);
 			color: var(--colors--background);
@@ -48,6 +65,7 @@ class PostPreview extends LitElement {
 			max-height: calc(1.666 * 1em * 4);
 			margin-top: 0;
 			overflow: hidden;
+			padding: 0 1rem;
 			text-overflow: ellipsis;
 			-webkit-box-orient: vertical;
 			-webkit-line-clamp: 4;
@@ -60,7 +78,7 @@ class PostPreview extends LitElement {
 		.title {
 			font-size: 2em;
 			font-weight: 200;
-			padding: 0 2rem;
+			padding: 0 1rem;
 			text-transform: uppercase;
 		}
 
@@ -69,13 +87,13 @@ class PostPreview extends LitElement {
 			text-decoration: none;
 		}
 
-		.image {
-			height: auto;
-			width: 100%;
-		}
-
 		.header {
 			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
 		}
 
 		.post-preview {
@@ -86,7 +104,10 @@ class PostPreview extends LitElement {
 		}
 
 		@media (min-width: 768px) {
-			.title {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
 				padding: 0;
 			}
 		}
@@ -97,11 +118,13 @@ class PostPreview extends LitElement {
 
 		return html`
 			<a href="${this.permalink}">
-				<img
-					alt="${this.image.alt}"
-					class="image"
-					src="${this.image.url}"
-				/>
+				<div class="image-wrapper">
+					<img
+						alt="${this.image.alt}"
+						class="image"
+						src="${this.image.url}"
+					/>
+				</div>
 			</a>
 		`;
 	}
@@ -118,7 +141,7 @@ class PostPreview extends LitElement {
 						</a>
 					</h1>
 
-					<time datetime="${this.date}">
+					<time class="date" datetime="${this.date}">
 						${getDate(this.date)}
 					</time>
 				</header>
@@ -127,7 +150,7 @@ class PostPreview extends LitElement {
 					<div class="excerpt">${unsafeHTML(this.excerpt)}</div>
 				</main>
 
-				<footer>
+				<footer class="footer">
 					<a class="button" href="${this.permalink}">
 						Continue reading
 					</a>

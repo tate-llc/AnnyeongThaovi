@@ -102,6 +102,17 @@ class PrismicBody extends LitElement {
 		li {
 			margin-bottom: 0.5em;
 		}
+
+		@media (max-width: 767px) {
+			p, ul, ol {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			ul, ol {
+				padding-left: 3.5rem;
+			}
+		}
 	`;
 
 	renderGalleryItem(item: PrismicBodyGallerySliceItem) {
@@ -112,6 +123,7 @@ class PrismicBody extends LitElement {
 				<img
 					alt="${item.image.alt}"
 					class="gallery-image"
+					loading="lazy"
 					src="${item.image.url}"
 				>
 
@@ -148,7 +160,7 @@ class PrismicBody extends LitElement {
 					</div>
 				`;
 
-			default:
+			paddin:
 				return null;
 		}
 	}
@@ -177,7 +189,7 @@ class PrismicBody extends LitElement {
 				case "image":
 					return html`
 						<div class="image">
-							<img src="${slice.primary.image?.url ?? ""}" />
+							<img alt="" loading="lazy" src="${slice.primary.image?.url ?? ""}" />
 						</div>
 					`;
 
@@ -194,7 +206,7 @@ class PrismicBody extends LitElement {
 						</div>
 					`;
 
-				default:
+				paddin:
 					return null;
 			}
 		});
