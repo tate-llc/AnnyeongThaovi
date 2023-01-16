@@ -1,0 +1,36 @@
+---
+import Document from "layouts/document.astro";
+import { Page } from "components/Page";
+import type { PostDocument, PrismicBodyTextSlice } from "types/prismic";
+import { PostPreview } from "components/PostPreview";
+import { client, getPermalink } from "utils/prismic";
+import * as prismicH from "@prismicio/helpers";
+
+const posts = await client.getByType<PostDocument>("post", {
+	orderings: {
+		direction: "desc",
+		field: "my.post.publish_date",
+	},
+	page: 0,
+	pageSize: 10,
+});
+---
+<Document title="Posts">
+	<Page>
+		<h1 slot="header">Posts</h1>
+
+		{posts.results.map((post) => (
+			<PostPreview
+				date={post.data.publish_date}
+				excerpt={prismicH.asHTML((post.data.body.find((slice) => slice.slice_type === "text") as PrismicBodyTextSlice)?.primary?.content)}
+				image={post.data.featured_image}
+				permalink={getPermalink({
+					date: post.data.publish_date,
+					type: "post",
+					uid: post.uid,
+				})}
+				title={prismicH.asText(post.data.title)}
+			/>
+		))}
+	</Page>
+</Document>

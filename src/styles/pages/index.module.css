@@ -1,0 +1,38 @@
+.intro {
+	box-sizing: border-box;
+	padding: 0 2em;
+	text-align: center;
+}
+
+.intro h2 {
+	font-size: 4em;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+.columns {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin: 4em -2em;
+}
+
+.columns > div,
+.columns > img {
+	flex-grow: 1;
+	flex-shrink: 1;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.intro {
+		padding: 0;
+	}
+
+	.columns {
+		flex-direction: row;
+		margin: 4em auto;
+		gap: 2em;
+	}
+}

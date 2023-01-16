@@ -1,0 +1,53 @@
+---
+import { client, getDate } from "utils/prismic";
+import Document from "layouts/document.astro";
+import { FeaturedImage } from "components/FeaturedImage";
+import type { PostDocument } from "types/prismic";
+import { PrismicBody } from "components/PrismicBody";
+import * as prismicH from "@prismicio/helpers";
+import styles from "styles/pages/post.module.css";
+
+export const getStaticPaths = async () => {
+	const posts = await client.getAllByType<PostDocument>("post");
+	return posts.map((post) => {
+		const date = post.data.publish_date;
+		const d = new Date(date ?? "");
+
+		return {
+			params: {
+				year: d.getFullYear().toString(),
+				month: (d.getMonth() + 1).toString().padStart(2, "0"),
+				date: (d.getDate() + 1).toString().padStart(2, "0"),
+				uid: post.uid,
+			},
+			props: { post },
+		};
+	});
+};
+
+interface Props {
+	post: PostDocument;
+}
+
+const { post } = Astro.props;
+---
+<Document title={prismicH.asText(post.data.title)}>
+	<FeaturedImage
+		fullHeight={true}
+		src={post.data.featured_image?.url}
+		visible={!!post.data.featured_image?.url}
+	/>
+
+	<article>
+		<header class={styles.header}>
+			<h1 class={styles.title}>{prismicH.asText(post.data.title)}</h1>
+			<time datetime={post.data.publish_date}>
+				{getDate(post.data.publish_date)}
+			</time>
+		</header>
+
+		<main>
+			<PrismicBody body={post.data.body} client:idle />
+		</main>
+	</article>
+</Document>
