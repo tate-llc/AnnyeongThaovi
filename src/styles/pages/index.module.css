@@ -31,8 +31,9 @@
 	}
 
 	.columns {
-		flex-direction: row;
-		margin: 4em auto;
+		display: grid;
 		gap: 2em;
+		grid-template-columns: 1fr 1fr;
+		margin: 4em auto;
 	}
 }
