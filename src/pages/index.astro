@@ -19,6 +19,7 @@ const latestPosts = await client.getByType<PostDocument>("post", {
 ---
 <Document>
 	<FeaturedImage
+		crop={latestPosts.results[0]?.data.featured_image_homepage_crop ?? "Center"}
 		src={latestPosts.results[0]?.data.featured_image?.url}
 		visible={!!homepage.data.show_featured_image}
 	/>

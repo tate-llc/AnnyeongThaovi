@@ -22,6 +22,7 @@ export type HomepageDocument = PrismicDocument<{
 export type PostDocument = PrismicDocument<{
 	body: SliceZone<AnyPrismicBodySlice>;
 	featured_image: PrismicImage | null;
+	featured_image_homepage_crop: string | null;
 	publish_date: string | null;
 	title: [];
 }>;
