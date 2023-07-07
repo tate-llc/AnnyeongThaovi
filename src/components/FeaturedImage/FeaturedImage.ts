@@ -9,13 +9,25 @@ class FeaturedImage extends LitElement {
 	@property() fullHeight?: boolean = false;
 	@property() src?: string = "";
 	@property() visible?: boolean = true;
+	@property() crop?: string = "Center";
 
 	static styles = css`
 		.image {
 			height: 100%;
 			object-fit: cover;
-			object-position: center;
 			width: 100%;
+		}
+
+		.centerCrop {
+			object-position: center;
+		}
+
+		.topCrop {
+			object-position: center top;
+		}
+
+		.bottomCrop {
+			object-position: center bottom;
 		}
 
 		.wrapper {
@@ -36,11 +48,23 @@ class FeaturedImage extends LitElement {
 	render() {
 		if (!this.visible || !this.src) return null;
 
+		let cropClass = "centerCrop";
+
+		switch (this.crop) {
+			case "Top":
+				cropClass = "topCrop";
+				break;
+
+			case "Bottom":
+				cropClass = "bottomCrop";
+				break;
+		}
+
 		return html`
 			<div class="${this.fullHeight ? "fullWrapper" : "wrapper"}">
 				<img
 					alt="${this.alt}"
-					class="image"
+					class="image ${cropClass}"
 					src="${this.src}"
 				/>
 			</div>
