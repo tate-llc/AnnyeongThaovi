@@ -2,8 +2,152 @@
 import Document from "layouts/document.astro";
 import { Page } from "components/Page";
 ---
+
+<style>
+	form {
+		max-width: 700px;
+		margin: 4em auto;
+		padding: 0 2em;
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+	}
+
+	input {
+		padding: 8px;
+		border: 1px solid #000;
+		border-radius: 2px;
+		font: inherit;
+	}
+
+	button {
+		padding: 16px;
+		font: inherit;
+		text-transform: uppercase;
+		background-color: #000;
+		color: #fff;
+		border: 0;
+		border-radius: 2px;
+	}
+
+	@media only screen and (prefers-color-scheme: dark) {
+		input {
+			border: 1px solid #fff;
+		}
+
+		button {
+			border: 1px solid #fff;
+		}
+	}
+</style>
+
 <Document title="Subscribe">
 	<Page>
 		<h1 slot="header">Subscribe</h1>
+
+		<form id="subscribe-form">
+			<input
+				id="name"
+				name="name"
+				placeholder="Name"
+				required
+			/>
+
+			<input
+				id="email"
+				name="email"
+				placeholder="Email"
+				type="email"
+			/>
+
+			<input
+				id="phone"
+				name="phone"
+				placeholder="Phone"
+				type="tel"
+			/>
+
+			<button>Subscribe to updates</button>
+		</form>
 	</Page>
 </Document>
+
+<script>
+import { child, getDatabase, push, ref } from "firebase/database";
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+	apiKey: "AIzaSyAHHqb5Z1_2UU_c0I5X1PXOybDdDMw5efs",
+	authDomain: "annyeong-thaovi-4f1ed.firebaseapp.com",
+	projectId: "annyeong-thaovi-4f1ed",
+	storageBucket: "annyeong-thaovi-4f1ed.appspot.com",
+	messagingSenderId: "478121129847",
+	appId: "1:478121129847:web:a0a0129eb2039a73d19372",
+};
+
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
+(() => {
+	const form = document.getElementById("subscribe-form");
+	console.log("form", form);
+
+	if (!(form instanceof HTMLFormElement)) {
+		return;
+	}
+
+	const enableForm = () => {
+		for (const element of form.elements) {
+			if (element instanceof HTMLInputElement || element instanceof HTMLButtonElement) {
+				element.disabled = false;
+			}
+		}
+	};
+
+	form.addEventListener("submit", async (ev) => {
+		ev.preventDefault();
+
+		const formData = new FormData(form);
+
+		for (const element of form.elements) {
+			if (element instanceof HTMLInputElement || element instanceof HTMLButtonElement) {
+				element.disabled = true;
+			}
+		}
+
+		console.log("formData", formData);
+		const name = formData.get("name");
+		const email = formData.get("email");
+		const phone = formData.get("phone");
+
+		if (!name) {
+			window.alert("Enter your name");
+			return enableForm();
+		}
+
+		if (!email && !phone) {
+			window.alert("Enter and email address or phone number");
+			return enableForm();
+		}
+
+		push(child(ref(database), 'contacts'), {
+			name,
+			email,
+			phone,
+		});
+
+		window.alert("Thanks for subscribing!");
+
+		for (const element of form.elements) {
+			if (element instanceof HTMLInputElement) {
+				element.disabled = false,
+				element.value = "";
+			}
+
+			if (element instanceof HTMLButtonElement) {
+				element.disabled = false;
+			}
+		}
+	});
+})();
+</script>
