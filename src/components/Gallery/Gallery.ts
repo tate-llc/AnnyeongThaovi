@@ -38,7 +38,7 @@ class Gallery extends LitElement {
 		}
 
 		.feature-image {
-			height: 100%;
+			height: calc(100% - 2.25em);
 			object-fit: contain;
 			object-position: center;
 			width: 100%;

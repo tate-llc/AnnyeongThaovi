@@ -44,6 +44,8 @@ class LatestPosts extends LitElement {
 
 		.post-title {
 			margin: 0 0 0.5em;
+			padding: 0 0.25em;
+			text-align: center;
 			text-decoration: underline;
 			text-transform: uppercase;
 		}
