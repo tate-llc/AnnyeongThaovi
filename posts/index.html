@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>Posts | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><my-page><template shadowroot="open"><style>
+		.header {
+			font-size: 2em;
+			margin: 2em auto;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	</style><!--lit-part MTwX7X72Vbo=-->
+			<div class="header">
+				<slot name="header" />
+			</div>
+
+			<slot />
+		<!--/lit-part--></template><h1 slot="header">Posts</h1><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2025/03/24/end-of-an-era"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/Z30rW5bqstJ99H2q_IMG_1594.jpg?auto=format%2Ccompress&amp;rect=0%2C0%2C3024%2C4032&amp;w=3024&amp;h=4032"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2025/03/24/end-of-an-era"><!--lit-node 4-->
+							<!--lit-part-->End of • 한 시대의 막을 내리다 • an Era<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2025-03-24"><!--lit-node 6-->
+						<!--lit-part-->March 24, 2025<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part 9W0SrJQcI3Q=--><p>To think I never wanted to teach in my lifetime, it turned out to be the best first profession I could have chosen for myself. The thought of teaching made me look toward other directions whenever it was presented to me, but it seemed to always stay open at the same time. In the very back of my mind. And now I couldn’t imagine myself without the title of Thaovi Teacher, or should I say, taobi teachuh? To say that the last four years was incredible is an understatement. Was it teaching, teaching in Korea, or just Korea? After 4 years, I would say all of it combined.</p><p>내 평생 가르치는 일은 하고 싶지 않다고 생각했었는데, 돌아보니 그 선택이 내가 고른 가장 좋은 첫 직업이었던 것 같아요. 가르친다는 생각이 나에게 주어질 때마다 다른 방향으로 눈을 돌리곤 했지만, 동시에 그 생각은 내 마음 속 깊은 곳에 늘 열려 있었던 것 같아요. 이제는 ‘타오비 선생님/쌤’이라는 직함 없이 내 자신을 상상할 수 없을 정도예요. 아니면 ‘타오비 티쳐’라고 해야 할까? 지난 4년은 정말 놀라운 경험이었다고 말하는 건 지나치게 표현한 거예요. 그것이 가르침이었을까, 아니면 한국에서의 가르침이었을까, 아니면 단지 한국일까? 4년이 지난 지금, 저는 이 모든 것이 결합된 결과라고 생각해요.</p><p></p><p>When I first started teaching, many teachers asked how many years I&#39;d been teaching already. I honestly had no idea what I was doing then but I guess it came naturally to me. But now? I easily have <em>almost </em>perfected teaching English as a foreign language to Korean students. I say &#39;almost&#39; because I believe that there&#39;s always room to be better and to improve. In my work and in life in general. I still remember arriving in Namwon and immediately thinking that I’d try and move out and be in a bigger city since it felt so small. And then especially after I was shown my tiny box apartment too. But Namwon ended up being the most perfect place for me and I wouldn’t have had it any other way.</p><p>처음 가르치기 시작했을 때, 많은 선생님들이 내가 몇 년 동안 가르쳤는지 물어봤어요. 그때는 솔직히 내가 뭘 하고 있는지 몰랐지만, 어쩌면 자연스럽게 잘 할 수 있었던 것 같아요. 지금은? 한국 학생들에게 영어를 외국어로 가르치는 일을 거의 완벽하게 할 수 있게 되었어요. ‘거의’ 완벽하다고 말하는 이유는 항상 더 나아질 수 있다고 믿기 때문이에요. 남원에 처음 도착했을 때, 나는 이 작은 도시를 떠나 더 큰 도시로 이사 가야겠다고 생각했었는데, 특히 내 작은 룸을 보면서 그 생각은 점점 더 확실해졌어요. 하지만 결국 남원은 제게 가장 완벽한 장소였고, 저는 그 어떤 다른 곳도 상상할 수 없을 정도로 만족하고 있어요.</p><p></p><p>As my time has come to an end, I’ve thought back on my life here these last four years a lot. I moved over 4 years ago barely knowing how to say hello or thank you. And as a certified Semi-Korean, title given by my Korean friend, Kim Chanhee, I’m ashamed to say I didn’t even know what kimbap was before I arrived. However, I’m now leaving as my Korean has significantly improved just by listening to those around me with MUCH knowledge about Korean foods and how they should taste, and even be eaten! Shame.</p><p>시간이 다가오면서 지난 4년 동안 여기에서의 삶을 많이 돌아봤어. 4년 전, 나는 ‘안녕하세요’와 ‘감사합니다’도 제대로 말할 줄 모르던 상태로 왔고, 내 친구인 김찬희가 준 ‘세미 코리안’이라는 칭호를 받았지. 그런데… 한국에 오기 전에는 김밥이 무엇인지도 몰랐던 사람이었어. 하지만 이제는 한국 음식과 그 맛에 대해 많은 지식을 가진 사람들 주변에서 들으면서 자연스럽게 한국어도 많이 늘었고, 이제 떠나게 됐어요. 좀 아쉽네.</p><p></p><p>I came to Korea knowing <em>of</em> only one person who I met and became friends with in May of 2021, Ann. We knew of each other when we both lived in Seattle because she is friends with my sister, but we had never met. And now we are friends too! Not in the way where it&#39;s like, &#39;Oh, this is my friend&#39;s little sister,&#39; but as actual friends, with a friendship that&#39;s separate from my sister&#39;s relationship with her, and I couldn&#39;t be more thankful for that. I’ve never thought I lived in my sister’s shadow, nor did she ever make me feel that way, but when it comes to meeting people connected to my sister it has always felt like I’m just “QuynhAnh’s little sister” and not as me, Thaovi. So I’m really thankful to Ann for never making me feel that way. (Thanks Ann, u didn’t know but now u know).</p><p>한국에 오기 전, 제가 아는 사람은 단 한 명뿐이었어요. 그 사람은 2021년 5월에 만난 Ann이었어요. 우리는 시애틀에 살 때 서로 알았지만, 저는 Ann이 제 언니와 친구라는 사실만 알고 있었고, 실제로 만난 적은 없었어요. 이제는 서로 진짜 친구가 되었어요! 그리고 그 친구는 ‘이 사람은 내 친구의 동생’이라는 느낌이 아닌, 제 언니와의 관계와는 독립적인 친구 관계로, 그 점에 대해 정말 감사하게 생각하고 있어요. 나는 언니의 그림자 속에서 살았다고 생각한 적은 없지만, 언니가 나를 그렇게 느끼게 한 적도 없었어요. 그럼에도 불구하고, 언니와 관련된 사람들을 만날 때마다 항상 ‘QuynhAnh언니의 동생’이라고만 여겨져서, 그때마다 마치 진짜 나, Thaovi가 아닌 다른 사람처럼 느껴졌어요. 그래서 Ann이 저를 그런 방식으로 대하지 않아서 정말 감사해요. Ann은 절 진심으로 친구로 대해주었고, 그런 점에서 저는 정말 감사해요. (고마워, Ann! 몰랐겠지만 이제 알겠지?)</p><p></p><p>I came to Korea not scared, not knowing what to expect, not expecting anything at all honestly. After arriving I was traumatized by my office of education‘s lack of preparation for my arrival but I held off on running away, aka doing a midnight run, since I so clearly remember telling myself, “Thaovi, you came here to work not to have a lavish life in Korea so let’s just see how work goes before doing anything rash” and I am so incredibly glad I was patient and stayed. I met so many amazing people along the way, from coworkers to other teachers from around the world coming to do what I also came to do, whom many now are my very dear friends. I used to joke, and still do, that I only have 2 friends but now I’m leaving with so many friends with so much love around me, near and far.</p><p>한국에 올 때, 두려움도 없었고 무엇을 기대해야 할지도 몰랐어요. 사실 아무것도 기대하지 않았어요. 도착한 후에는 제 교육청의 준비 부족에 큰 충격을 받았지만, ‘타오비, 너는 호화로운 삶을 살러 온 게 아니라 일을 하러 왔으니까 급하게 결정을 내리지 말자’고 다짐하면서 그 자리를 지켰어요. 정말 감사하게도 참을성 있게 기다려줘서 너무 행복해요. 그 덕분에 많은 훌륭한 사람들을 만났고, 이들 중 많은 이들이 제 아주 소중한 친구들이 되었어요. 저는 농담 삼아, 여전히 농담이지만, ‘친구가 2명밖에 없다’고 말했었지만, 이제는 사랑하는 친구들이 많이 생겨서 떠날 때 너무 감사한 마음이에요.</p><p></p><p>In my first couple of years, and especially the first two, I kept being told, ‘You’re so brave,’ but I couldn’t quite understand what that comment truly meant until recently. I moved to Korea when I was 22 and now I’m 27 (omg). As I’ve entered my late 20s, I realized how pivotal of a time your mid 20s are and I’m so glad I spent them in Korea, even more so, Asia. In my mid 20s, I discovered so much about my surroundings, the people I wanted to spend my time with, and, most importantly, myself. As a 22 year old who wasn’t scared to move across the world and told her parents, ‘I’m leaving!’, I thought I knew everything there was to be an adult; how hard could it be? Little did I know I was only just a 2 year old baby adult. Brave sounded like such a dramatic word since I wasn’t scared at the time… at all. I don’t know exactly why I wasn’t scared, but maybe it was because I left America and everyone I loved behind during a time where it was impossible to see them; COVID-19. Looking back at my younger self now, yeah, I would say that I was definitely brave too. Because what the heck is a 22 year old doing moving across the world away from their family and friends??? Are you kidding? That is TERRIFYING. Anyway, I’d like to thank my 22 year old self for being brave because had she not been, I wouldn’t be feeling the way I’m feeling now.</p><p>첫 몇 년, 특히 처음 두 년 동안은 ‘너 참 용감하구나’라는 말을 많이 들었어요. 그 말을 진정으로 이해하게 된 건 최근이었어요. 나는 (한국 나이로) 23살에 한국에 왔고, 지금은 28살이에요 (오마이갓). 20대 후반이 되어 보니 20대 중반이 얼마나 중요한 시기인지 알게 됐고, 정말 한국에서 그 시기를 보낸 것에 대해 너무 감사해요. 23살 때, 나는 세상에 무엇이든 할 수 있을 거라고 생각했어요. ‘성인으로서의 삶’이 얼마나 어려운지 몰랐어요. 그때는 두려움도 없었어요. 왜 그런지 모르겠지만, 아마 코로나19 때문에 미국을 떠나면서 아무것도 두렵지 않았던 것 같아요. 돌이켜보니, 네, 나도 23살의 나를 칭찬하고 싶어요. 가족과 친구들을 떠나면서 23살이 할 수 있었던 용기는 정말 대단했다고 생각해요. 정말 무섭고, 두려운 일이었어요. 그런데 그 덕분에 지금의 내가 있을 수 있게 되었어요.</p><p></p><p>I’m writing this on my notes app in my phone as I’m sitting on the plane heading back to Seattle currently. I feel a lot of sadness but also a lot more of gratefulness, gratitude, thankfulness, feeling blessed, beyond lucky, so loved, and feelings I can’t quite describe.</p><p>And now I’m leaving with all the love in the world—at least that what it feels like. To move to another country and find the love and support that I found is an indescribable feeling. I’ve never once felt unconditional love from people outside of my family until I moved here. To leave it all behind to start a new challenge in life, since in my heart it felt like it IS my time for change, made it that much more difficult to go. Not only that, but I am leaving a place and so many people who I love so much too. The best thing of all though? Knowing that all the love I found here will still be there for me when I return to visit. And that it’s still here for me, just a little bit further away. I thought that to myself at first because I wanted to believe that what I believe is true, but I think everyone had told me in some way that I’ll always be welcomed with open arms when I come back; that this isn’t, ‘Goodbye,’ but a, ‘See you later.’ Whether it’s in Korea, in Seattle, or on FaceTime (thank god for technology) wherever in the world it may be, I’ll see you all again. You all know who you are.</p><p>지금 비행기에서 이 글을 쓰고 있어요. 시애틀로 돌아가는 중이에요. 슬픔도 많이 느끼지만, 감사함, 축복받은 기분, 사랑받는 기분 등 말로 다 표현할 수 없는 감정들이 내 마음 속에 가득 차 있어요. 한국에서 받은 사랑과 지원을 떠나게 되는데, 그 모든 것이 너무 감사해요. 한국에서의 사랑은 언젠가 돌아올 때 나를 여전히 따뜻하게 맞이해 줄 것이라는 믿음도 있어요. 처음에는 ‘그게 사실일까?’라고 생각했지만 많은 사람들이 나에게 언제든지 돌아오면 열린 마음으로 맞이해 줄 거라고 말해줘서 그 믿음이 더 확신을 주었어요. 한국에서든, 시애틀에서든, 페이스타임을 통해서든, 언젠가 다시 만날 수 있을 거라는 믿음이 있어요.</p><p></p><p>As I was sitting in my aisle seat waiting for my plane to depart, I had my phone in my hand. I probably should have had my phone on airplane mode, it was not (sorry to my pilot). It’s Monday and Mondays mean futsal practice from 6-8pm. However, we mostly always are stretching or just arriving around 6:15–6:30. My flight was supposed to depart at 6:15 but it got delayed by 20 minutes. At 6:20pm, my phone lit up with the words “김양택코치님“ (my coach’s contact in my phone). Last week was going to be the last time I could say goodbye to my coach, but due to an unfortunate accident in Namwon, we couldn’t see each other to say goodbye. My last phone call to my Korean phone number. I picked up and he said my name excitedly and then said he was sorry for not being able to see me. When I replied, “it’s okay” in Korean, tears immediately streamed down my face. The call was only a minute long but it meant a lot more to me than he’ll probably ever know. 양택코치니 넘넘 정말 고마웠어요.</p><p>비행기에서 복도 자리에 앉아 기다리던 중, 핸드폰을 손에 들고 있었어요. 아마 비행기 모드로 전화기를 설정해야 했을 텐데…설정하지 않았어요 (파일럿님, 죄송합니다). 월요일이라서 보통 6시에서 8시까지 운동을 하는 날이었어요. 비행기는 6시 15분에 출발할 예정이었지만 20분 지연되었어요. 지난주가 마지막 인사를 할 수 있는 시간일 뻔했지만, 안타깝게도 남원에서 사고로 인사를 하지 못했어요. 6시 20분에 코치님이 내 이름을 부르며 전화를 주셨어요. 코치님은 ‘못 봤어 미안해’라고 말씀하셨어요. “괜찮아요”라고 답하자마자, 갑자기 눈물이 쏟아졌어요. 단 1분의 전화였지만 그 전화는 내게 너무 소중한 시간이었어요. 양택코치님, 정말 고마웠어요.</p><p></p><p>I thought I could make it the whole flight without crying. If you know anything about mbti’s, better known to Americans as personality types, mine is ENFP with a big fat F. So jokes on me! After 4 years, I’m leaving the life that I built for myself, so of course I’m going to cry, but I don’t think I’ve stopped crying since my coach called me. Truly, and I mean this, because of my coach, I was able to have so many beautiful friendships with so many amazing people in Namwon and I’m forever so grateful to him. At a time where I felt my friendships with people I was meeting in Korea were shattering, he found me and convinced me to join our team and it was probably one of my top 3 best decisions I ever made while living in Korea. However, it’s another reason leaving is harder than I could have ever imagined. Never once did any of my futsal teammates and friends make me feel excluded. Despite my lack of Korean speaking fluency skills, they still took me in and treated me like a real friend on <em>our</em> team and not just a foreigner who was on <em>their</em> team. They always tried their best to make me feel as comfortable as possible. I always heard expats, foreigners living in Korea, online say it was hard to be friends with Koreans but I didn’t seem to have any problems with this at all. Thank you to my team for everything.</p><p>비행기 타는 동안 울지 않고 갈 수 있을 거라 생각했는데, ENFP(그것도 F가 큰)인 나에게는 그런 일이 없었어요! 내가 쌓아온 삶을 떠나니 당연히 울게 되죠. 그런데 코치님(김양택 코치님)께서 전화를 주신 이후로, 울음을 멈춘 적이 없어요. 코치님 덕분에 남원에서 많은 아름다운 사람들과 우정을 쌓을 수 있었고, 그에게 정말 감사해요. 한국에서 만난 사람들과의 우정이 힘들어졌을 때, 코치님이 나를 찾아와 풋살 팀에 가입하라고 설득하셨고, 그 결정은 내 인생에서 가장 잘한 결정 중 하나였어요. 떠나는 것이 생각보다 훨씬 더 힘들어요. 한국어 실력이 부족한데도, 풋살 팀원들은 나를 외국인이라고 대하지 않고 진정한 친구처럼 대해주었어요. 그들에게 정말 감사하고, 선데이 모닝 팀에게 감사해요.</p><p></p><p>Yesterday I had to say goodbye to my two closest friends in Namwon, Lauren and Nondumiso. Everything was wonderful and great and felt like normal up until I started walking away after saying goodbye/see you later. How do some people not cry? Why do I cry so easily? YOH. This, in general, is the first time I’ve ever cried saying goodbye to people outside of my family since I first moved to Korea and honestly, I wasn’t even crying about leaving, there was a different event that happened to happen at the time I was leaving so I cried a lot about that then. The other day my nail girl, Masha, told me that my personality is like the sun and I almost cried after she said THAT. This post is literally just about me crying at this point.</p><p>어제는 남원에서 가장 친한 친구인 Lauren과 Nondumiso에게 작별 인사를 했어요. 작별 인사를 한 후에 걸어가는데 눈물이 나더라고요. 어떻게 사람들은 울지 않을 수 있을까? 나는 왜 이렇게 쉽게 우는 걸까? 그동안 한국에 오면서도 작별 인사로 울었던 적은 없었는데, 이번이 처음으로 떠나는 게 아쉬워서 울었어요. 며칠 전에 내 네일 아티스트 마샤가 내 성격이 태양 같다고 말해줬는데, 그 말을 듣고 거의 울 뻔했어요. 이 글은 사실 그냥 내가 울었다는 이야기예요… ㅋㅋ</p><p></p><p>Anyway, all this to say, in Namwon, The City of Love, I indeed found, not just a little, but a lot of love there. Even when I went to my grocery store to say goodbye to my grocer (also 이모 (my Korean auntie/friend’s mom)), she cried. I was so touched at that because it showed me that she cared about me even though to me, I was just another regular shopper at her grocery store who happens to be friends with her daughter.</p><p>어쨌든, 남원, The City of Love에서, 나는 정말 조금이 아니라, 많이 사랑을 찾았어요. 마트에 가서 내 이모(내 친구 엄마)에게 작별 인사를 했을 때, 그 아줌마가 울었어요. 그게 정말 감동적이었어요. 왜냐면 나한테는 그냥 평범한 마트 손님일 뿐이었는데, 그 아줌마가 나를 걱정해 준다는 게 느껴졌거든요.</p><p></p><p>I’m not the same girl who left in 2021 so when I make my return to America, people can’t be too surprised right? At least I hope that people at home don’t expect me to be the same. I’ve grown significantly as a person, unfortunately not physically though, fought many battles alone but learned to lean on others when I need it, I’d like to think I think more introspectively too but still working on that one even more, traveled a lot of Asia, can confidently say my spice tolerance has significantly increased, and scored lots of goals too!</p><p>2021년에 떠났던 그 나랑 지금의 나는 달라요. 그래서 내가 미국에 돌아가면 사람들이 너무 놀라지 않겠죠? 적어도 집에서는 내가 똑같을 거라고 기대하지 않았으면 좋겠어요. 나는 많이 성장한 사람이에요, 안타깝게도 몸은 안 자랐지만, 많은 어려움을 혼자 겪었고, 이제는 필요할 땐 다른 사람한테 기대는 법을 배웠어요. 난 요즘 더 많은 자기 성찰을 하고 있는데, 아직 더 많이 해야 할 것 같아요. 매운 음식도 잘 먹게 되었고, 아시아도 많이 여행했으며, 풋살에서도 많은 골을 넣었어요!</p><p>One of my friends told me, “you did more in Namwon in 4 years than I did in [home country] my whole life.” And yes, I certainly did do a lot. I traveled all over Korea, totaling 47 cities and towns all across Korea including my Korea hometown, Namwon. I visited 9 different Asian countries, and even went all the way to The Middle East! I joined a futsal team. I played volleyball each year with my schools in a tournament. I taught over a thousand students from third grade elementary to third grade middle school (9th grade). I TAUGHT. I even remembered maybe 90% of their names each year and met with around 450-500 students each year. I truly built a beautiful life here and this was my most beautiful era in life thus far. I can’t believe I’m leaving but I know that it’s time for me to make a mark elsewhere now.</p><p>내 친구 중 한 명이 ‘너는 남원에서 4년 동안 내가 [그녀가 고향]에서 살아온 것보다 더 많은 일을 했어’라고 말했어요. 맞아요… 나 정말 많이 했어요. 나는 한국의 47개 도시와 군을 다녔고, 그 중엔 내 고향인 남원도 포함돼요. 9개 아시아 나라를 여행했고, 심지어 중동까지 갔어요! 풋살 팀에도 가입했어요. 매년 학교에서 배구 대회에도 참가했어요. 초등학교 3학년부터 중학교 3학년까지 천 명이 넘는 학생들을 가르쳤어요. 매년 학생들의 이름을 90% 정도 기억할 수 있었고, 매년 450-500명 정도의 아이들을 가르쳤어요. 진짜 여기서 아름다운 삶을 만들었고, 이 시기는 내 인생에서 가장 아름다운 시절이었어요. 내가 떠난다는 게 믿기지 않지만, 이제 다른 곳에서 나만의 흔적을 남길 때가 된 것 같아요.</p><p></p><p>A lot of empty holes in my heart that I didn’t realize I had were healed here. Of course, as any life is, it’s not always rainbows and butterflies but I will say that my rainbows and butterflies here in Korea definitely outweighed all of my heavy downpour rains that I had while I was living there. Oftentimes we feel sadness even deeper and longer since it feels more heavy than happiness and we think it’ll last forever, but it’s always temporary. That’s something I learned here. And I know I’m just speaking from my own experience so I hope that those who are reading this who experience sadness in a different way, that you’ll find comfort in knowing whatever it is that you’re going through too shall pass.</p><p>내가 몰랐던 마음속의 빈 구멍들이 여기서 치유됐어요. 물론, 어떤 인생이 그렇듯 항상 무지개와 나비만 있는 건 아니지만, 한국에서의 내 무지개와 나비들은 내가 여기 살면서 겪었던 폭우 같은 힘든 날들을 확실히 이겨냈어요. 우리는 종종 슬픔을 더 깊고 길게 느낄 때가 많아요. 행복보다 더 무겁게 느껴져서 그 슬픔이 영원할 것 같다고 느낄 때가 많아요. 하지만 그건 항상 일시적이에요. 그게 내가 여기서 배운 거예요. 그리고 나는 그냥 내 경험에서 말하는 거라, 이 블로그를 읽고 있는 사람들이 슬픔을 다른 방식으로 겪고 있더라도, 너희도 지금 겪고 있는 일이 결국 지나갈 거라는 걸 알고 위로를 얻기를 바래요.</p><p></p><p>I’m going to journal the rest of my thoughts for my personal and future self, so for now, this is the end of my blog. The end to my most beautiful era in life so far. Here’s to the next chapter of my life! Please send all your positive vibes as I navigate my new life here in America as a baby adult who grew up in Asia. Thank you all for following along if you stayed with me until now. Back in 2021, my parents tried bribing me with a brand new car if I didn’t leave but I chose to go and it was my best decision in life; moving to Korea.</p><p>내 생각은 나만의 일기장에 남길 거라서, 지금은 내 블로그의 끝을 맺을 거예요. 지금까지 내 인생에서 가장 아름다운 시절의 끝이기도 해요. 이제 내 인생의 다음 장으로 나아가자! 이제 미국에서 아시아에서 자란 아기 어른으로서 새 삶을 시작하니까, 모두의 긍정적인 에너지를 보내주세요. 지금까지 나와 함께해준 사람들 정말 고마워요. 2021년에 부모님이 내가 떠나지 않으면 새 차를 사준다며 나를 유혹했지만, 나는 떠나기로 선택했고 그건 내 인생에서 최고의 결정이었어요. 한국으로 이사 온 거 정말 잘한 결정이었어요. ♡</p><p>---</p><p><strong>THANK YOU CREDITS TO THOSE WHO MADE MY LIFE A SUCCESS IN KOREA: / 내 인생을 한국에서 성공으로 이끈 모든 이들에게 감사드립니다; </strong></p><p>I’d like to end this blog by thanking my <strong>parents</strong> for never forcing decisions on me, always supporting me even if it meant they wouldn’t get to see me as much (even though I know deep down they wanted me to stay), and helping me pack to move back home. My <strong>sister</strong> for always vocalizing her support and loving me and my life in Korea, for visiting multiple times and staying with me for even as long as 3 months — she really got to see my life up close more than anyone else back at home. My <strong>brothers</strong> for seeing how happy I was living in Korea which helped me make my decision to stay a fourth year. My “foreign” friends I made in Korea that stuck by my side and rooted for me since the days we met, <strong>Sylvia, Jane, Lydia, Ann, Maya, Mary, Kalei, Lauren, Miso and Dani. Rocio,</strong> too, although we met in college, she lived in Korea for 3 of the years I did and supported me a lot too. <strong>지은</strong> (Jee Eun) for being the first person I ever felt unconditional love from outside of my family and always making sure that I’m thinking of myself first; not only was she just my coworker, but my Korean mom and friend. <strong>태훈 &amp; 유경</strong> (Taehoon and Yukyung) for being my first true Korean friends and always making time to see me and spend time together despite being as busy as me with their travels. All the <strong>lunch ladies</strong> at every single school I ever worked at for feeding me (a lot too), Korean food has become like real 집밥 (like mom’s food but Korean) for me. One of my coteacher’s from my first year, <strong>진두성</strong> (Jin), for helping me search for my apartment that I lived in the last three years so I could actually love my physical home and always making sure I was settling into my Korea life okay. My landlord, <strong>이정규</strong>, for being simply the best landlord I’ve ever had (and I’ve had 4 total)—any time I had an issue at my apartment, he would help within the hour, he kept my rent the same price all 3 years despite raising everyone else’s rent, paid for my last month’s utility bill for me just because AND let me stay an extra 5 nights after my housing contract expired (because ain’t no WAY this will ever happen in America for me). <strong>김지현</strong> (Jihyeon), for getting me through my first year in Korea—it was a time. My nail girl, <strong>마샤</strong> (Masha), for always having the best designs and doing the best job with my nails every month and being a friend to me too. 마트타운’s best employee, my <strong>이모</strong>, 김경미 also 우희엄마. <strong>은희 </strong>and<strong> 미라</strong> for always making time to get dinners with me once a month if not, every other month. My dermatologist, <strong>박현호</strong> (Park Hyunho),<strong> </strong>for saving my skin during my first year breakouts and continuously caring about me and remembering every little detail I ever told him whenever I come for my next visits. My Seoul hairdresser, <strong>태근</strong> (Taegeun), for always making my hair prettier than it was before and always treating me so kindly. My futsal coach, <strong>김양택</strong>, for introducing me to all of these amazing women in my life now. The best futsal team, Sunday Morning (and friends + former teammates), <strong>경혜언니, 가현언니, 유진언니, 수혜언니, 수연언니, 보금언니, 다은, 태연, 우희, 찬희, 해솔, 가윤, 해인, 수정, 서연, 은영, 민송, 은지, 유빈, 세영, 선영, 주희언니, 주연, 수진언니, 선한이, 민주, 승희, 윤하, 유진, 지영, 재윤언니…</strong> All my Korean English coteachers ever, <strong>김하영, 진두성, 김지현, 이은숙, 박지은, 박미라, 박세빈, 이인아, 김리화, 조미성, 김화령</strong>. All of my schools and everyone I worked with in Korea (trying to remember all names, but these people especially), <strong><em>남원초</em>: 김하영, 박지은, 김승기, 김산, 이수현, 정지영, 유재춘, 운겸, 현숙쌤, 광식, 방승현, 양승현, 이승현, 문현미, 황병석교장쌤, 정진, 강수연, 유지우, 김예지, 황도영, 송아롬, 예빈, 송화담, 실장님, 원성재, 동현, 종식,,, <em>교룡초</em>: 진두성, 박미라, 박세빈, 이인아, 이태훈, 이찬희, 최선희, 주은희, 최은숙, 심중보, 송가현, 전효준, 이민국, 백승인, 이춘숙, 김태현, 정수현교감쌤, 진정숙, 배민수, 윤경쌤,,, <em>용성초: </em>최소연,<em> 금지중,,, </em>용북중: 조미성, 지원쌤, 체육쌤, 보건쌤,,, <em>아영중</em>: 김화령, 승미, 영후, 박찬기, 하경, 가윤, 혜연쌤, 상준, 민정, 진희쌤, 은혜쌤, 수진.</strong> Thank you to all of <strong>my students</strong>, there are way too many to name, but if you ever see this, you know who you are—thank you for giving me the chance to learn with you and teach you. It was truly my honor to have taught some of the most amazing kids I’ve ever encountered in life. I’d also like to thank my dear friend, <strong>Griffen</strong>, for helping me create this blog to keep everyone updated with my life in Korea, supporting me and taking time off to visit me — that was one of my most memorable visits for sure. And of course, thank you to <strong>Namwon</strong> for being the best home in Korea for me, I cried and laughed a lot here but Namwon was a place that always gave me so much comfort and love. I hope I remembered everyone’s names… <strong>Thank you.</strong></p><p>Finally, I’d like to thank <strong>my younger self</strong> for having the courage, not being afraid, being so carefree and  being brave enough to seize this opportunity for myself to experiences these once (maybe haha) in a lifetime opportunity. I really did that!!!!! I think I lived really well these last four years, took advantage of every opportunity to travel, left my comfort zone an infinite amount of times to create my own community, and so much more. Many of my friends here in Korea had said they are proud of me which made me feel really good. I’m so proud of myself, too!! I’ve become better, a better person, someone who is even more sure of herself and my world view lens is even wider than before and I’m so happy about that. Korea will always be my home away from home. I can’t believe I’m back in America haha. To my next chapter in life! ♡</p><p>이 블로그를 끝으로, 한국에서의 마지막 시절을 기록해요. 이제 미국으로 돌아가 새로운 장을 시작하려고 해요. 고마운 분들이 많아요. 부모님, 항상 나를 지지해주신 가족들, 친구들, 선생님들, 코치님, 그리고 선데이 모닝 팀 모두에게 진심으로 감사드려요. 나의 이야기를 듣고 함께해 준 모든 분들께 감사드려요, 그동안 정말 많은 사랑을 주셔서 감사합니다. 새로운 장을 시작하는 나에게는 긍정적인 에너지와 응원을 보내주세요. 이 모든 경험을 통해 내가 얼마나 성장했는지 느끼며, 이 경험이 내 삶을 더욱 풍요롭게 만들어 주었어요. 다시 한 번, 감사합니다.</p><p></p><p>And to those who were wondering how long I cried, probably one hour total, 4 if you include the breaks in between crying HAHAHA. THAT’S LIKE HALF OF MY FLIGHT BUT I’M OKAY—REALLY SEE YOU LATER EVERYONE, IT HAD TO BE DONE. I’m just a girl and a crier forever. 완전 F야… ㅋㅋㅋ</p><p>그리고 얼마나 울었는지 궁금해하는 사람들, 아마 총 1시간 정도, 쉬는 시간까지 합치면 4시간 정도 울었어 ㅋㅋㅋㅋㅋㅋ. 그게 내 비행 시간의 절반인데 괜찮아… 진짜 나중에 봐용, 이건 해야만 했어. 난 그냥 울보인 여자일 뿐이야. 완전 F야… ㅋㅋㅋ</p><p></p><p>Xoxo, Thaovi / 타오비.</p><p></p><p><em>And if you&#39;ve made it this far into my last post here are, what was supposed to be 10, but 13 of my favorite moments and things in the last four years I spent in Korea in no particular order (I&#39;m excluding all moments with my friends because I always had the best time with everyone that I mentioned above for real - they were my chosen family in Korea</em>♡<em>).</em></p><p>그리고 만약 이 글을 끝까지 읽었다면, 원래 10개를 쓰려고 했지만 결국 12개의 제 좋아하는 순간들과 한국에서 보낸 마지막 4년 동안의 추억들을 순서 없이 소개할게요 (친구들과의 순간들은 제외할게요, 왜냐하면 사실 위에서 언급한 모든 사람들과 항상 최고의 시간을 보냈으니까요 - 그들은 한국에서 제 선택한 가족이었어요♡).</p><ol><li><em>School lunch. (급식)</em></li><li><em>Living alone. (혼자 사는 거)</em></li><li><em>Daiso 5 minutes away from my apartment.  (내 아파트에서 5분 거리 다이소)</em></li><li><em>My second futsal tournament weekend in Boryeong.  (보령에서 두 번째 풋살 대회)</em></li><li><em>Chunhyang Festivals. All Namwon festivals... (춘향제… 남원의 모든 축제들…)</em></li><li><em>After school drives with Jee Eun. (지은이랑 퇴근 후 드라이브)</em></li><li><em>Cherry Blossom season in Korea, especially in Namwon on cherry blossom street aka the whole city lining the river in Namwon. (한국의 벚꽃 시즌, 특히 남원 요천 벚꽃길)</em></li><li><em>Safety; leaving your belongings on the table and coming back and it&#39;s still there? America could never. Can I add being able go on night walks by the river and not feel like I was going to get kidnapped here? (안전함)</em></li><li><em>When my student, 민성, asked me if I fly home to America and fly back to Korea to teach them every day. (내 학생 민성이가 매일 미국에 갔다가 한국에 와서 수업한다고 물어봤어… 진짜 잘생긴 바보 ㅎㅎㅎ)</em></li><li><em>UGH DO I HAVE TO CHOOSE ONLY ONE MORE???? EVERYTHING. Looking back, no matter how much something made me cry or laugh, they&#39;re all reasons why I can be so thankful and grateful for the experience that I had and how I feel about everything now. I fully healed myself when I was and also didn&#39;t know I was broken here, so as cliche as it is to say, everything. I loved every moment and each moment made me into who I am now. But if I really have to choose, I fear I have a favorite taxi driver in Namwon, his license plate is either 34바2200 or 2002???? SOMEthING like that, but he always has the best attitutde and is so funny and always makes me laugh. He always remembers me when he picks me up by my apt LOL. 기사님 따봉!!!! 5별 always. His name, unsure but my taxi app says 서*윤 (Seo *Yoon). thx for all the fun rides over the years hahahaha, I definitely taxied more than I should have. (아 이거 진짜 하나만 고르라고? 다. 돌이켜보면, 아무리 울고 웃었던 순간들이 있어도 그 모든 게 내가 지금 이 경험을 얼마나 감사하고 고마워하는지 이유가 되지. 여기서 내가 몰랐던 내가 치유된 거 같아. 진부한 말이겠지만, 다 좋아. 모든 순간이 나를 지금의 나로 만들어줬어. 그래도 하나만 고르라고 하면, 내가 좋아하는 남원 택시 기사님이 있어. 번호판이 34바2200인가 2002인가??? 뭐 그런 느낌인데, 항상 최고로 긍정적이고 웃기고 나를 웃게 만들어줘. 항상 아파트에서 내가 탑승할 때 기억해 줘서 너무 웃겨 ㅋㅋ 기사님 따봉!!!! 5별 항상. 이름은 잘 모르겠지만, 내 택시 앱에 서*윤이라고 적혀 있네. 여러 해 동안 즐거운 택시 타기 고마워 ㅋㅋㅋ, 너무 많이 택시 타긴 했지만)</em></li><li><em>omg i can&#39;t I&#39;m sorry, but I went to a J-Hope concert in SEOUL. DAY 1. YES I SECURED A TICKET. I failed at getting BLACKPINK tix but I managed J-hope idk either. Also Yet To Come Liveplay in Haeundae, Busan with my sister since we&#39;re on the topic of BTS lol. THis is now 12... but we&#39;ll pretend it&#39;s together. Okay, really, I&#39;m done. (아 미안, 진짜 안 되겠다. 근데 서울에서 J-Hope 콘서트 갔었어. DAY 1. 티켓 잡았지!! BLACKPINK 티켓은 실패했지만, J-Hope는 어떻게든 잡았어. 또, 부산 해운대에서의 BTS ‘Yet To Come’ 라이브플레이도 내 동생이랑 갔었어. BTS 얘기 나왔으니깐ㅋㅋ. 이건 이제 12번인데, 그냥 같이 묶어줄래? 오케이, 진짜 끝)</em></li><li><em>Wait also picnics with my Ayoung Middle School teachers and staff. (아 또… 아영 중학교 선생님들과의 피크닉스)</em></li><li><em>Last one… getting to travel all over Korea without the tourists in 2021-2022 (마지막으로… 2021-2022년 동안 관광객 없이 한국을 전역을 여행할 수 있었음)</em></li></ol><p>Okay, thank you for reading all the way!!! I’m unsure how well these korean translations are, but I hope they were good enough. Okie bye byeeee. And from the bottom of my heart, I love you! 사랑해요 ♡ </p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2025/03/24/end-of-an-era"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2025/02/12/thefinalstretch"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/Z0VzbK8jQArT1TRV_IMG_8114.jpg?auto=format,compress"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2025/02/12/thefinalstretch"><!--lit-node 4-->
+							<!--lit-part-->The Final Stretch<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2025-02-12"><!--lit-node 6-->
+						<!--lit-part-->February 12, 2025<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part d/v7r5QVRnE=--><p>I booked my one way ticket back to America. The last time I bought a one way ticket was over four years ago and that was a flight to Korea. It felt so surreal to move here and now it feels surreal to be moving back. People have been asking how I feel about moving home and my answer is that I honestly don&#39;t know. I feel a bit of excitement, anxiousness, worry but not exactly <em>worried</em> - there&#39;s a word for this in Korean, 고민 (gomin), but there&#39;s no real translation to capture its full meaning in English. The easiest thing I <em>can</em> say is that I am feeling bittersweet about it all. I am, however, excited to be physically close to my family again. Although I can&#39;t promise my stay in Seattle forever (hahahahahahahahaha just kidding... maybe). </p><p>Since August, I visited Taiwan again to help Jane move and on the second, also the last, day there, we just wish we had more time to explore Taiwan. Taiwan is one of those places I just never expected to really love so much. We then made our way to Cambodia and it was unexpectedly one of the coolest places I had been to in a while. And thanks to our wonderful tour guide, Sareth, and driver, Savon, it was the smoothest trip of our lives. We were able to visit the capital city, Phnom Penh, my friend Sophanna&#39;s hometown, Battambang, and then Siem Reap where Angkor City is. Angkor City is basically the city of temples where the most famous of all their temples, Angkor Wat, is located. Every day in Siem Reap you would just hear me and Jane saying, &quot;WOOOWWWWW.&quot; It was truly amazing. </p><p>Shortly after I got back from my trips, I worked a little bit and then went to Jeju Island to visit Sylvia! Jeju is Jeju and it&#39;s the best as always.</p><p>I then flew to Busan to meet up with my uncle&#39;s family who came to visit. We had a great time surfing and exploring some of the tourist sites together. I was really happy to see my two little cousins, Mila and Calen, enjoying their time in a different country. Since leaving America, I&#39;ve realized a lot of my family has grown up. Despite our age difference of over ten years, it was still so fun to hang out with them. </p><p>Summer vacation finally came to an end but my visitors did not. One of my closest friends from college, Griffen, came to visit me shortly after and I had the best time showing him around Namwon and Busan! It was summer, so Busan and/or Jeju Island are a must to visit. Family of course, but friends coming to Korea to visit me is so special that I cannot explain into words how much it means to me. It was the best best best ever. </p><p>At the beginning of September, my Namwon friends, Lauren and Miso, and I went to Yeosu together. Lauren and I set up a surprise birthday party for Miso and commemorated our first trip together, <em>finally</em>. Setting up a surprise party in a trio friend group was rather hard but we got the job done. This was a much needed trip together and I had so much fun driving my friends around this beautiful peninsula city. We ordered the cutest cake for Miso&#39;s birthday but we couldn&#39;t pick it up during the store&#39;s opening hours, but have no fear! We live in Korea so anything is possible. The store manager gave me the code to enter her store to pick up the cake and trusted that I, a customer she has never met, to make sure that I lock the door after leaving. Could you imagine this happening in America? I don&#39;t think so either. </p><p>Chuseok, Korean Thanksgiving, was in the middle of September so I went to Japan for the third time! This was my second solo Japan trip. I went to Fukuoka this time for 5 days, which if you ever decide to go, I recommend 3 or 4 days only. It was really small but this was the weekend I started to realize I needed to slow down. My stamina for travel was crashing because I had been non-stop go go go-ing every weekend for the past 5 months. I was so tired but I still needed to appreciate the beauty and food Japan has to offer. My favorite place I visited in Fukuoka was a small beach area called Itoshima. It had this beautiful white torii gate in the water with two giant rocks behind it and if you go there at the right time of year, you can see the sun setting between the rocks. Although I didn&#39;t get to see <em>that</em> specifically, I still got to witness a sunset that was really beautiful. There, I met the cutest couple from Hong Kong who came with their parents to celebrate their father’s birthday. They took many photos for me and asked to take pictures together too. They told me they noticed me from a distance because my outfit that day (a black tank top with a long white flowy skirt) matched the scenery of Itoshima. Fukuoka has a ramen they&#39;re known for; Hakata Ramen. I didn&#39;t like it because the broth was so rich in flavor and I prefer lighter broths so if you&#39;re interested, I would recommend! Otherwise, pass. But if you find yourself in Hakata, Fukuoka, I would say you should try. </p><p>After coming home from Fukuoka I wanted to rest but I found out Olivia Rodrigo was coming to Seoul so I had to return that weekend to see her because if you know me, you know I love her. It was the best and a concert I didn&#39;t realize I needed to see in my life. I think it fully healed my heart. Music is so powerful. </p><p>At the beginning of October, my sister, Bear and I had planned a really exciting trip to Japan which would have been my fourth trip there but unfortunately there was an unexpected turn of events and we had to cancel our entire trip — woh woh. But all is well now and everyone is safe and healthy! I was devastated since something really exciting was going to take place on that trip.</p><p>At the end of October, my friend Boris from university came to visit again. He brought his brother and a friend this time so it was nice to meet them too! I showed them around Jeonju and met up with them in Seoul that weekend then said goodbye again. Through Boris, I made a new friend, Vivian. Although I don&#39;t feel like I really want any new friends, it&#39;s been nice getting to know someone new since I feel extremely comfortable with everyone I&#39;m already friends with in Korea now. </p><p>The fall foliage in Korea is some of the most beautiful foliages’ I&#39;ve seen in life. So many vibrant colors of tree leaves changing from green to red, orange and yellow. And eventually you see all the leaves drop to the ground. Every year, the leaves change color and drop to reset. This year especially was a reminder to me that even nature needs to listen to its environment, reset and recharge. If we don&#39;t listen to how our environment is, how can we survive? This year has been my most peaceful year yet, but I&#39;m still learning how to listen to my body, rest and recharge when my energy is low. As you can see from my travels, it is a work in progress. </p><p>At the end of November and January, two of my soccer friends got married! My friends, Suhye (well, unnie, if we want to be formal with Korean culture (this is basically what you’d call any girl older than you (if you’re also a girl)) and Daeun! It was nice to know both brides and grooms in each weddings since they’re both my friends/teammates since I’m used to only knowing one or the other when I have gone to past weddings. It felt really beautiful to see both my unnie and friend marry people they love.</p><p>You must be wondering what exciting event was supposed to happen on the Japan trip, right? Well, you guessed it! My sister and Bear are now engaged!!! I was so devastated because I knew that event was going to happen in Japan, not to mention, at Fujisan, for a long time and then suddenly we had to change the plan and I couldn’t be there for their big day anymore so I was really sad. So sad, my coworkers were concerned about me the day after I learned I had to cancel my trip. This trip was not just any trip, but a trip I was really looking forward to for so many reasons and so many months. I was especially excited to see my sister again, and witness the love of her life propose to her! But it all crumbled in a second for me. Sigh. I must be so dramatic… we knew this though. But it’s not about me!!! Well this event particularly is not, but this blog obviously is though (hahaha). Anyways they are engaged now and happy and I’m so happy too and to gain a future brother in law soon!</p><p>Lastly, I stepped outside of Asian waters and traveled to the Middle East! My friend Kalei and I reunited with Jane, who moved to Taiwan that I mentioned earlier in this post, in Dubai! We traveled to the United Arab Emarites and Qatar. </p><p>Honestly, I had no expectations going into this trip since I didn’t have much prior knowledge of either countries, only that Dubai would be expensive. To our surprise, Dubai had, I’d say, American prices without tipping. We visited Abu Dhabi too! There, we visited the Grand Mosque which is the first mosque any of us have ever visited and it was so beautiful. I’m not quite sure how to explain my trip besides the fact that the culture, history, architecture and religion in both countries felt so rich and beautiful. The people were truly kind there and the food was not bad! Although, I think I might like middle eastern/Mediterranean food in America better? It was really amazing to learn and experience a new area of the world that I didn’t think I’d ever visit. </p><p>I just read a random statistic that said as of 2025, Dubai and Doha are the first and second most boring cities in the world, and I’m here to say that I don’t think that’s true, AT ALL. I could also think of more boring places in the world too. For one, Nagoya, Japan. Terribly boring. Remember when I said Cambodia was unexpectedly the coolest place I’d been to in a while? I think the Middle East takes the cake. I would recommend all to visit some day!!! </p><p>It’s now mid February and has been snowing more than usual. My last day of work felt like walking into a snow storm blizzard. Last week, I completed my work as an English teacher in Korea (cry), said my goodbyes to students and coworkers at all four schools I have been working at this past year (cry again) and am currently on my vacation time now and will be on ~vacation~ (with Lydia and Jamie, my last two friend visitors (yay!)) until my contract ends at the end of this month. Lydia used to live in Korea so we’re mostly just hanging out, catching up, and doing what we do best—eating, in Seoul. Have I mentioned Lydia is my favorite friend to eat with ever??? Just something about a friend that is down to eat everything with you that you want to try is so nice. Jamie, my close friend from university, will arrive later this weekend which I am SO ecstatic about. I’m going to show her around my Korea hometown, Namwon; Jeju Island to climb Hallasan, pick tangerines; and of course Seoul to shop, eat, and do some fun activities we have planned like getting our color analysis’!</p><p>Anyway, see you again in my final blog next month??? I can’t believe the end is near. 🥹</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2025/02/12/thefinalstretch"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2024/08/14/onemoreyear"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/ZoeZFx5LeNNTwzwQ_IMG_8301-1-.jpg?auto=format,compress"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2024/08/14/onemoreyear"><!--lit-node 4-->
+							<!--lit-part-->One mOrE yEAr<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2024-08-14"><!--lit-node 6-->
+						<!--lit-part-->August 14, 2024<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part C45fWKALPYY=--><p>&quot;One more year&quot; should be trademarked by me. &quot;Really? I won&#39;t believe it until I see it&quot; or &quot;this is the last year right?&quot; are the most popular responses I&#39;ll get when I say I&#39;m staying in Korea for an additional year. </p><p>To be completely honest, this wasn&#39;t something I was expecting myself but here I am sitting at my desk writing this post as I start work here in Korea for my fourth and (probably) final year. I just was not any bit ready to come home. Last year I kept telling myself that it would be my last to force myself to move home to America, but was that what <em>I </em> really wanted? Towards the end of 2023, I realized I wasn&#39;t quite ready to leave my home yet. I know I&#39;ll leave eventually but 2024 wasn&#39;t the year to do that just yet. </p><p>As my fourth year starts, I can&#39;t help but reflect back on my time the last three years and thinking about how much has changed since I moved to Korea. I especially noticed how different my life is now when I visited home this past winter. I feel most excited about this year and what&#39;s in store for me. I feel like I finally created a community for myself in my Korea hometown and I have an amazing support system within those communities, my workplace, and from friends here as well. I truly feel valued and appreciated at work, my soccer team sees me as more than &quot;just the foreigner on the team,&quot; and I feel like the friends I choose to spend my time with now are the ones that have always truly cared for me and vice versa. </p><p>Since my last blog post, I went to Thailand... twice. I traveled to Bangkok and Krabi and then Bangkok again and Chiang Mai for my second trip. The first trip was a tropical vacation and finally getting to experience Thailand waters, snorkeling, swimming, eating fruit on the beach or by the ocean, what more could I ask for?! The second trip, I went to northern Thailand and experienced yummy food and culture! Unfortunately, I did not do the elephants which is a must in Chiang Mai, but I&#39;m sure I&#39;ll be back because I really did love Chiang Mai a lot! </p><p>I went to Jeju Island again too. Jeju is always the most refreshing and recharging break ever for me. I can do many things by myself and see the water almost anywhere I go when I&#39;m there so it&#39;s really nice. </p><p>Shortly after coming home from my first Thailand trip, my entire immediate family came to visit me!! It was the most special experience because they all got to see where I have been living for the past three years and it was our first family vacation since 2012 and our first international trip together outside of Vietnam. Every day with them was absolutely perfect and I think that was the happiest I ever was the entirety of 2023. Together, we visited Namwon of course, Jeonju, Seoul and Busan! We had the best time eating, seeing Korea, and of course, spending time with each other -- a rarity these days to have a full house together. I got to take my family to my favorite spots and restaurants and it was nice seeing them enjoy the things I love here. After the week was over, my family minus my sister went to Vietnam to visit the grandparents. I&#39;m glad I wasn&#39;t left alone right away after the most perfect week of my life. My sister stayed with me for a few more weeks and we went to Busan and Seoul again and Yeosu. After she left me, I went to Thailand again. </p><p>I had a couple of friends and a cousin that visited Korea last year too and it was really nice seeing them as well. There is something about meeting up with someone you were once close to or still close to in a different country that is really so special. I hope there will be more visitors in the future because I love seeing people from home in my current home! </p><p>In about a week, I&#39;ll be leaving for Hokkaido on my second international solo trip! I&#39;m very excited because it&#39;s supposedly cherry blossom season when I go. One of my dreams in life is to see the cherry blossoms in Japan so hopefully it lives up to my own expectations of it. I&#39;m excited to spend some time in a different country alone again and maybe I&#39;ll make some friends, if not, I&#39;m very content spending all the time with myself! </p><p>First semester of my fourth year is almost over and all of my students have been really amazing this year. Usually, I&#39;ll run into a problem with at least one class that will be too talkative or completely silent but this year everyone has been really amazing and evenly split so all 22 classes I teach have a good amount of participation and eagerness to learn. Thank you to the teachers who spent lots of time trying to divide these students into their current classrooms now. The best!! </p><p>---</p><p>It&#39;s currently the beginning of June and the last time I wrote the last paragraph was the end of April... anyway, my trip to Hokkaido was the best trip of my life. I honestly don&#39;t know if I just loved it so much because I was alone and had the best time eating everything or if I was just at peace with life that I was so happy and content to be spending time alone and seeing another part of the world again. I set a 7:30am alarm to wake up everyday to go go go but I never opened my eyes until 9am every day. That is the beauty of solo travel I think. You have no one waiting on you and you aren&#39;t waiting for anyone either. I think every bite of food I had in Hokkaido was the most amazing food I&#39;ve ever had in my life and it would just keep getting better. I didn&#39;t MAKE any friends, but I met a lot of awesome travelers and Japanese people while I was eating there. I even enjoyed a flight of Sapporo beer from the Sapporo Beer Museum and I have to say that was one of the things I was most excited for. THE DAIRY?? If you know me well, you know I&#39;m lactose intolerant but the dairy didn&#39;t hurt me in Hokkaido!!! I seriously had the best trip ever. </p><p>Summer vacation is coming in a couple months and I could not be more excited. Each year, work gets more tiring and I don&#39;t understand how teachers teach forever. I love my kids with all my heart but I&#39;m only in my mid twenties and I&#39;m so tired. My job is seriously the best that I will ever get though. I truly am valued and cared for in Namwon I will be very sad to go when the time comes so I&#39;ll always look fondly of my time here in Korea, especially Namwon.</p><p>---</p><p>It&#39;s July now. Each year, I get better and better at publishing on my blog. I&#39;m finishing up teaching my last first semester in Korea!! I can confidently say this, this time, because I have been having this feeling that I am ready to return and be close to my family and friends in the states again. I think living and being alone will do that to you after some time. Although, I rarely ever feel lonely. I&#39;ve been reflecting a lot the past few months on my time here in Korea. It&#39;s been an experience to say the least. I&#39;ve grown as an adult here, I&#39;ve seen how much more I&#39;m capable of than I thought possible, I learned that I can&#39;t be tied down to one place because I can make any place my home if I allow it to too. </p><p>Living abroad isn&#39;t always rainbows and butterflies though I will be honest. It has its ups and downs just like any ordinary life. But this is my regular and reality right now so of course I occasionally go through all the emotions that life throws at me. Entering my mid 20s and navigating my 20s in a completely different environment from where I grew up required me to be strong and independent. As half of 2024 has come to a close, I thought back to what I was like when I first moved to now and I feel especially more grown, more mature, I have some sense of direction in life and feel a lot more calm and at peace with the unknown. I&#39;m just even more sure about who I am as a person than ever before. I truly was a baby adult when I moved so I can understand now what emotions my parents may have felt when I told them I was going to move to another country as a 22 year old. I&#39;m so lucky and blessed to always be supported in my decision to come here and grow as an adult by my friends and family. I&#39;ve been feeling really proud of myself the last few months when I think of how I&#39;ve evolved as a person in these last three and a half years. I&#39;m definitely not the same person as when I left but I would say I&#39;ve become a better one and that is what I&#39;m feeling proud of lately. </p><p>My last couple of updates before I go missing from this blog for six months to a year is from the annual Namwon Schools tournament with all the teachers and staff and the norovirus school lunch food poisoning cases that is currently happening right now. </p><p>For volleyball, each team has 9 players and I was 6 in the lineup, my lucky number. In the tournament there were four different brackets and my team&#39;s bracket only had 3 teams so we played a total of two games because we won one and lost the other. The team we lost to took 2nd place in the tournament and I felt we could have beat them had they not had a 6&#39;4&quot; volleyball COACH on their team... oh well. It was a bummer but relief at the same time since we could finish early and eat lunch at a reasonable hour. All the other teams that kept playing couldn&#39;t eat lunch until around 2pm!! The final teams didn&#39;t eat until 4:30! I would cry if I couldn&#39;t eat a proper meal from 9am until then... anyway, at lunch one of my coworkers had just found out it was my last year teaching in Korea and he started sobbing. I&#39;m not even exaggerating or joking too. I was touched at the same time though because my closest coworker there said this just shows how much we love and will miss you when you go, Thaovi. I started crying too because 1. I cry very easily and 2. Someone was sharing their true and honest feelings with me and it made me emotional too. I&#39;m always surprised how loved I am by my coworkers here. I truly have it better than any other foreign English teacher I know in Korea and I just feel especially lucky to have met some of the most amazing people in Korea while working in Namwon. </p><p>Namwon is currently experiencing a school lunch food poisoning epidemic. The first case started on Tuesday this week. By Thursday, we heard that there were 160 suspected cases of food poisoned patients, later that afternoon the number went up to 210. Then this Friday morning the number shot up to about 500+ patients. 22 elementary, middle and high schools in Namwon have now been affected and those schools have currently either shut down, shortened school hours to until lunch time, and/or postponed tests since it&#39;s test season. Nobody is safe!!!! Be safe out there and wash your hands with soap. </p><p><em>Update: it&#39;s Monday the next week and the number is now 1024 patients and 24 schools throughout the city and we made it on BBC News...</em></p><p>And before I really go away, my next trip is Taiwan for a couple days to help Jane move (cry) and then we&#39;ll be heading to Cambodia for a week for our last big trip together (until winter vacation hahaha). We booked a full tour for our entire trip for ease, safety and because of the fact that we both hate planning. There&#39;s a lot on the schedule but I&#39;ve been in contact with our tour guide and he seems laid back as well which will be good for us. We&#39;ll be traveling to Phnom Penh, Battambang and Siem Reap. We&#39;re not excited for the heat but we are so excited to explore a new country together again! I also booked a last minute flight to Jeju to visit my friend, Sylvia, and then my uncle&#39;s family will be coming to Korea so I&#39;ll fly to Busan after my Jeju trip to meet up with them!!! FULLY BOOKED SUMMER!! </p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2024/08/14/onemoreyear"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2023/07/21/samnyeonshijak"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/e8035105-fdb7-4e18-95f3-cb2fc029ed73_image_6483441.JPG?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2023/07/21/samnyeonshijak"><!--lit-node 4-->
+							<!--lit-part-->Part Three and a Half<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2023-07-21"><!--lit-node 6-->
+						<!--lit-part-->July 21, 2023<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part X/ShKF2XNyk=--><p>Remember when I said that Maeng Juno, one of my students who graduated elementary school last year, promised he&#39;d come back to visit me in a previous post? Well, the world has come full circle and I am now teaching at his middle school this year! This year, I&#39;m still, sOo0 fortunately, teaching at four different schools, two being schools I&#39;ve taught at since the beginning, Namwon and Kyoryong Elementary, and two new middle schools<strong>—</strong>one private; Yongbuk Middle, and one in the mountains; Ayoung Middle. As always, the first day at a new school is always the most nerve-wracking for me, but everyone was so kind and welcoming and made me feel like I belonged. Coincidentally, the principal&#39;s son at Yongbuk is heading to UW in the fall so that&#39;s very exciting for him! But now I definitely feel special treatment from the principal because his son&#39;s soon-to-be university is my alma mater. He had me talk to his son on the phone and it was the funniest and most, kind of, awkward encounter of all time. The math teacher, Younghu, who sits next to me in the office at Ayoung, and I have become quite close coworkers! His English has improved a lot just by talking to me all the time at work. Ayoung is quite far from the city so my coteacher, Hwaryeong, drives me to and from work every Friday and we always have really nice conversations together! </p><p>Korea finally became maskless at the beginning of the year! On the first day back at Kyoryong, my fifth grader, Hangyul, did not recognize me without my mask and looked at me with the most confused face. So, I covered my nose and mouth to which he exclaimed, &quot;OH THAOVI TEACHER!!!!!!!! 안녕하세요!!!!!!&quot; and gave me the biggest and tightest hug. This year I teach five periods at Kyoryong, 4 periods, lunch, and then fifth period. My fifth-period kids didn&#39;t know I&#39;d be teaching them again so when I saw them lining up for lunch, their cute faces lit up and they were ecstatic to see me again. They were jumping up and down saying hello and that they love me. It was adorable. One of my fourth graders this year, Minsung, genuinely and innocently asked me if I fly to Korea every day from America to get to work. To which I answered, &quot;Yes, I love you that much so I fly here every day to see you&quot; HAHA. </p><p>Every day this year has felt a bit bittersweet since the school year started because I know my time in Korea will end someday. I know marriage is far, far away for me, but I already know which coworkers of mine I&#39;ll invite so I can hopefully see them again in America. The coworkers I&#39;m closest to have told me they&#39;ll save money to visit me! My fourth grader, Minkyung, made me promise her that one day when she comes to The US I need to be there to welcome her. Sol, another fourth grader of mine, told me that there&#39;s no need for me to go back to The US.  I told her my family lives there, then her response was, &quot;But you know...I live <em>here</em>. In Korea.&quot; Thinking about leaving my home away from home has made me tear up several times already, but I know that is because my time in Korea has been quite the experience; one that I will cherish forever.</p><p>A friend told me that there was no way my coworkers wouldn&#39;t throw me a big goodbye party before I head back to the US and they were right. I was talking to an old coworker the other day and she said, &quot;We have to do the party for you to say goodbye and also celebrate you going back home&quot; when we were talking about me leaving one day. All I know is that I&#39;ll be crying the whole time when that happens. </p><p>It&#39;s that time of year again (June - in case I post this in December) when all the Namwon schools get together for the annual Namwon schools volleyball tournament. I learned that when Koreans are studying to become teachers, they&#39;re required to take volleyball as an elective because it&#39;s a sport that they can bond in during school hours. So, volleyball tournaments within schools in cities across Korea are quite common. This year, I chose to play for my main school&#39;s team; Namwon Elementary. A great decision because, unlike last year, the team I played with had great players but terrible teamwork. My team this year trusted each other which resulted in us playing extremely well together. And because of that, it was the best time. I played against some former coworkers who moved to different schools and it was so fun to see each other again and play against them. I thought I would not like playing against schools I work at (meaning people I work/worked with), but it was so much fun!</p><p>After the volleyball tournament, my team and everyone who came to cheer us on—yes, we had fans—went to lunch to eat and, of course, drink. Last year, I drank with my coworkers after the tournament for eight hours. I thought that was a lot, but this year? Eleven hours... one of the lunch ladies came up to me during lunch and told me that she loves me a lot and hopes that I don&#39;t feel lonely while living in Korea by myself. She continued and said that every week when she serves me food she can feel how big my heart is just by making eye contact with me. And boy did I start sobbing. I was already trying my best not to cry that day as I knew it was my last time playing in a tournament with them and that I would be leaving Korea in about nine months and she had the <em>audacity</em> to talk to me that sweetly. The waterworks were uncontrollable. Someone had mentioned that I consistently create these warm interactions with random people in Korea and honestly, I wasn&#39;t truly aware of it until I was told by them and then I more deeply understood that when the lunch lady said those words to me. Earlier that week, the owner of the mart I grocery shop at, Kim Kyung Mi, hugged me over the conveyor belt saying that it&#39;s always, and big emphasis SO nice to see me after not seeing me for so long. I left the mart wanting to cry. Leaving is going to be difficult, to say the least. </p><p>As it is my third year in Korea, I keep denying that my Korean isn&#39;t any good, but I&#39;ve continuously shocked myself with how much better my listening has become. There have been countless times when I haven&#39;t needed to process what was being said to translate in my head, but just immediately understood what was said or asked. It&#39;s funny when my kids ask me questions in Korean and when I respond they take about three seconds to realize I <em>actually</em> understood them. Hangyul, my fifth grader, is convinced that I speak fluently so if I ever throw in a Korean word he yells out, &quot;OH *insert Korean word* is Korean!!!!&quot; and actually says this in Engish. There was a time when my coworkers, Park Jieun and Kim Seunggi, were talking and I started laughing because of something they said and Jieun just went, &quot;NO! Thaovi you&#39;re not supposed to understand Korean right now!&quot; Recently, there was an issue happening at school so when the admin was getting statements from students, I started listening and when I asked Jieun about it later she said, &quot;WOW Thaovi! You understood very well, that&#39;s exactly what is going on.&quot; Putting Korean listening on my resume for my next job *insert sunglass emoji*. Totally kidding. </p><p>A slight shift in topic, but this year I have injured myself twice. I learned that I have a herniated disk and had to lay on the floor for seven straight days because my bed was too soft for my back. Of any week to injure myself, that was the best week to do so because I had a five-day weekend that week. I&#39;m okay now, eastern medicine is truly magical. But I&#39;m trying to continue to do strengthening and conditioning exercises to ease the pain. I hurt my back when I started playing volleyball again this year when I landed on my right foot weirdly and it was game over from then on. The next week when I saw my coworkers from the school I broke my back at (because remember, ya girl works at four different schools), everyone was very sweet and concerned for my health. Every single staff member asked how my back was. It took about a month to recover.</p><p>The subsequent injury was because of soccer. I play soccer with seven of my fifth-grade boys after class every Wednesday; Juwon, Seungjoon, Byeonggwon, Hyunho, Younghwan, Juyoung, and Chan. Sometimes Hangyul, the boy who didn&#39;t recognize me when he saw me without my mask for the first time, joins too. This injury is because I&#39;m just dumb; I played soccer with my slides on that day and stubbed my toe so hard that the top of my big toe nail split from the bed of my toe and immediately started bleeding. (Graphic sorry). But when I tell you I know my kids love me, this is when I truly knew they CARE about me. Seungjoon was next to me when my toe started bleeding and called everyone to stop because &quot;TEACHER. BLOOD. STOP.&quot; <br />My kids, who all are obsessed with playing soccer, dropped everything in an instant just to make sure I was okay. Juyoung told me to stay put because he was going to go get the nurse. Juwon was pulling out his Hello Kitty bandaids for me. Younghwan was so gently holding onto my foot as Seungjoon poured water over my toe to wash away the blood. Chan was spraying disinfectant on my toe. Byeonggwon was getting more water for Seungjoon to pour over my toe. And Hyunho had barged into a staff meeting (I don&#39;t have to go to these because it&#39;s pointless for a non-Korean speaker to go) to tell them I was hurt. I had way too many people seeing my toes that week but it&#39;s all healed now so don&#39;t worry. Talk about WORRY, my goodness. I love them so much. </p><p>To continue my injury streak this year, I joined a volleyball and soccer club in Namwon. Knock on wood that I don&#39;t actually injure myself by joining these clubs. Volleyball is fun because I play with a couple of my coworkers and an old coworker! I&#39;m learning new skills that I would otherwise not learn if I didn&#39;t join. It&#39;s super technical and learning in Korean is a bit difficult, but the coach says I&#39;ve been improving! Volleyball club consists of two high school students to middle age adults and is coed. It&#39;s been 7 or 8 years since I&#39;ve played soccer competitively, but my body went right back into it on the first day. I scored two goals!! The soccer club is a woman&#39;s club in Namwon, but sometimes some of the girls&#39; boyfriends come to play with us. I was so nervous to join because I didn&#39;t know anyone and better yet, I can&#39;t speak Korean fluently. But from day one, everyone was so kind and welcoming towards me and made me feel so included. You might be wondering, then how do we communicate? We just speak to each other in our languages with as much English/Korean as we know and we end up understanding each other because our listening is decent enough. <br />We took a picture together on the first day and they made me be in the middle because I was new. I clicked with all the women immediately and felt genuinely happy for the first time in what seemed like a long time, but was maybe just a month. I&#39;m the youngest of all my friends in Korea, and I became friends with one of the younger girls on the team, Woohee, and she calls me 언니/unnie, which has a similar meaning to &quot;older sister&quot; and it was heartwarming to be called that honestly. Woohee is now extra special to me too because I later found out that her mom is the sweetest woman in Namwon, Kim Kyung Mi—the mart worker, the one that I mentioned in one of the above paragraphs. One of the other girls on the team and I learned we were born the same year, also only 11 days apart! Her face lit up when she found out because all her friends were born a year earlier so I&#39;m the first, and I quote, &quot;real friend&quot; she&#39;s made born the same year as her. Her name is Haein. I&#39;m not sure why, but age and the year you&#39;re born really matters in this country. </p><p>Update (I wrote the above paragraph a week before this one); I spoke an injury into existence. I&#39;ve injured myself once again. Third time&#39;s a charm though, right? I pulled a quad muscle from soccer so I&#39;m out for two weeks. I guess I am no longer young. The physical therapist I saw said REST AND STRETCH. One of my students, Eunsung, finishes practices before my practices start and noticed I wasn&#39;t at practice last week and asked me where I was. I had to tell him I got injured and I just think it&#39;s cute he was looking for me after his practice was over. </p><p>Every week my kids, Taeyeon, Chae-a, Sowon, and Woo-i, bring me a napkin during lunch and that&#39;s such a random act of kindness, but such a consistent act done towards me that I want to remember. A couple of my fifth graders, Seoyeon and Kyumi, come to talk to me while I eat my food, and as distracting as that is, it&#39;s a very consistent and sweet gesture. And since we&#39;re on the topic of lunch, one of the lunch ladies was PACKING rice onto my tray one day and said, &quot;More love more rice&quot; and it was so cute. Every week, I feel as if the lunch ladies are playing the game, &quot;How Much Food Can Thaovi Eat Today?&quot; because even other teachers see my plate and their eyes widen and go &quot;whaaaaat.&quot; I was told that many of the lunch ladies have kids my age so they think of me the same and want to make sure I am well-fed while in Korea; this is the purest form of love I can receive from them and it does not go unnoticed. </p><p>The year is already halfway over and I&#39;ve done a lot of reflection these last several months. I write mostly about my good times because that&#39;s what I want to remember most from my time here, but thinking back on my time I&#39;ve dealt with more hardship than I expected to. However, I want to remember how much I have also grown through these last few years too. It&#39;s kind of crazy how much I&#39;ve changed in two and a half years. Even my coworker, Suhyun, was like, &quot;Thaovi remember when you&#39;d ask me all these questions like xyz when you first moved?&quot; and I had no recollection of it. It&#39;s sort of comforting knowing that my growth has not gone unnoticed, even by my colleagues. Each year, I feel like there&#39;s some major hurdle I have to face and this year in particular is about friendships. I&#39;ve had a realization that my time in Korea in relation to friendships is like a condensed version of my whole life where you start with a lot of friends and slowly, as you get older, those friendship circles decrease. Some people aren&#39;t meant to be in our lives forever and that&#39;s okay! People come and go (literally in this country).  And friendship breakups are more common than not and oftentimes not talked about enough. Reminding myself that I can&#39;t control how someone responds or acts towards me no matter what I do has given me a lot of peace this year. This year, I&#39;m focusing on myself (a continual journey) and building on the relationships that I know I want in my life. I also am focusing on making the most of my last year and living out my last several months in Korea to its fullest without regret! </p><p>This summer, I&#39;m heading to Thailand! Stay tuned...</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2023/07/21/samnyeonshijak"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2023/06/31/gyeoulbanghak"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/720e0f3e-8dd9-48a9-aed8-f829f10c1440_tv+pic.jpg?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2023/06/31/gyeoulbanghak"><!--lit-node 4-->
+							<!--lit-part-->&quot;Thaovi do you rest?&quot;<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2023-07-01"><!--lit-node 6-->
+						<!--lit-part-->June 31, 2023<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part 7EBM5KMVJZw=--><p>Summer is here, but here&#39;s an update about my winter vacation. As I mentioned in my last blog post, I went on four trips—two domestic, two international. As tiring as that sounds to some of you, which yes, it definitely was, it was so fun at the same time. </p><p>My travels to Japan included Osaka, Nara, Kyoto, Nagoya, Hakone, and Tokyo! Osaka is known to be Japan&#39;s food capital but my friends and I only found mediocre food there. We must have been doing it wrong, but overall I&#39;m not sure how much I&#39;d recommend this place. Although, I&#39;ll try again in the future when I make my return to Japan&#39;s Universal Studios. Those on social media who have Japan on your discover page have probably seen videos of bowing deer. Those deer are actually vicious and live in Nara. <br />Kyoto was BEAUTIFUL. I loved everything about it. The architecture, the food, the people, the shops, the places—just walking in Kyoto I always found myself happy. The best restaurant experience I had was in Kyoto where the chef said, &quot;I&#39;ll be waiting every night for your return&quot; as we left so I must return!!! It snowed one of the days we were there so we thought it would be a good idea to wait to go to Fushimi Inari, one of Japan&#39;s most famous shrines, but it was not because all the busses and some trains stopped running because of the snow. But lo and behold, we made it there and it was absolutely breathtaking. <br />Nagoya is named Japan&#39;s most boring city and it lived up to its name. Our trip was 2 weeks long so we needed a day where we did nothing of importance and that we did and we did that there. Originally we planned for Nagoya because the new Studio Ghibli Theme Park is there but we learned it&#39;s complicated to secure tickets so definitely look into that before you plan your trip to Japan to go to Studio Ghibli Theme Park. We booked an onsen stay in Hakone with a mountain view of Mt. Fuji, but just our luck it was extremely foggy and snowy then so we couldn&#39;t see Mt. Fuji from our place at all. However, while riding the Shinkansen, we were able to see Mt. Fuji as we were on the train tracks. <br />Tokyo is Tokyo! Honestly, it was just another big city to me, but it was special because I was able to catch up with a family friend that I haven&#39;t seen since I was 8 years old. It&#39;s truly amazing how much more you discover as an adult about the world and about people. I met my friend after five years from University who is from Japan. She and I, although many years apart, never skipped a beat when we were together. Coincidentally, a high school friend was in Tokyo at the same time and knew I was there and reached out so we got to catch up as well! <br />If you felt any bit sad that I couldn&#39;t go to Studio Ghibli Theme Park, no fret! I went to the Studio Ghibli MUSEUM instead while in Tokyo; 10/10 experience. My favorite place in Tokyo was Asakusa which included a great coffee bar shop, an amazing miso soup breakfast spot, and the freshest melon pan I&#39;ll ever have. By the end of my Japan trip, I was saying arigatogozaimasu and sumimasen like nobody&#39;s business, words I didn&#39;t even know before coming to Japan. Pro tip when traveling to Japan, don&#39;t say arigato; this is only used between friends otherwise it can be considered rude! </p><p>As soon as I got back home to Namwon, I was packing for my next trip. I slept in my bed twice then got on another plane to Jeju Island. Usually, when I visit Jeju Island it&#39;s to visit my friend Sylvia who lives there, but this trip was my first trip spending it with my mainland friends, Lydia, Jane and Mary! Lydia moved back home to the US this year so our last hurrah with our friends was spent on Jeju Island together. It was a wonderful time and Lydia and I got to spend some one on one time together since we were able to get a little more time off than the others! We celebrated our friend Jane&#39;s birthday, made homemade sangria, went hallabong (Jeju is known for hallabong—similar to tangerines) picking, and of course, ate delicious food together! Until we all meet again for another trip together! </p><p>Next trip: Solo Trip! Taiwan was such a lovely time and it&#39;s become such a special place to me because I went there alone. Although, my friend Lydia and her boyfriend Intak were there at the same time as me so I spent one day and part of my birthday with them! Together, we explored Yehliu Geopark, Shifen Old Street and Waterfall, Yinyang Sea, and finally Jiufen Old Street. In Shifen, we wrote on a giant lantern and let it fly into the sky to grant our wishes. Jiufen is known to be Spirited Away town and I learned that Jiufen was an old red light district made during Japanese colonization. </p><p>I planned a rough itinerary of what I&#39;d do in Taipei while I was on the plane to Taiwan...quite the planner I&#39;d say. A lantern festival was taking place while I was there and there was no way to miss it because a big chunk of the city was decorated with lights and lanterns. One night, I meant to go to a night market, but I was mesmerized by the lights outside so I got off the bus to explore the area. There was a cute bunny walking light projection on Taipei 101 tower and I found myself staring at that for 15 minutes. Lydia, Intak, and I went to Din Tai Fung (DTF) for my birthday lunch and they gave me a special DTF present right after I said, &quot;if DTF had merch, I would buy it.&quot; Lydia got me a very cute cake for my birthday that we all got to eat together! Anyone who has kept in touch with me these last three years has learned about my shark obsession and of course, I found a shark pop-up store and took shark photobooth photos! I spent a good chunk of my day exploring the Beitou Hot Springs which is famous in Taipei! Maps told me to take a bus from the subway to get there, but I decided to walk and found a yummy cà phê sữa đá (Vietnamese iced coffee) cafe and cute alleyways on the way there! I went on a hike on a trail called Elephant Mountain to catch the sunset and it was the most peaceful hike I’ve ever done, maybe because I had nobody to talk to on it. Solo travel is nice because you can explore without worrying about others&#39; needs. I hope everyone can experience solo travel at least once because it is so special. Wandering without an itinerary, people-watching, and eating ice cream while journaling all felt extra special to me in Taipei. </p><p>My final winter vacation destination was Gangwon Province, otherwise known as Gangwon-do. I rented a car and spent four days, three nights here with my friend Maya who was soon moving back to the States. Together, we visited Sokcho, Yangyang, and Gangneung and in one day visited eight different beaches. Maya had never been to Sokcho before (her top destination in Gangwon-do), but I went in 2021 so it was interesting to see the differences just after two years! Yangyang has a very famous beach called Surffy Beach, but my favorite beach in Gangwon-do that I&#39;ve visited is Sokcho Beach! And Gangneung is a city beach known for its tofu so we tried their soondubu gelato! I wasn&#39;t sure what tofu gelato would taste like, but it was surprisingly very delicious! Then I remembered there&#39;s a Vietnamese dessert that I like that&#39;s made with soft tofu... Gangwon-do is known for snow crabs and other fresh seafood so, Maya and I were on the hunt for some crabs but somebody tell me why small crabs were one hundred dollars each??? The only crab we tasted that weekend was in a crab pasta which was great, just not the crab we were wanting to have. All in all, it was a great last hurrah with Maya and last vacation before the school year began! <br /></p><p>*if you’d like to see photos of my travels, please look on my Instagram story highlights thank you lol*</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2023/06/31/gyeoulbanghak"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2023/01/16/oraenmanieyo"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/0ec87ec4-b664-4088-8d6a-86cf6d95254b_JPEG+image.jpeg?auto=compress,format&amp;rect=0,0,3024,4032&amp;w=3024&amp;h=4032"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2023/01/16/oraenmanieyo"><!--lit-node 4-->
+							<!--lit-part-->Long Time No See<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2023-01-16"><!--lit-node 6-->
+						<!--lit-part-->January 16, 2023<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part OHDs57sDFVI=--><p>&quot;오랜만이에요~~&quot; or &quot;oraenmanieyo&quot; as Koreans will say if they haven&#39;t seen you for just a week. My favorite lunch lady that I see once a week at one of my schools ALWAYS says this to me. Same with the bakery ladies even though they see me every Thursday too. 근데… 진짜 오랜만이다!!! Seriously, it&#39;s almost been a year since I have written to you. The only thing I don&#39;t like about writing in Hangul, the Korean alphabet, is that you cannot emphasize your text the way we can capitalize everything and make it extra dramatic because you all know I am a walking hyperbole. Anyway, <em>again</em>, it&#39;s been a long time! How are you??? Send me a text, DM, email, or whatever. I would love to know!</p><p>I initially meant to publish this in June 2022, but for all you know, I could be making this up... get ready for a long post of updates!</p><p>Since February, I visited home for almost a month! It was so, SO nice to eat food at home again. One of the top three things I missed while living in Korea had (and still has) been my mom&#39;s food. Everything my mom makes is my favorite dish; something I will never take for granted again. I am the least lucky person out there, but there are two things I feel lucky about; being born in America (automatically a native English speaker) and having a mom who cooks the best food. No one can change my mind because many others agree. </p><p>I successfully surprised all of my family members thanks to the help of my sister who almost ruined the surprise<em> </em>too many times. Before I surprised my immediate family, I told my sister what I thought everyone&#39;s reactions would be and I was exactly spot on about everyone. It was the absolute best to hug my family and friends that I could see. I missed my family and friends a lot, but I was very ready to come back to my home here in Korea (sorry mom and dad, I know your stomachs are churning after reading that sentence). My time at home was jam-packed with scheduled meetings with family and friends I had planned to see. I always say I only have two or five friends, but somehow saw 14 people who were not my family. I even went up to Whistler to snowboard with my sister and our friends. My calendar makes my head hurt every time I see it. Even now, but worth it!</p><p>I completed my second year of teaching and half of my students this year were completely new to me. At this point, I&#39;ve taught about 750 faces. I feel really lucky, I guess here&#39;s the third lucky thing about my life, to have such a great workplace environment, students, and coworkers. My main school&#39;s coteacher changed to my favorite coworker, Park Jieun, who sat next to me in the office last year. She calls herself my Korean Mom and me, her American daughter. She comments on how tired I look every time I show up to work so it&#39;s forced me to sleep AT LEAST 8 hours, which is the best thing I&#39;ve done for myself in a long time. She hasn&#39;t commented on my tiredness since because she knows I&#39;m getting my beauty sleep in. Even my dermatologist couldn&#39;t get me to sleep more (Korea, the skin care capital of the world, seriously ruined my flawless skin (lack of sleep was never the main cause but anyway it&#39;s better now, thanks to Dr. Park Hyunho)). I&#39;m a lot better at remembering names now since I am more familiar with the Korean language. Although, I feel like I need to because my students will occasionally ask me if I remember their names—I feel terrible when I can&#39;t remember. </p><p>I MOVED APARTMENTS! Thank GOD. One of my coteacher&#39;s searched and called every realtor in the city every day for two and a half weeks. It was so exhausting and mentally draining because I knew I could do this by myself if it hadn&#39;t been for the language barrier. I felt like a burden. I almost gave up because everything we saw, we both didn&#39;t like and I wasn&#39;t going to move if I didn&#39;t love it more than ‘The Box’ that I had last year. On the last day we looked, I woke up that morning saying, “if I don&#39;t find something today, I&#39;m just going to stay here.” The first place we looked at that morning was perfect. I signed the lease that day. Now, I live alone in a one-bedroom apartment; a dream, seriously. And the landlord is the best landlord I&#39;ve ever had. All thanks to Jin Duseong.</p><p>I joined the volleyball team at one of my schools—Kyoryong Elementary. 14 Namwon elementary schools competed in a tournament one weekend in May. Meaning I would potentially have to compete against two of the other elementary schools I work at. Luckily I did not need to do that, but when I met my main school&#39;s team, Namwon Elementary, at the tournament, the principal asked, &quot;Thaovi! Why aren&#39;t you playing for our school? Is there anything you can&#39;t do???&quot;.  My team did well, we only lost once to the team that won the tournament. I played very well during the season so I wasn&#39;t worried about my performance for the tournament. However, some of the men on my team are ball hoggers and it was frustrating for me since this is a team sport. Regardless, it was a really fun experience. After the tournament, we had lunch and drank for a full workday…I was so nervous because 한국말 잘 못 해요!!! I can&#39;t speak Korean well!!! It ended up being so fun though. Everyone was super inclusive and maybe because we were all drinking, we weren’t self-conscious about speaking each others&#39; language (Korean drinking culture is like none other let me tell you...).</p><p>Summer came around and I left the country! I went to the Philippines with a couple of friends and it was such a wonderful trip. The Philippines was never a top country on my bucket list but I was itching to leave Korea since it is such a small country and you can only do so much when you don&#39;t own a car. So, Jane, my friend who I travel a lot with got me to come with her (didn&#39;t take much convincing). We went to two different islands and three different destinations. Bohol, where we scuba dived and did every tourist thing that pops up when you look up the island; Palawan, where we went to Puerto Princesa and El Nido. Here, we went on a subterranean underground river tour (a super awesome untouched cave with bats flying up and around close to you with very interesting natural structures inside) and did an island hopping tour of five different islands and lagoons in a rainstorm among other things! My highlights of this trip were that the people were just genuinely kind here, the water was beautiful and so CLEAN, and it is overall such a beautiful country. I would recommend everyone to go at some point in their lives (especially if you love the water). </p><p>Some of my family came to visit shortly after which caused the delay in this post. I really wanted to publish what I had written before their arrival in September but here we are in 2023...oops is all I can say. </p><p>I had the BEST time with my family; my dad, younger brother, sister, and her boyfriend came to visit me. They all came to Namwon on the same day, aka my happiest day of the year. Yes, they all fit in my apartment; impossible if they came to visit last year. My brother, Tri, was here for the weekend; dad was here for a little over a week; my sister, 11 weeks! (Yes, she still has a job). It was really nice to show some of my family my home here in Korea and I think they liked seeing it in real life as well. My dad even said, “next time we can show mom and Hieu!” I got so used to my sister, QuynhAnh, being here that we started to call my apartment, &#39;our apartment.&#39; #crying. I don&#39;t get homesick often, but having them with me for one weekend or eleven weeks made my home feel even homier. I&#39;m still getting over the fact that they&#39;re not here anymore, but I&#39;m so grateful for all the time I was able to spend with them here in Korea. </p><p>While my sister was in Korea, she got to visit two of my schools, Namwon and Kyoryong Elementary, meet my students and sit in on my classes. My kids were so ecstatic to meet someone so close to me that two too many classes took up half of my teaching time asking her questions. She even got to enjoy Korean school lunch, which she came on the best meal of the year in my opinion; steak bites and other yummy food. Two coworkers that I&#39;m very close to, Taehoon and Jihyeon, set aside time to meet and hang out with QuynhAnh. They even prepared gifts for her arrival in Korea. &quot;What about me???&quot; I jokingly asked Taehoon and his response was, &quot;uhhhhhhhh share&quot; and laughed. Even my kids gave my sister candies and stickers calling them gifts. After she went home, some would ask when she’d be back. My phone’s lock screen is of me and my sister and the kids that met her are always excited that they know the girl on their teacher’s phone. My kids and coworkers are the best!</p><p>QuynhAnh and I got to travel internationally together! She and I visited Malaysia, Singapore, and our grandparents and family in Vietnam! This was the first time we traveled with just the two of us and it was really nice to spend so much time abroad together. We agreed that Malaysia was way better than expected and had amazing food, Singapore was most beautiful at night (it looks exactly like it does in the movies), and Vietnam is just the best because of our family and the food. In Korea, we visited Jeonju, Damyang, Busan, Jeju Island, Yeosu, and Seoul together. We watched BTS perform in Busan, rode around in a motorbike car on Udo Island in Jeju, and watched the sunrise in Yeosu together. My favorite weekend with my sister was when we reunited in Busan after she left me for Japan for a week. That was the best weekend of last year honestly.</p><p>I received perfect scores for all but one of my teaching observations. Which was great for me, but honestly, I was hoping for more feedback on how to improve, but that&#39;s okay! I&#39;ll pat myself on the back for this one. Half of the teachers in my office observed me so when I walked into the office after I finished teaching that day, they all started cheering for me. The science teacher, who is usually nervous to speak English, so proudly exclaimed, &quot;verrrrry nice!!!&quot;. It was so cute. Everyone in the office was so supportive of me because they knew how much I dreaded my observation day. </p><p>I renewed my contract for a third year, something I did not expect to do. I&#39;m just not ready to say goodbye to my newfound home, my students, and my coworkers. Many of my third-graders asked for my autograph and wrote me cards saying they hope that we can meet again next year. A few of my sixth graders sobbed having to say goodbye to me as they have to move on to middle school the next year. My sweet and eager learner, Mang Juno, promised me he’d come back to visit me—I can’t wait to see him again. For not being able to communicate fluently in their language, we still find ways to connect. It&#39;s been so special to literally and figuratively see all of my students&#39; growth over the last two years, I can&#39;t wait to see how they grow next year. Life this past year has had its rough patches, different from last year, but something I would never change because it makes me who I am right now. </p><p>This winter vacation, I&#39;m going on two international trips and two domestic ones. I&#39;m spending two weeks in Japan with a couple of friends (meeting up with a family friend and college friend too (so exciting!!)), and then a 5-day solo trip to Taipei for my birthday. In Korea, I&#39;m heading to Jeju Island once again and Gangwon province to see the best beach in the country! I am so excited about these trips and especially to go on a trip outside of Korea alone. I went on my first solo weekend trip back in April and I forgot how much I loved doing things alone and remembered how important it is to spend time with myself. I cannot promise I&#39;ll update you about these trips, but I&#39;ll try. See you soon, xoxo. </p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2023/01/16/oraenmanieyo"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2022/02/03/the-end-part-i"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/a5e88330-65e9-4bd4-8d83-29a5ce77384e_JPEG-image-5-1.jpg?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2022/02/03/the-end-part-i"><!--lit-node 4-->
+							<!--lit-part-->The End. Part I.<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2022-02-03"><!--lit-node 6-->
+						<!--lit-part-->February 3, 2022<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part vmlyOhDZM6o=--><p>As my first year of teaching has come to a close, I have to say that my absolute favorite thing I accomplished this year was that I can walk the halls of any of the four schools I work at and pass students and be able to say, “안녕/hi (name)!” to many of my students. I call this an accomplishment because 1. I have close to 500 students and 2. BOY is it <strong>hard</strong> to learn Korean names; they sound soooo similar. I have identical twins whose names are Jin-oon and Jin-oo… and another set named Minseo and Minjae… WHY DO THEY DO THIS TO ME?! I know each set of twins apart though so you can call me a pro. Some of you might not be surprised because of the countless Starbucks customers’ names and orders I could recall, but this is completely different, in my opinion.</p><p>I have always been big on getting to know people more than just how their “good” day is going. (Although if Koreans are good, they tell you, and if not, they tell you). I believe that getting to know someone starts with their name; the biggest identifier of themselves. And not just their name, but saying it right. Seeing my students’ faces, hearing their voices, and being able to identify them in the halls and not just in the classroom has assured me that I have been doing my best to know my students and not just be here to teach them what I know, but to learn who they are as well.</p><p>One of the things I don’t love doing is using Korean in class because they’re in English class and English class = English time! But sometimes to motivate my learners who have a harder time than others, I will tell them “you can do it” in English and Korean. I think this actually helps them want to participate because they can see that I am trying for them as well.</p><p>I am truly amazed by all of my students. The amount that they have learned and retained versus what I have retained in Korean is a much more significant amount. It’s funny because I am so in awe of how most of my coworkers can speak both Korean and English, but here I am, a bilingual individual myself. There is something about living in a country where English is not the primary language and seeing that others know it fluently is so much more amazing.</p><p>I have built strong relationships with my co-teachers and several coworkers that I am so grateful for. The Koreans will never see this, but I’ll write it so I can remember them forever but I want to especially thank all my co-teachers, Hayoung, Jin, Rihwa (a new coteacher!), Jihyeon and Eun Suk for always answering my never-ending questions and dealing with me, a first-year teacher.</p><p>My coworkers, @Kyoryong Elem: Gahyeon, Hyojun, Taehoon, Baek, Minguk, Minsoo, Yoonkyung, Eunhyee, and Jin Jeongsook (the janitor!!); @Namwon Elem: Jieun, Doyoung, Jiwoo, Jiho, Suhyun, Won Songjae, Donghyun, and Jongsik; @Geumji Middle: Mr. Seo, Eun Ha, and Mijung. And the lunch ladies at Namwon Elem and the one that moved to Yongseong Elem.</p><p>There are SO many people to thank but these are the people who have always been so warm and welcoming to me, supported me, genuinely cared for me, driven me home, made sure I would eat all my meals when I got terribly sick, brought me medicine, and some have even been part of my everyday life here in Korea.</p><p>I also would like to thank my fourth-grade classes on Tuesdays, especially my first class of the day because they saved me one morning from literally breaking down in tears. Tuesdays are my busiest days of the week, but the day I look forward to the most because of them, my angels. Seeing their faces light up is the absolute best and having 96% of the class actually participate brings me a lot of joy.</p><p>4-4 class: Serin, Chaewon, Hyuna, Jiyeon, Seokyeong, Gaeun, Yoonhwan, Yumi, Aram, Jiwon, Changhui, Seungyeon, Eunchan, Yeha, Junhyuk, Woohyuk, Hyunjun, Minjun, Jihong, Insung, Yoonhee… I love you all soooooooo much. And yes, I just imagined my kids sitting in the classroom and wrote their names down…what favorites???????? (but this is more so I don’t forget their names ever).</p><p>This year has been the biggest growth I’ve had in my life and this is no exaggeration. Moving across the world, during a pandemic all alone, has helped me learn new ways of life, learn more about myself, the world, and know that I can adapt to any changes that are thrown at me. I also want to ESPECIALLY thank my Bus Besties, Jane and Lydia; my Namwon family, Sabrina, Yusuf, Toni, Chanel, and Marcos; my Islanders, Sylvia, Cheyenne, and Dongun for literally making this past year the greatest year I have ever had. And of course my neighbor, Daniel, for being a very good and helpful neighbor. Without them, my experience would have been extremely different and I am forever grateful for them.</p><p>I have decided to stay in Korea for another year to teach because I can’t leave something I love so much just yet. Saying a possible goodbye to my coworkers and all of my kids made me realize that I truly love my job and I am fulfilled every single day; even after the most exhausting days, they always make it worth it for me.</p><p>Did I cry, you ask? Absolutely.</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2022/02/03/the-end-part-i"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2021/10/21/im-alive"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/bdfb5532-ac46-44d6-82d5-6445bbb5a0df_IMG_5053-3.jpg?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2021/10/21/im-alive"><!--lit-node 4-->
+							<!--lit-part-->I’m Alive<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2021-10-21"><!--lit-node 6-->
+						<!--lit-part-->October 21, 2021<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part w5oOpAGiRpw=--><p>“By submitting this form, you agree to receive <em>occasional </em>emails and/or text messages.” ‘Occasional’ was definitely the right word choice for the agreement statement when you subscribed to my blog. Nine months have passed since I landed in Korea and this is my fourth blog post. How silly of me~ anyways, I’d just like to let everyone know that I am indeed alive and well! If you want to know more than what is below, then you can call, text, dm, facetime, or email me, and I will pick up and/or answer at some point. Technology is truly amazing and has helped me stay in touch with so many and I am grateful for that.</p><p>Since July, I have gone on a few summer trips (<a href="https://www.youtube.com/watch?v=4K1msDNI0tg" rel="noopener noreferrer">Busan</a>, Jeju Island, and <a href="https://www.youtube.com/watch?v=BM9x7koNh80" rel="noopener noreferrer">Yeosu</a>)! And just because summer ended doesn’t mean the trips have ended… I continued my travels on the weekends and went to <a href="https://www.tiktok.com/@alwayshungrylydia/video/7009814804449856774?referer_video_id=6955046013879045381&amp;refer=embed&amp;is_copy_url=1&amp;is_from_webapp=v1" rel="noopener noreferrer">Geoje Island</a>, Sokcho (a pain to get to, but oh, the things we do to go to National Parks (Seoraksan)), <a href="https://www.tiktok.com/@alwayshungrylydia/video/7017767831437577478?referer_video_id=6955046013879045381&amp;refer=embed&amp;is_copy_url=1&amp;is_from_webapp=v1" rel="noopener noreferrer">Gapyeong</a>, Nami Island, and made my first trip back to Seoul since April. For how small Korea is (about half the size of WA), it has a lot of things to do, places to visit, and a heckuva lot of cable cars. I even checked off the box on shooting hand sanitizer straight into my right eyeball; strongly do not recommend.</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2021/10/21/im-alive"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2021/07/21/halfway-there"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt="test"
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/cd615b62-f347-41f6-97ec-92bff619eff1_JPEG-image-47-1.jpg?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2021/07/21/halfway-there"><!--lit-node 4-->
+							<!--lit-part-->Halfway There!<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2021-07-21"><!--lit-node 6-->
+						<!--lit-part-->July 21, 2021<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part LxcoMydv2JU=--><p>Hiiiiiii, blog fam~ sorry I have been MIA. Life and work have been SO busy!!! I just finished my first (very successful) semester of teaching! Besides, getting adjusted to life here in Korea took a lot longer than I expected it to. After not having a bed for two months, my apartment is all finally coming together. Thanks, money!</p><p>Time is passing by so quickly. I have done much traveling since my last post, I’ve figured out my groove for teaching students who don’t understand me and even became a weekly regular at the famous bakery in Namwon called 명문 제과 (Myeongmun); so regular that the owner doesn’t even ask me what I want to get anymore.</p><p>I keep thinking that my Korean gets worse by the day, but I pick up more words that my students say to me every day. I had a conversation with the bakery owner today for almost five minutes and she could understand me! So, I guess you could say I’m an expert now.</p><p>Some of my favorite things about work are:</p><ol><li>When I speak or write in Korean to my students, they all freak out in the best way but stop paying attention because they’re distracted by my ~spectacular, little to none~ Korean knowledge.</li><li>Every Monday and Tuesday morning at my main school, Namwon Elementary, I get greeted by four of my coworkers while I’m changing into my school slippers (in Korea, you wear “outside” shoes and “inside” shoes)—one of the four NEVER fails to say, “morning teaaaa!” to me while another coworker makes me this hot cereal because they know I don’t eat breakfast sometimes.</li><li>Hugs from my kids (if you know me well, you KNOW I love a good hug).</li><li>Every Wednesday and Thursday morning, I take the same bus as the janitor and a special needs teacher to my second school, Kyoryong Elementary. They always include me in their conversations even though they know I have no idea what they’re saying, but it makes me feel included and it’s really nice.</li><li>One of my four co-teachers (I have four (for four schools, basically like a supervisor for each school), but I teach with 19 different people). She is the best and makes me feel so comfortable around her. She has told me that I make speaking English easier because she feels comfortable around ME, and that is THE best compliment I have received from a native Korean. Which not to brag, two other Korean teachers have told me the same – I guess I just have that effect on people *hair flip*.<br />Honestly, though, everything about work I absolutely love, and I am <em><strong>so</strong></em> lucky to be able to say this.</li></ol><p>My favorite end of the semester story is of my last day of teaching one of my fourth-grade classes at Kyoryong Elementary. I was telling the kids that it was my last day seeing them before summer vacation and they all yelled out, “nooo” or in Korean, “아니!!!!” (aniiiii) or “안돼!!!!!” (andwaaaaae). One kid actually had his mask off since he was sipping on his water and he made the biggest frowny face I had ever seen and it was so precious at the same time.</p><p>Then once class was over, I said, “Have a good summer, everyone; be good to 민국 선생님” (their homeroom teacher). And my favorite kid (yes, unfortunately, I have favorites—it’s inevitable) got up from his seat, with a half-sad face, slowly walked up to me with his arms spread out, and gave me the biggest and tightest hug I had been given in a while, and wouldn’t let me go.</p><p>Not long after, the rest of the class came toward me and we were in a big class group hug that lasted over two minutes long. It was THE sweetest thing ever. It melted my heart and I was internally crying (happily of course) for the rest of the day because of that moment. When I say, I have THE BEST students, I really mean it. I thought I wanted to get out of Namwon when I first got here, but these kids are really good at convincing me to stay.</p><h2>Travel</h2><p>As for traveling, I have been to Seoul, <a href="https://www.youtube.com/watch?v=7YJ3YT_0ihY" rel="noopener noreferrer">Busan</a>, Daegu, <a href="https://www.tiktok.com/@alwayshungrylydia/video/6963983521786367237?_d=secCgYIASAHKAESMgow3M0WD%2B5wFAK1DFQ2lpID4KMKAKAJM22j6jk0eCiWeC5E4W9Pwk2hXzvOyIZCM1kVGgA%3D&amp;language=en&amp;mid=6777274113254754306&amp;preview_pb=0&amp;region=KR&amp;sec_user_id=MS4wLjABAAAAaxR5IxNKADE_QmoHkktgdp51G_fzuPuL8xZkA_ccf81DiQQ_VansyvK4NqJI7pMn&amp;share_app_id=1233&amp;share_item_id=6963983521786367237&amp;share_link_id=AD8A7E5E-4071-407D-A393-D09BFBBC2AF5&amp;source=h5_t&amp;timestamp=1621428774&amp;tt_from=copy&amp;u_code=daj3g6727eiakd&amp;user_id=6789875926915826694&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;_r=1" rel="noopener noreferrer">Jeonju</a>,<a href="https://www.tiktok.com/@alwayshungrylydia/video/6955046013879045381?_d=secCgYIASAHKAESMgowLTofIkYXPGoqBy%2Bqk8L9sz8rrhYkma%2FmOPVH15bzDIQKfb2RyCvAF7IJ9Ljcx4uaGgA%3D&amp;language=en&amp;mid=6722656094272883458&amp;preview_pb=0&amp;region=US&amp;sec_user_id=MS4wLjABAAAAVSzdZ3mBfaZqoXPxZPvXPtveJ7zWRJO81XU8id6f3ZmQgq0VK_nHjkDWNZwXPCdW&amp;share_app_id=1233&amp;share_item_id=6955046013879045381&amp;share_link_id=CD8768C9-2A4B-440E-A950-E97AC838CA31&amp;source=h5_t&amp;timestamp=1619353660&amp;tt_from=copy&amp;u_code=dg9cf13i3fgb9g&amp;user_id=6912206210545927173&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;_r=1" rel="noopener noreferrer">Gwangju</a>, Suncheon, Gokseong, <a href="https://www.youtube.com/watch?v=8yJ-krle0HE" rel="noopener noreferrer">Boseong, Damyang</a>, and Gochang (I’ve linked vlogs to some locations that my friend, Lydia, has made, so be sure to watch those and follow/subscribe to her channel because she’s super awesome, cute, basically another version of me and we are always together). This summer, I will be heading back to Busan to surf (I’ll be careful mom &amp; dad, don’t worry!!) and then to Jeju Island and Yeosu! Korea is so breathtaking. Nature here is so different from home, and coming from Washington, we are all so lucky, but Korea is truly a beauty. I am always in awe wherever I go, even in Namwon.</p><h2>Busan</h2><p>My absolute favorite place that I have traveled to so far is <strong>Busan</strong>. Before I came to Korea, I wanted to move there, but obviously, I don’t live there. I think if I would have gotten placed there, I would never go back home to America… Busan is the perfect mix of a big city, peaceful sceneries, ocean and mountains views, and the nicest and most beautiful people I have encountered in Korea. One of my coworkers and I are pretty good friends now and before I left for Busan, he said that he knows I’ll love it a lot, and he was not wrong— this place exceeded all expectations; from food to views and everything in between.</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2021/07/21/halfway-there"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2021/04/29/expecting-the-unexpected"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/a8eafada-c8e4-409d-968a-4033e289ea6d_bbbad0c4-e83b-4ccc-928a-d352c13b96f3_File_025.jpeg?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2021/04/29/expecting-the-unexpected"><!--lit-node 4-->
+							<!--lit-part-->Expecting the Unexpected<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2021-04-29"><!--lit-node 6-->
+						<!--lit-part-->April 29, 2021<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part gvxX3bIPPL8=--><p>Never did I think moving to a different country would be easy. I was already expecting it to be tough — being across the world from home, moving alone during a pandemic, not knowing where I&#39;ll be living until I get to Korea… There were so many factors I thought about before moving. Yet, it still was the most traumatizing move of my life (is this an exaggeration? Maybe, but I don&#39;t think so). I was originally told, &quot;you&#39;ve been placed in a province, so your housing will most likely be bigger than the average city life apartment&quot; OOOF were they wrong about that. I had read horror stories about moving across the world through this program, but nothing like mine lol.</p><p>My apartment is a box. It has zero storage space, no closets, my kitchen seems to be hanging by a thread, everything (and I mean EVERYTHING) was covered in five different types of flower wallpaper. Not to mention, I JUST got my bed last week — something that was supposed to be here before I arrived. I&#39;ve been here for over two months.</p><p>The day before EPIK orientation ended, we all learned where exactly in the province we&#39;d be placed/living in. I got placed in a small city called Namwon (남원) just 25–60 minutes away (depending on the mode of transportation) from Jeonju (전주), the capital city of Jeonbuk (전북). Namwon is so small that there is not even a Starbucks or a McDonald&#39;s, which is unfortunate because sometimes I just crave McNuggets or McDonald&#39;s&#39; fries. And I didn&#39;t think I&#39;d miss SBX after it being part of my life for 3+ years, but now that it&#39;s nonexistent, I do… There isn&#39;t much to do here, but there is a lot to appreciate — from its mountainous views to the river and cherry blossoms (when in season) that line the city! My favorite thing about Namwon so far is the Yocheon River because it&#39;s right behind my apartment and I can go on walks by it anytime I want and I am always in awe of how beautiful it is here.</p><p>Most weekends since I&#39;ve been here have been raining so going anywhere really isn&#39;t worth it. So, so far, I&#39;ve only been to Seoul, Jeonju, and Gwangju. This weekend I&#39;m heading to a city called Daegu. And after about two months living in Namwon, I&#39;ve learned to just expect the unexpected — every day and week, some curveball has hit me whether that&#39;s life, the office of education playing games with me or school (Korean surprises we call them), but I&#39;m pushing through and figuring it out slowly but surely and honestly, I have never been more proud of myself than in these last two months! So I&#39;m very happy about that. Plus, I&#39;m SLOWLY learning Korean, making me trilingual (if I ever become fluent lolol — I don&#39;t have that much hope for this, though, but we shall see).</p><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2021/04/29/expecting-the-unexpected"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview><post-preview><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			left: 0;
+			object-fit: cover;
+			object-position: center;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.button {
+			background-color: var(--colors--foreground);
+			color: var(--colors--background);
+			display: inline-block;
+			padding: 0.5em;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.excerpt p {
+			display: block;
+			display: -webkit-box;
+			line-height: 1.666;
+			max-height: calc(1.666 * 1em * 4);
+			margin-top: 0;
+			overflow: hidden;
+			padding: 0 1rem;
+			text-overflow: ellipsis;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+		}
+
+		.excerpt > *:not(:first-child) {
+			display: none;
+		}
+
+		.title {
+			font-size: 2em;
+			font-weight: 200;
+			padding: 0 1rem;
+			text-transform: uppercase;
+		}
+
+		.title-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.header {
+			margin-bottom: 1em;
+		}
+
+		.date,
+		.footer {
+			padding: 0 1rem;
+		}
+
+		.post-preview {
+			border-bottom: 1px solid var(--colors--separator);
+			margin: 4em auto;
+			max-width: 700px;
+			padding-bottom: 4em;
+		}
+
+		@media (min-width: 768px) {
+			.title,
+			.date,
+			.excerpt p,
+			.footer {
+				padding: 0;
+			}
+		}
+	</style><!--lit-part EqZZIXU12po=-->
+			<article class="post-preview">
+				<!--lit-part o7ecF8zPhvc=-->
+			<a href="/2021/02/19/i-moved"><!--lit-node 0-->
+				<div class="image-wrapper">
+					<img
+						alt=""
+						class="image"
+						src="https://images.prismic.io/annyeongthaovi/bf6e08b0-599d-4327-8e94-1e1d2db7ee60_sava-bobov-eVa2FK83K6w-unsplash.jpg?auto=compress,format"
+					/><!--lit-node 2-->
+				</div>
+			</a>
+		<!--/lit-part-->
+
+				<header class="header">
+					<h1 class="title">
+						<a class="title-link" href="/2021/02/19/i-moved"><!--lit-node 4-->
+							<!--lit-part-->I Moved!<!--/lit-part-->
+						</a>
+					</h1>
+
+					<time class="date" datetime="2021-02-19"><!--lit-node 6-->
+						<!--lit-part-->February 19, 2021<!--/lit-part-->
+					</time>
+				</header>
+
+				<main>
+					<div class="excerpt"><!--lit-part Y3LHVQ4JasA=--><p>Surprise! I moved to South Korea and I could not be more excited to start my career here as an English teacher. Since we’re still living in a pandemic, I’ve been in quarantine for the past 2 weeks so I haven’t seen any of Korea; only movies, tv shows, and the view outside my dorm room.</p><p>Many of you are wondering how I got here so I’ll save you the novel and tell you the short story: I applied to a program called EPIK in August, got accepted, and then booked my one way plane ticket to Incheon International Airport. Packed my life away and now I am currently sitting here in the Hae Oreum Dorm at Konkuk University in Chungju writing this post on my last night of quarantine before I start orientation tomorrow and teaching in March.</p><h3>Some notable things since I arrived in Korea:</h3><ol><li>I got covid symptom flagged at the airport for having “too high” of a temperature (37.5°C – the threshold to get held back). They even stickered my passport and made me wear a covid symptom badge necklace to make sure the airport officials knew. Lucky me, I know. This also made my travel from Seattle to my quarantine site go from 14-15 hours max to 27 hours (I slept 3 hours the entire 27 hours and continued to stay away for an additional day since I arrived at my quarantine site at 5:30 am…we love to see it).</li><li>I turned 23 in quarantine! And it wasn’t as lonely as you’d expect. My best friend from college, Jamie, threw me an online birthday party and created a party room where whenever someone would enter the call a new little character she created would join the ‘house party.’ It was so cute and thoughtful! Plus the food I got on my birthday was stellar. Even though I wasn’t at home, my younger brother decided to make Korean fried chicken for my birthday…how sweet and I had to just watch them eat it over a video call #torture.</li><li>Anyone who knows me well knows I cannot tolerate anything above 0 stars but since I can’t pick what I eat during quarantine, I can confidently say that I tolerate spicy food a <strong>little </strong>bit better now – thanks 고추장 (gochujang (Korean red chili paste/sauce))!</li><li>I have survived without a fridge and microwave (the outside ledge of my window acts as a fridge and the heater on blast as a microwave).</li><li>I learned what the difference between sushi and kimbap is.</li><li>The Chungju quarantine staff are the sole reason for my happiness during quarantine. They are so generous and have kept all 100+ of us safe and well-fed over the last 14 days. I truly am so thankful and have so much gratitude for them and all their cute/yummy food surprises. I love them and they have my heart. Chungju over Seoul (quarantine) forever!!!!!</li><li>Two years ago, I watched seasons 1-7 of Game of Thrones in 18 days, which I finished just before season 8 premiered, and I wasn’t sure how much TV I could watch again after that, but anything is possible. So, I watched 7-8 shows/movies in 14 days. And yes, I am ashamed I didn’t finish any K-dramas.</li><li>I used a wet room for the first time, and it’s not as bad as you think it would be.</li><li>I completed a 28 lecture Korean course for beginners, but I still suck at it so I better figure it out soon!</li><li>I made 5 friends at the airport!!!</li></ol><p>Anyways, stay tuned for more updates :).</p><p><em>xoxo from KR ♡</em></p><h4>If you’re interested in the shows/films I watched:</h4><ul><li><strong>I May Destroy You</strong> (12 episodes) – Michaela Coel – 10/10 must watch but don’t binge</li><li><strong>BlacKkKlansman</strong> – Spike Lee – 9/10</li><li><strong>Mulholland Drive </strong>– David Lynch – 7/10 until you watch this <a href="https://www.youtube.com/watch?fbclid=IwAR3ckUSKlm-BGtuwWySnk4FPoaeCtEhVqPT7dAuW8wE5Ols4eufsgj5EkmM&amp;v=VvgRLTP3U5Y&amp;feature=youtu.be" target="_blank" rel="noopener noreferrer">YouTube video explanation</a> AFTER watching the film, then it’s a 9/10 for me LOL.</li><li><strong>The Royal Tenenbaums </strong>– Wes Anderson – 7/10</li><li><strong>Lovestruck in the City</strong> (only watched 5 episodes) – I didn’t finish obvi, but 5/10, I’ve heard both that it gets better and that it doesn’t so I’m not so sure if I will continue.</li><li><strong>Bridgerton</strong> (8 episodes) – 10/10 yep</li><li><strong>Twin Peaks</strong> season 1 (8 episodes) – David Lynch – 10/10</li><li><strong>Twin Peaks</strong> season 2 (22 episodes) – up until episode 12 or 14((?) you’ll know when you watch) 9/10, the rest is a 5/10</li></ul><!--/lit-part--></div>
+				</main>
+
+				<footer class="footer">
+					<a class="button" href="/2021/02/19/i-moved"><!--lit-node 12-->
+						Continue reading
+					</a>
+				</footer>
+			</article>
+		<!--/lit-part--></template></post-preview></my-page></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>

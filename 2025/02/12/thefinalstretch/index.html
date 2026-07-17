@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>The Final Stretch | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" />
+<link rel="stylesheet" href="/assets/index.a90d95f7.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><featured-image><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.centerCrop {
+			object-position: center;
+		}
+
+		.topCrop {
+			object-position: center top;
+		}
+
+		.bottomCrop {
+			object-position: center bottom;
+		}
+
+		.wrapper {
+			height: min(75vh, calc(100vw * 9 / 16));
+			position: relative;
+			width: 100%;
+		}
+
+		.fullWrapper {
+			height: auto;
+		}
+
+		.fullWrapper .image {
+			height: auto;
+		}
+	</style><!--lit-part 7ECSEfhLqWA=-->
+			<div class="fullWrapper"><!--lit-node 0-->
+				<img
+					alt=""
+					class="image centerCrop"
+					src="https://images.prismic.io/annyeongthaovi/Z0VzbK8jQArT1TRV_IMG_8114.jpg?auto=format,compress"
+				/><!--lit-node 1-->
+			</div>
+		<!--/lit-part--></template></featured-image><article>
+		<header class="_header_1cgre_8">
+			<h1 class="_title_1cgre_1">The Final Stretch</h1>
+			<time datetime="2025-02-12">
+				February 12, 2025
+			</time>
+		</header>
+
+		<main>
+			<astro-island uid="1LF1cc" component-url="/index.2464379d.js" ssr="" client="idle" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;PrismicBody&quot;,&quot;value&quot;:true}" await-children=""><prismic-body><template shadowroot="open"><style>
+		.youtube {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.youtube-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.tiktok-wrapper {
+			text-align: center;
+		}
+
+		.embed {
+			box-sizing: border-box;
+			margin: 4em auto;
+			max-width: 1000px;
+			padding: 0 2em;
+			width: 100%;
+		}
+
+		.gallery-image {
+			height: 300px;
+		}
+
+		.gallery-caption {
+			font-size: 0.9em;
+			text-align: center;
+		}
+
+		.gallery-figure {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			margin: 0;
+		}
+
+		.gallery-list {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 2em;
+			list-style: none;
+			margin: 0;
+			padding: 0 2em;
+		}
+
+		.gallery {
+			display: block;
+			margin: 4em 0;
+			overflow-x: auto;
+			overflow-y: hidden;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colors--link);
+		}
+
+		h2, h3, h4, p, ul, ol {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 700px;
+		}
+
+		p, ul, ol {
+			line-height: 1.666;
+		}
+
+		ul, ol {
+			box-sizing: border-box;
+			padding-left: 2.5em;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		@media (max-width: 767px) {
+			p, ul, ol {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			ul, ol {
+				padding-left: 3.5rem;
+			}
+		}
+	</style><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part d/v7r5QVRnE=--><p>I booked my one way ticket back to America. The last time I bought a one way ticket was over four years ago and that was a flight to Korea. It felt so surreal to move here and now it feels surreal to be moving back. People have been asking how I feel about moving home and my answer is that I honestly don&#39;t know. I feel a bit of excitement, anxiousness, worry but not exactly <em>worried</em> - there&#39;s a word for this in Korean, 고민 (gomin), but there&#39;s no real translation to capture its full meaning in English. The easiest thing I <em>can</em> say is that I am feeling bittersweet about it all. I am, however, excited to be physically close to my family again. Although I can&#39;t promise my stay in Seattle forever (hahahahahahahahaha just kidding... maybe). </p><p>Since August, I visited Taiwan again to help Jane move and on the second, also the last, day there, we just wish we had more time to explore Taiwan. Taiwan is one of those places I just never expected to really love so much. We then made our way to Cambodia and it was unexpectedly one of the coolest places I had been to in a while. And thanks to our wonderful tour guide, Sareth, and driver, Savon, it was the smoothest trip of our lives. We were able to visit the capital city, Phnom Penh, my friend Sophanna&#39;s hometown, Battambang, and then Siem Reap where Angkor City is. Angkor City is basically the city of temples where the most famous of all their temples, Angkor Wat, is located. Every day in Siem Reap you would just hear me and Jane saying, &quot;WOOOWWWWW.&quot; It was truly amazing. </p><p>Shortly after I got back from my trips, I worked a little bit and then went to Jeju Island to visit Sylvia! Jeju is Jeju and it&#39;s the best as always.</p><p>I then flew to Busan to meet up with my uncle&#39;s family who came to visit. We had a great time surfing and exploring some of the tourist sites together. I was really happy to see my two little cousins, Mila and Calen, enjoying their time in a different country. Since leaving America, I&#39;ve realized a lot of my family has grown up. Despite our age difference of over ten years, it was still so fun to hang out with them. </p><p>Summer vacation finally came to an end but my visitors did not. One of my closest friends from college, Griffen, came to visit me shortly after and I had the best time showing him around Namwon and Busan! It was summer, so Busan and/or Jeju Island are a must to visit. Family of course, but friends coming to Korea to visit me is so special that I cannot explain into words how much it means to me. It was the best best best ever. </p><p>At the beginning of September, my Namwon friends, Lauren and Miso, and I went to Yeosu together. Lauren and I set up a surprise birthday party for Miso and commemorated our first trip together, <em>finally</em>. Setting up a surprise party in a trio friend group was rather hard but we got the job done. This was a much needed trip together and I had so much fun driving my friends around this beautiful peninsula city. We ordered the cutest cake for Miso&#39;s birthday but we couldn&#39;t pick it up during the store&#39;s opening hours, but have no fear! We live in Korea so anything is possible. The store manager gave me the code to enter her store to pick up the cake and trusted that I, a customer she has never met, to make sure that I lock the door after leaving. Could you imagine this happening in America? I don&#39;t think so either. </p><p>Chuseok, Korean Thanksgiving, was in the middle of September so I went to Japan for the third time! This was my second solo Japan trip. I went to Fukuoka this time for 5 days, which if you ever decide to go, I recommend 3 or 4 days only. It was really small but this was the weekend I started to realize I needed to slow down. My stamina for travel was crashing because I had been non-stop go go go-ing every weekend for the past 5 months. I was so tired but I still needed to appreciate the beauty and food Japan has to offer. My favorite place I visited in Fukuoka was a small beach area called Itoshima. It had this beautiful white torii gate in the water with two giant rocks behind it and if you go there at the right time of year, you can see the sun setting between the rocks. Although I didn&#39;t get to see <em>that</em> specifically, I still got to witness a sunset that was really beautiful. There, I met the cutest couple from Hong Kong who came with their parents to celebrate their father’s birthday. They took many photos for me and asked to take pictures together too. They told me they noticed me from a distance because my outfit that day (a black tank top with a long white flowy skirt) matched the scenery of Itoshima. Fukuoka has a ramen they&#39;re known for; Hakata Ramen. I didn&#39;t like it because the broth was so rich in flavor and I prefer lighter broths so if you&#39;re interested, I would recommend! Otherwise, pass. But if you find yourself in Hakata, Fukuoka, I would say you should try. </p><p>After coming home from Fukuoka I wanted to rest but I found out Olivia Rodrigo was coming to Seoul so I had to return that weekend to see her because if you know me, you know I love her. It was the best and a concert I didn&#39;t realize I needed to see in my life. I think it fully healed my heart. Music is so powerful. </p><p>At the beginning of October, my sister, Bear and I had planned a really exciting trip to Japan which would have been my fourth trip there but unfortunately there was an unexpected turn of events and we had to cancel our entire trip — woh woh. But all is well now and everyone is safe and healthy! I was devastated since something really exciting was going to take place on that trip.</p><p>At the end of October, my friend Boris from university came to visit again. He brought his brother and a friend this time so it was nice to meet them too! I showed them around Jeonju and met up with them in Seoul that weekend then said goodbye again. Through Boris, I made a new friend, Vivian. Although I don&#39;t feel like I really want any new friends, it&#39;s been nice getting to know someone new since I feel extremely comfortable with everyone I&#39;m already friends with in Korea now. </p><p>The fall foliage in Korea is some of the most beautiful foliages’ I&#39;ve seen in life. So many vibrant colors of tree leaves changing from green to red, orange and yellow. And eventually you see all the leaves drop to the ground. Every year, the leaves change color and drop to reset. This year especially was a reminder to me that even nature needs to listen to its environment, reset and recharge. If we don&#39;t listen to how our environment is, how can we survive? This year has been my most peaceful year yet, but I&#39;m still learning how to listen to my body, rest and recharge when my energy is low. As you can see from my travels, it is a work in progress. </p><p>At the end of November and January, two of my soccer friends got married! My friends, Suhye (well, unnie, if we want to be formal with Korean culture (this is basically what you’d call any girl older than you (if you’re also a girl)) and Daeun! It was nice to know both brides and grooms in each weddings since they’re both my friends/teammates since I’m used to only knowing one or the other when I have gone to past weddings. It felt really beautiful to see both my unnie and friend marry people they love.</p><p>You must be wondering what exciting event was supposed to happen on the Japan trip, right? Well, you guessed it! My sister and Bear are now engaged!!! I was so devastated because I knew that event was going to happen in Japan, not to mention, at Fujisan, for a long time and then suddenly we had to change the plan and I couldn’t be there for their big day anymore so I was really sad. So sad, my coworkers were concerned about me the day after I learned I had to cancel my trip. This trip was not just any trip, but a trip I was really looking forward to for so many reasons and so many months. I was especially excited to see my sister again, and witness the love of her life propose to her! But it all crumbled in a second for me. Sigh. I must be so dramatic… we knew this though. But it’s not about me!!! Well this event particularly is not, but this blog obviously is though (hahaha). Anyways they are engaged now and happy and I’m so happy too and to gain a future brother in law soon!</p><p>Lastly, I stepped outside of Asian waters and traveled to the Middle East! My friend Kalei and I reunited with Jane, who moved to Taiwan that I mentioned earlier in this post, in Dubai! We traveled to the United Arab Emarites and Qatar. </p><p>Honestly, I had no expectations going into this trip since I didn’t have much prior knowledge of either countries, only that Dubai would be expensive. To our surprise, Dubai had, I’d say, American prices without tipping. We visited Abu Dhabi too! There, we visited the Grand Mosque which is the first mosque any of us have ever visited and it was so beautiful. I’m not quite sure how to explain my trip besides the fact that the culture, history, architecture and religion in both countries felt so rich and beautiful. The people were truly kind there and the food was not bad! Although, I think I might like middle eastern/Mediterranean food in America better? It was really amazing to learn and experience a new area of the world that I didn’t think I’d ever visit. </p><p>I just read a random statistic that said as of 2025, Dubai and Doha are the first and second most boring cities in the world, and I’m here to say that I don’t think that’s true, AT ALL. I could also think of more boring places in the world too. For one, Nagoya, Japan. Terribly boring. Remember when I said Cambodia was unexpectedly the coolest place I’d been to in a while? I think the Middle East takes the cake. I would recommend all to visit some day!!! </p><p>It’s now mid February and has been snowing more than usual. My last day of work felt like walking into a snow storm blizzard. Last week, I completed my work as an English teacher in Korea (cry), said my goodbyes to students and coworkers at all four schools I have been working at this past year (cry again) and am currently on my vacation time now and will be on ~vacation~ (with Lydia and Jamie, my last two friend visitors (yay!)) until my contract ends at the end of this month. Lydia used to live in Korea so we’re mostly just hanging out, catching up, and doing what we do best—eating, in Seoul. Have I mentioned Lydia is my favorite friend to eat with ever??? Just something about a friend that is down to eat everything with you that you want to try is so nice. Jamie, my close friend from university, will arrive later this weekend which I am SO ecstatic about. I’m going to show her around my Korea hometown, Namwon; Jeju Island to climb Hallasan, pick tangerines; and of course Seoul to shop, eat, and do some fun activities we have planned like getting our color analysis’!</p><p>Anyway, see you again in my final blog next month??? I can’t believe the end is near. 🥹</p><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></template></prismic-body></astro-island>
+		</main>
+	</article></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>

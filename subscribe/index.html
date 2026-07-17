@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>Subscribe | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/subscribe.7263a8ea.css" />
+<link rel="stylesheet" href="/assets/index.41481571.css" /><script type="module" src="/hoisted.922c0767.js"></script>
+<script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><my-page class="astro-5I2RKWF4"><template shadowroot="open"><style>
+		.header {
+			font-size: 2em;
+			margin: 2em auto;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	</style><!--lit-part MTwX7X72Vbo=-->
+			<div class="header">
+				<slot name="header" />
+			</div>
+
+			<slot />
+		<!--/lit-part--></template><h1 class="astro-5I2RKWF4" slot="header">Subscribe</h1><form id="subscribe-form" class="astro-5I2RKWF4">
+			<input id="name" name="name" placeholder="Name" required class="astro-5I2RKWF4">
+
+			<input id="email" name="email" placeholder="Email" type="email" class="astro-5I2RKWF4">
+
+			<input id="phone" name="phone" placeholder="Phone" type="tel" class="astro-5I2RKWF4">
+
+			<button class="astro-5I2RKWF4">Subscribe to updates</button>
+		</form></my-page></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>
+
+

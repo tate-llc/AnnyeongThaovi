@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>Long Time No See | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" />
+<link rel="stylesheet" href="/assets/index.a90d95f7.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><featured-image><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.centerCrop {
+			object-position: center;
+		}
+
+		.topCrop {
+			object-position: center top;
+		}
+
+		.bottomCrop {
+			object-position: center bottom;
+		}
+
+		.wrapper {
+			height: min(75vh, calc(100vw * 9 / 16));
+			position: relative;
+			width: 100%;
+		}
+
+		.fullWrapper {
+			height: auto;
+		}
+
+		.fullWrapper .image {
+			height: auto;
+		}
+	</style><!--lit-part 7ECSEfhLqWA=-->
+			<div class="fullWrapper"><!--lit-node 0-->
+				<img
+					alt=""
+					class="image centerCrop"
+					src="https://images.prismic.io/annyeongthaovi/0ec87ec4-b664-4088-8d6a-86cf6d95254b_JPEG+image.jpeg?auto=compress,format&amp;rect=0,0,3024,4032&amp;w=3024&amp;h=4032"
+				/><!--lit-node 1-->
+			</div>
+		<!--/lit-part--></template></featured-image><article>
+		<header class="_header_1cgre_8">
+			<h1 class="_title_1cgre_1">Long Time No See</h1>
+			<time datetime="2023-01-16">
+				January 16, 2023
+			</time>
+		</header>
+
+		<main>
+			<astro-island uid="W7Yl4" component-url="/index.2464379d.js" ssr="" client="idle" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;PrismicBody&quot;,&quot;value&quot;:true}" await-children=""><prismic-body><template shadowroot="open"><style>
+		.youtube {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.youtube-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.tiktok-wrapper {
+			text-align: center;
+		}
+
+		.embed {
+			box-sizing: border-box;
+			margin: 4em auto;
+			max-width: 1000px;
+			padding: 0 2em;
+			width: 100%;
+		}
+
+		.gallery-image {
+			height: 300px;
+		}
+
+		.gallery-caption {
+			font-size: 0.9em;
+			text-align: center;
+		}
+
+		.gallery-figure {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			margin: 0;
+		}
+
+		.gallery-list {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 2em;
+			list-style: none;
+			margin: 0;
+			padding: 0 2em;
+		}
+
+		.gallery {
+			display: block;
+			margin: 4em 0;
+			overflow-x: auto;
+			overflow-y: hidden;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colors--link);
+		}
+
+		h2, h3, h4, p, ul, ol {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 700px;
+		}
+
+		p, ul, ol {
+			line-height: 1.666;
+		}
+
+		ul, ol {
+			box-sizing: border-box;
+			padding-left: 2.5em;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		@media (max-width: 767px) {
+			p, ul, ol {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			ul, ol {
+				padding-left: 3.5rem;
+			}
+		}
+	</style><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part OHDs57sDFVI=--><p>&quot;오랜만이에요~~&quot; or &quot;oraenmanieyo&quot; as Koreans will say if they haven&#39;t seen you for just a week. My favorite lunch lady that I see once a week at one of my schools ALWAYS says this to me. Same with the bakery ladies even though they see me every Thursday too. 근데… 진짜 오랜만이다!!! Seriously, it&#39;s almost been a year since I have written to you. The only thing I don&#39;t like about writing in Hangul, the Korean alphabet, is that you cannot emphasize your text the way we can capitalize everything and make it extra dramatic because you all know I am a walking hyperbole. Anyway, <em>again</em>, it&#39;s been a long time! How are you??? Send me a text, DM, email, or whatever. I would love to know!</p><p>I initially meant to publish this in June 2022, but for all you know, I could be making this up... get ready for a long post of updates!</p><p>Since February, I visited home for almost a month! It was so, SO nice to eat food at home again. One of the top three things I missed while living in Korea had (and still has) been my mom&#39;s food. Everything my mom makes is my favorite dish; something I will never take for granted again. I am the least lucky person out there, but there are two things I feel lucky about; being born in America (automatically a native English speaker) and having a mom who cooks the best food. No one can change my mind because many others agree. </p><p>I successfully surprised all of my family members thanks to the help of my sister who almost ruined the surprise<em> </em>too many times. Before I surprised my immediate family, I told my sister what I thought everyone&#39;s reactions would be and I was exactly spot on about everyone. It was the absolute best to hug my family and friends that I could see. I missed my family and friends a lot, but I was very ready to come back to my home here in Korea (sorry mom and dad, I know your stomachs are churning after reading that sentence). My time at home was jam-packed with scheduled meetings with family and friends I had planned to see. I always say I only have two or five friends, but somehow saw 14 people who were not my family. I even went up to Whistler to snowboard with my sister and our friends. My calendar makes my head hurt every time I see it. Even now, but worth it!</p><p>I completed my second year of teaching and half of my students this year were completely new to me. At this point, I&#39;ve taught about 750 faces. I feel really lucky, I guess here&#39;s the third lucky thing about my life, to have such a great workplace environment, students, and coworkers. My main school&#39;s coteacher changed to my favorite coworker, Park Jieun, who sat next to me in the office last year. She calls herself my Korean Mom and me, her American daughter. She comments on how tired I look every time I show up to work so it&#39;s forced me to sleep AT LEAST 8 hours, which is the best thing I&#39;ve done for myself in a long time. She hasn&#39;t commented on my tiredness since because she knows I&#39;m getting my beauty sleep in. Even my dermatologist couldn&#39;t get me to sleep more (Korea, the skin care capital of the world, seriously ruined my flawless skin (lack of sleep was never the main cause but anyway it&#39;s better now, thanks to Dr. Park Hyunho)). I&#39;m a lot better at remembering names now since I am more familiar with the Korean language. Although, I feel like I need to because my students will occasionally ask me if I remember their names—I feel terrible when I can&#39;t remember. </p><p>I MOVED APARTMENTS! Thank GOD. One of my coteacher&#39;s searched and called every realtor in the city every day for two and a half weeks. It was so exhausting and mentally draining because I knew I could do this by myself if it hadn&#39;t been for the language barrier. I felt like a burden. I almost gave up because everything we saw, we both didn&#39;t like and I wasn&#39;t going to move if I didn&#39;t love it more than ‘The Box’ that I had last year. On the last day we looked, I woke up that morning saying, “if I don&#39;t find something today, I&#39;m just going to stay here.” The first place we looked at that morning was perfect. I signed the lease that day. Now, I live alone in a one-bedroom apartment; a dream, seriously. And the landlord is the best landlord I&#39;ve ever had. All thanks to Jin Duseong.</p><p>I joined the volleyball team at one of my schools—Kyoryong Elementary. 14 Namwon elementary schools competed in a tournament one weekend in May. Meaning I would potentially have to compete against two of the other elementary schools I work at. Luckily I did not need to do that, but when I met my main school&#39;s team, Namwon Elementary, at the tournament, the principal asked, &quot;Thaovi! Why aren&#39;t you playing for our school? Is there anything you can&#39;t do???&quot;.  My team did well, we only lost once to the team that won the tournament. I played very well during the season so I wasn&#39;t worried about my performance for the tournament. However, some of the men on my team are ball hoggers and it was frustrating for me since this is a team sport. Regardless, it was a really fun experience. After the tournament, we had lunch and drank for a full workday…I was so nervous because 한국말 잘 못 해요!!! I can&#39;t speak Korean well!!! It ended up being so fun though. Everyone was super inclusive and maybe because we were all drinking, we weren’t self-conscious about speaking each others&#39; language (Korean drinking culture is like none other let me tell you...).</p><p>Summer came around and I left the country! I went to the Philippines with a couple of friends and it was such a wonderful trip. The Philippines was never a top country on my bucket list but I was itching to leave Korea since it is such a small country and you can only do so much when you don&#39;t own a car. So, Jane, my friend who I travel a lot with got me to come with her (didn&#39;t take much convincing). We went to two different islands and three different destinations. Bohol, where we scuba dived and did every tourist thing that pops up when you look up the island; Palawan, where we went to Puerto Princesa and El Nido. Here, we went on a subterranean underground river tour (a super awesome untouched cave with bats flying up and around close to you with very interesting natural structures inside) and did an island hopping tour of five different islands and lagoons in a rainstorm among other things! My highlights of this trip were that the people were just genuinely kind here, the water was beautiful and so CLEAN, and it is overall such a beautiful country. I would recommend everyone to go at some point in their lives (especially if you love the water). </p><p>Some of my family came to visit shortly after which caused the delay in this post. I really wanted to publish what I had written before their arrival in September but here we are in 2023...oops is all I can say. </p><p>I had the BEST time with my family; my dad, younger brother, sister, and her boyfriend came to visit me. They all came to Namwon on the same day, aka my happiest day of the year. Yes, they all fit in my apartment; impossible if they came to visit last year. My brother, Tri, was here for the weekend; dad was here for a little over a week; my sister, 11 weeks! (Yes, she still has a job). It was really nice to show some of my family my home here in Korea and I think they liked seeing it in real life as well. My dad even said, “next time we can show mom and Hieu!” I got so used to my sister, QuynhAnh, being here that we started to call my apartment, &#39;our apartment.&#39; #crying. I don&#39;t get homesick often, but having them with me for one weekend or eleven weeks made my home feel even homier. I&#39;m still getting over the fact that they&#39;re not here anymore, but I&#39;m so grateful for all the time I was able to spend with them here in Korea. </p><p>While my sister was in Korea, she got to visit two of my schools, Namwon and Kyoryong Elementary, meet my students and sit in on my classes. My kids were so ecstatic to meet someone so close to me that two too many classes took up half of my teaching time asking her questions. She even got to enjoy Korean school lunch, which she came on the best meal of the year in my opinion; steak bites and other yummy food. Two coworkers that I&#39;m very close to, Taehoon and Jihyeon, set aside time to meet and hang out with QuynhAnh. They even prepared gifts for her arrival in Korea. &quot;What about me???&quot; I jokingly asked Taehoon and his response was, &quot;uhhhhhhhh share&quot; and laughed. Even my kids gave my sister candies and stickers calling them gifts. After she went home, some would ask when she’d be back. My phone’s lock screen is of me and my sister and the kids that met her are always excited that they know the girl on their teacher’s phone. My kids and coworkers are the best!</p><p>QuynhAnh and I got to travel internationally together! She and I visited Malaysia, Singapore, and our grandparents and family in Vietnam! This was the first time we traveled with just the two of us and it was really nice to spend so much time abroad together. We agreed that Malaysia was way better than expected and had amazing food, Singapore was most beautiful at night (it looks exactly like it does in the movies), and Vietnam is just the best because of our family and the food. In Korea, we visited Jeonju, Damyang, Busan, Jeju Island, Yeosu, and Seoul together. We watched BTS perform in Busan, rode around in a motorbike car on Udo Island in Jeju, and watched the sunrise in Yeosu together. My favorite weekend with my sister was when we reunited in Busan after she left me for Japan for a week. That was the best weekend of last year honestly.</p><p>I received perfect scores for all but one of my teaching observations. Which was great for me, but honestly, I was hoping for more feedback on how to improve, but that&#39;s okay! I&#39;ll pat myself on the back for this one. Half of the teachers in my office observed me so when I walked into the office after I finished teaching that day, they all started cheering for me. The science teacher, who is usually nervous to speak English, so proudly exclaimed, &quot;verrrrry nice!!!&quot;. It was so cute. Everyone in the office was so supportive of me because they knew how much I dreaded my observation day. </p><p>I renewed my contract for a third year, something I did not expect to do. I&#39;m just not ready to say goodbye to my newfound home, my students, and my coworkers. Many of my third-graders asked for my autograph and wrote me cards saying they hope that we can meet again next year. A few of my sixth graders sobbed having to say goodbye to me as they have to move on to middle school the next year. My sweet and eager learner, Mang Juno, promised me he’d come back to visit me—I can’t wait to see him again. For not being able to communicate fluently in their language, we still find ways to connect. It&#39;s been so special to literally and figuratively see all of my students&#39; growth over the last two years, I can&#39;t wait to see how they grow next year. Life this past year has had its rough patches, different from last year, but something I would never change because it makes me who I am right now. </p><p>This winter vacation, I&#39;m going on two international trips and two domestic ones. I&#39;m spending two weeks in Japan with a couple of friends (meeting up with a family friend and college friend too (so exciting!!)), and then a 5-day solo trip to Taipei for my birthday. In Korea, I&#39;m heading to Jeju Island once again and Gangwon province to see the best beach in the country! I am so excited about these trips and especially to go on a trip outside of Korea alone. I went on my first solo weekend trip back in April and I forgot how much I loved doing things alone and remembered how important it is to spend time with myself. I cannot promise I&#39;ll update you about these trips, but I&#39;ll try. See you soon, xoxo. </p><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></template></prismic-body></astro-island>
+		</main>
+	</article></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>

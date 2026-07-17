@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>Photos | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><my-page><template shadowroot="open"><style>
+		.header {
+			font-size: 2em;
+			margin: 2em auto;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	</style><!--lit-part MTwX7X72Vbo=-->
+			<div class="header">
+				<slot name="header" />
+			</div>
+
+			<slot />
+		<!--/lit-part--></template><h1 slot="header">Photos</h1><astro-island uid="Z1I5GhB" component-url="/index.3eb96216.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Gallery&quot;,&quot;value&quot;:&quot;lit&quot;}" await-children=""><my-gallery><template shadowroot="open"><style>
+		.feature-caption {
+			color: #fff;
+			font-size: 1em;
+			font: inherit;
+			padding-top: 1em;
+		}
+
+		.feature-caption:empty {
+			padding-top: 0;
+		}
+
+		.feature-image {
+			height: calc(100% - 2.25em);
+			object-fit: contain;
+			object-position: center;
+			width: 100%;
+		}
+
+		.feature-figure {
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			left: 0;
+			margin: 0;
+			padding: 2em;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.feature-bg {
+			appearance: none;
+			background-color: rgba(0, 0, 0, 0.8);
+			border: 0;
+			cursor: pointer;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+
+		.feature {
+			height: 100%;
+			left: 0;
+			opacity: 0;
+			position: fixed;
+			top: 0;
+			transition: 0.25s opactiy, 0.25s visibility;
+			width: 100%;
+			visibility: hidden;
+			z-index: 3;
+		}
+
+		.grid-caption {
+			margin-top: 0.5rem;
+			font-size: 0.9em;
+			text-align: center;
+		}
+
+		.grid-image {
+			width: 100%;
+		}
+
+		.grid-figure {
+			margin: 0;
+			width: 100%;
+		}
+
+		.grid {
+			display: grid;
+			gap: 2em;
+			grid-template-columns: 1fr;
+			margin: 4em auto;
+			max-width: 700px;
+		}
+
+		@media (min-width: 768px) {
+			.feature[data-visible="true"] {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			.grid-caption {
+				display: none;
+			}
+
+			.grid-image {
+				cursor: pointer;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+				width: 100%;
+			}
+
+			.grid-figure {
+				display: flex;
+			}
+
+			.grid {
+				gap: 1em;
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	</style><!--lit-part 8sfD4PvuAZY=-->
+			<div class="feature">
+				<button
+					aria-label="Hide image"
+					class="feature-bg"
+				/>
+
+				<figure class="feature-figure">
+					<img
+						alt=""
+						class="feature-image"
+						src=""
+					/>
+
+					<figcaption class="feature-caption" />
+				</figure>
+			</div>
+
+			<div class="grid">
+				<!--lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt="Haemultang"
+							loading="eager"
+							class="grid-image"
+							data-caption="Haemultang"
+							src="https://images.prismic.io/annyeongthaovi/97d8e8be-24af-4371-a630-23eb38b819f5_fe45729b-a290-41b6-a15d-c6bf122e8313_File_012.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Haemultang<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="eager"
+							class="grid-image"
+							data-caption="main co-teacher"
+							src="https://images.prismic.io/annyeongthaovi/d79a57f8-fe32-4714-9972-f3714a917af9_d37de964-01df-4678-b2f3-5c53abb26937_File_015.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->main co-teacher<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="eager"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/448da9e0-ce82-42d0-b3d4-f61fa20d1898_5e1b2367-b70c-44d7-b46a-a5db41776b63_File_033.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Yongseong Elementary"
+							src="https://images.prismic.io/annyeongthaovi/bc493d4f-6190-4997-9f05-6e87d49bd608_42918033-f9e5-43d2-9cce-46953a919af1_File_018.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Yongseong Elementary<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Gwanghanlu Garden Park"
+							src="https://images.prismic.io/annyeongthaovi/a8eafada-c8e4-409d-968a-4033e289ea6d_bbbad0c4-e83b-4ccc-928a-d352c13b96f3_File_025.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Gwanghanlu Garden Park<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/78b1fd6b-fd0c-425a-ae0e-ff4d381d246b_edd6be3d-66b5-4ab4-a33e-76efe5412f02_File_023.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Namwon Elementary"
+							src="https://images.prismic.io/annyeongthaovi/9d1c4253-5063-472e-81f3-aa35095c91a9_38dd28e8-9887-4b77-afcb-28d1d763be7c_File_013.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Namwon Elementary<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/f046c89a-0b3e-4202-b90c-514c81eed2cc_5d443e0e-cb81-45f1-af38-379b4cea2b32_File_002.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/7e9cee7c-57b4-44fd-bf17-84fe561d21ac_40b4c928-9c50-42c6-8d16-7e7c955824d8_File_010.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/c2c7dca5-6108-4b81-b210-c32b09fe75ad_bba573e6-e722-4ea2-b240-16e6796733c6_File_032.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Kyoryong Fortress"
+							src="https://images.prismic.io/annyeongthaovi/3aa5bf3d-18be-4a7d-bc1c-2d64c4582133_6e148286-d822-48d0-ab21-fd1671deefdb_File_027.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Kyoryong Fortress<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Kyoryong Elementary"
+							src="https://images.prismic.io/annyeongthaovi/746ddcc1-e2ee-4ae9-b330-be122b3a6a4c_3bd48851-ea12-4434-b966-19426749168a_File_016.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Kyoryong Elementary<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Top of Kyoryong Fortress"
+							src="https://images.prismic.io/annyeongthaovi/b825f438-17a3-4112-9f86-21fad6b17136_58d964ff-d0a3-47ff-b8a5-2e565e8a11b8_File_030.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Top of Kyoryong Fortress<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/eb1fb207-10e2-4d4e-a9ea-5821d2185c30_a51c59fd-d686-4d07-9bfe-dadd8fd95e7f_File_014.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Yocheon River"
+							src="https://images.prismic.io/annyeongthaovi/94828e97-9540-41ad-89fb-2ff62e60f193_929ba487-dffa-479d-8c3e-a772b71785db_File_007.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Yocheon River<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/1984afa0-1983-4967-a47c-04fbf7f9de4b_a8d454de-f41f-4faa-84d0-b0f3c29f20c1_File_028.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/fc43846a-51fd-4679-a985-683cd2eb4973_fcc2a24d-fb15-409d-8ded-cb8551f9d384_File_026.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/8b5e2a98-55ea-421c-9597-868cd4488408_cb7e6520-8eb2-4238-9f12-569333597d73_File_009.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/53c27e25-e65a-4811-9159-1182bde50d3f_31f1a789-366c-480a-8820-e179bd9d6489_File_029.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/682d3ddb-de81-4d3a-8da4-6d554c348267_2d13925c-480c-4d43-88c1-8dda80cc3c79_File_011.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/0c08ac89-4a1c-413f-9ee0-f3697b5792a9_11bb1f7a-f730-406c-95f4-13f24af08457_File_017.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/477d1672-15b0-463c-9d0b-c68a6473112f_ec7d2853-a5d8-4b55-ad74-4446810b315a_File_008.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/cdb8c4c3-7bf5-4619-836d-a5e9474f6541_61622a36-3473-40da-a856-2caa42c2628b_File_024.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Orientation Friends!"
+							src="https://images.prismic.io/annyeongthaovi/f46a8688-e860-4018-bcb6-ca324b2445a0_062824c0-2223-47f2-a6de-93cdeab77384_File_001.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Orientation Friends!<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="My PNW buddy :’)"
+							src="https://images.prismic.io/annyeongthaovi/b8d3accc-218e-4525-9d41-e7ccc31ea353_2f6d87fd-84b2-4e14-a117-aa942e9255fd_File_006.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->My PNW buddy :’)<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/cac9d183-a06d-4187-bbac-cb39827084fe_05b15620-ff93-4009-84bf-4770096e2306_File_004.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/b625bff7-7d0a-4482-b1a6-4c48211f6fb6_d936f57c-2d99-4fff-98ee-153be859a111_File_003.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Quarantine Viewz"
+							src="https://images.prismic.io/annyeongthaovi/aa3a708d-6bd0-4baf-a631-39e1991d779a_335bc43c-6223-4655-9251-36b418c45d64_File_003.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Quarantine Viewz<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Konkuk Univeristy – Chungju Campus"
+							src="https://images.prismic.io/annyeongthaovi/769bd34d-3054-45c9-a478-6b61e38d9b12_190ac773-46ac-453d-aacf-3ec2e669b842_File_005.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Konkuk Univeristy – Chungju Campus<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/093cea0f-0df3-4b1d-a3a4-3773b20fd322_96befdf6-11bc-446d-94dc-21e1a1321a39_File_001.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/bf884855-2da3-4005-b968-443c98fa46f1_b136aaea-49d7-4f83-b878-b0f8dd5c0037_File_000.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/94323d2f-b76d-4611-9d9e-ada709da165f_81dae58b-d844-4bf8-948a-b09340a6494a_File_004.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption=""
+							src="https://images.prismic.io/annyeongthaovi/d4274861-9d78-439c-8548-7fc034d3929e_9b0dc59f-8be7-4882-889d-55de15658b22_File_002.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part--><!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Quarantine &quot;Fridge&quot;"
+							src="https://images.prismic.io/annyeongthaovi/35239a57-06c8-4bcf-8bbb-6c125e0ac33a_d022c0cf-bd79-4bd0-aa00-e797610ecae2_File_005.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Quarantine &quot;Fridge&quot;<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--lit-part FIJaGD/jZtY=-->
+					<figure class="grid-figure">
+						<img
+							alt=""
+							loading="lazy"
+							class="grid-image"
+							data-caption="Quarantine &quot;Microwave&quot;"
+							src="https://images.prismic.io/annyeongthaovi/ad505e62-2f89-4393-8a28-4549284ed490_7151d651-c848-46ce-8c7c-633dd6d7cde8_File_006.jpeg?auto=compress,format"
+						/><!--lit-node 1-->
+
+						<!--lit-part G8I8rbwtuh8=-->
+							<figcaption class="grid-caption">
+								<!--lit-part-->Quarantine &quot;Microwave&quot;<!--/lit-part-->
+							</figcaption>
+						<!--/lit-part-->
+					</figure>
+				<!--/lit-part--><!--/lit-part-->
+			</div>
+		<!--/lit-part--></template></my-gallery></astro-island></my-page></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>

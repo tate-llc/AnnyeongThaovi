@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>&quot;Thaovi do you rest?&quot; | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" />
+<link rel="stylesheet" href="/assets/index.a90d95f7.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><featured-image><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.centerCrop {
+			object-position: center;
+		}
+
+		.topCrop {
+			object-position: center top;
+		}
+
+		.bottomCrop {
+			object-position: center bottom;
+		}
+
+		.wrapper {
+			height: min(75vh, calc(100vw * 9 / 16));
+			position: relative;
+			width: 100%;
+		}
+
+		.fullWrapper {
+			height: auto;
+		}
+
+		.fullWrapper .image {
+			height: auto;
+		}
+	</style><!--lit-part 7ECSEfhLqWA=-->
+			<div class="fullWrapper"><!--lit-node 0-->
+				<img
+					alt=""
+					class="image centerCrop"
+					src="https://images.prismic.io/annyeongthaovi/720e0f3e-8dd9-48a9-aed8-f829f10c1440_tv+pic.jpg?auto=compress,format"
+				/><!--lit-node 1-->
+			</div>
+		<!--/lit-part--></template></featured-image><article>
+		<header class="_header_1cgre_8">
+			<h1 class="_title_1cgre_1">&quot;Thaovi do you rest?&quot;</h1>
+			<time datetime="2023-07-01">
+				June 31, 2023
+			</time>
+		</header>
+
+		<main>
+			<astro-island uid="pEUBG" component-url="/index.2464379d.js" ssr="" client="idle" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;PrismicBody&quot;,&quot;value&quot;:true}" await-children=""><prismic-body><template shadowroot="open"><style>
+		.youtube {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.youtube-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.tiktok-wrapper {
+			text-align: center;
+		}
+
+		.embed {
+			box-sizing: border-box;
+			margin: 4em auto;
+			max-width: 1000px;
+			padding: 0 2em;
+			width: 100%;
+		}
+
+		.gallery-image {
+			height: 300px;
+		}
+
+		.gallery-caption {
+			font-size: 0.9em;
+			text-align: center;
+		}
+
+		.gallery-figure {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			margin: 0;
+		}
+
+		.gallery-list {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 2em;
+			list-style: none;
+			margin: 0;
+			padding: 0 2em;
+		}
+
+		.gallery {
+			display: block;
+			margin: 4em 0;
+			overflow-x: auto;
+			overflow-y: hidden;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colors--link);
+		}
+
+		h2, h3, h4, p, ul, ol {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 700px;
+		}
+
+		p, ul, ol {
+			line-height: 1.666;
+		}
+
+		ul, ol {
+			box-sizing: border-box;
+			padding-left: 2.5em;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		@media (max-width: 767px) {
+			p, ul, ol {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			ul, ol {
+				padding-left: 3.5rem;
+			}
+		}
+	</style><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part 7EBM5KMVJZw=--><p>Summer is here, but here&#39;s an update about my winter vacation. As I mentioned in my last blog post, I went on four trips—two domestic, two international. As tiring as that sounds to some of you, which yes, it definitely was, it was so fun at the same time. </p><p>My travels to Japan included Osaka, Nara, Kyoto, Nagoya, Hakone, and Tokyo! Osaka is known to be Japan&#39;s food capital but my friends and I only found mediocre food there. We must have been doing it wrong, but overall I&#39;m not sure how much I&#39;d recommend this place. Although, I&#39;ll try again in the future when I make my return to Japan&#39;s Universal Studios. Those on social media who have Japan on your discover page have probably seen videos of bowing deer. Those deer are actually vicious and live in Nara. <br />Kyoto was BEAUTIFUL. I loved everything about it. The architecture, the food, the people, the shops, the places—just walking in Kyoto I always found myself happy. The best restaurant experience I had was in Kyoto where the chef said, &quot;I&#39;ll be waiting every night for your return&quot; as we left so I must return!!! It snowed one of the days we were there so we thought it would be a good idea to wait to go to Fushimi Inari, one of Japan&#39;s most famous shrines, but it was not because all the busses and some trains stopped running because of the snow. But lo and behold, we made it there and it was absolutely breathtaking. <br />Nagoya is named Japan&#39;s most boring city and it lived up to its name. Our trip was 2 weeks long so we needed a day where we did nothing of importance and that we did and we did that there. Originally we planned for Nagoya because the new Studio Ghibli Theme Park is there but we learned it&#39;s complicated to secure tickets so definitely look into that before you plan your trip to Japan to go to Studio Ghibli Theme Park. We booked an onsen stay in Hakone with a mountain view of Mt. Fuji, but just our luck it was extremely foggy and snowy then so we couldn&#39;t see Mt. Fuji from our place at all. However, while riding the Shinkansen, we were able to see Mt. Fuji as we were on the train tracks. <br />Tokyo is Tokyo! Honestly, it was just another big city to me, but it was special because I was able to catch up with a family friend that I haven&#39;t seen since I was 8 years old. It&#39;s truly amazing how much more you discover as an adult about the world and about people. I met my friend after five years from University who is from Japan. She and I, although many years apart, never skipped a beat when we were together. Coincidentally, a high school friend was in Tokyo at the same time and knew I was there and reached out so we got to catch up as well! <br />If you felt any bit sad that I couldn&#39;t go to Studio Ghibli Theme Park, no fret! I went to the Studio Ghibli MUSEUM instead while in Tokyo; 10/10 experience. My favorite place in Tokyo was Asakusa which included a great coffee bar shop, an amazing miso soup breakfast spot, and the freshest melon pan I&#39;ll ever have. By the end of my Japan trip, I was saying arigatogozaimasu and sumimasen like nobody&#39;s business, words I didn&#39;t even know before coming to Japan. Pro tip when traveling to Japan, don&#39;t say arigato; this is only used between friends otherwise it can be considered rude! </p><p>As soon as I got back home to Namwon, I was packing for my next trip. I slept in my bed twice then got on another plane to Jeju Island. Usually, when I visit Jeju Island it&#39;s to visit my friend Sylvia who lives there, but this trip was my first trip spending it with my mainland friends, Lydia, Jane and Mary! Lydia moved back home to the US this year so our last hurrah with our friends was spent on Jeju Island together. It was a wonderful time and Lydia and I got to spend some one on one time together since we were able to get a little more time off than the others! We celebrated our friend Jane&#39;s birthday, made homemade sangria, went hallabong (Jeju is known for hallabong—similar to tangerines) picking, and of course, ate delicious food together! Until we all meet again for another trip together! </p><p>Next trip: Solo Trip! Taiwan was such a lovely time and it&#39;s become such a special place to me because I went there alone. Although, my friend Lydia and her boyfriend Intak were there at the same time as me so I spent one day and part of my birthday with them! Together, we explored Yehliu Geopark, Shifen Old Street and Waterfall, Yinyang Sea, and finally Jiufen Old Street. In Shifen, we wrote on a giant lantern and let it fly into the sky to grant our wishes. Jiufen is known to be Spirited Away town and I learned that Jiufen was an old red light district made during Japanese colonization. </p><p>I planned a rough itinerary of what I&#39;d do in Taipei while I was on the plane to Taiwan...quite the planner I&#39;d say. A lantern festival was taking place while I was there and there was no way to miss it because a big chunk of the city was decorated with lights and lanterns. One night, I meant to go to a night market, but I was mesmerized by the lights outside so I got off the bus to explore the area. There was a cute bunny walking light projection on Taipei 101 tower and I found myself staring at that for 15 minutes. Lydia, Intak, and I went to Din Tai Fung (DTF) for my birthday lunch and they gave me a special DTF present right after I said, &quot;if DTF had merch, I would buy it.&quot; Lydia got me a very cute cake for my birthday that we all got to eat together! Anyone who has kept in touch with me these last three years has learned about my shark obsession and of course, I found a shark pop-up store and took shark photobooth photos! I spent a good chunk of my day exploring the Beitou Hot Springs which is famous in Taipei! Maps told me to take a bus from the subway to get there, but I decided to walk and found a yummy cà phê sữa đá (Vietnamese iced coffee) cafe and cute alleyways on the way there! I went on a hike on a trail called Elephant Mountain to catch the sunset and it was the most peaceful hike I’ve ever done, maybe because I had nobody to talk to on it. Solo travel is nice because you can explore without worrying about others&#39; needs. I hope everyone can experience solo travel at least once because it is so special. Wandering without an itinerary, people-watching, and eating ice cream while journaling all felt extra special to me in Taipei. </p><p>My final winter vacation destination was Gangwon Province, otherwise known as Gangwon-do. I rented a car and spent four days, three nights here with my friend Maya who was soon moving back to the States. Together, we visited Sokcho, Yangyang, and Gangneung and in one day visited eight different beaches. Maya had never been to Sokcho before (her top destination in Gangwon-do), but I went in 2021 so it was interesting to see the differences just after two years! Yangyang has a very famous beach called Surffy Beach, but my favorite beach in Gangwon-do that I&#39;ve visited is Sokcho Beach! And Gangneung is a city beach known for its tofu so we tried their soondubu gelato! I wasn&#39;t sure what tofu gelato would taste like, but it was surprisingly very delicious! Then I remembered there&#39;s a Vietnamese dessert that I like that&#39;s made with soft tofu... Gangwon-do is known for snow crabs and other fresh seafood so, Maya and I were on the hunt for some crabs but somebody tell me why small crabs were one hundred dollars each??? The only crab we tasted that weekend was in a crab pasta which was great, just not the crab we were wanting to have. All in all, it was a great last hurrah with Maya and last vacation before the school year began! <br /></p><p>*if you’d like to see photos of my travels, please look on my Instagram story highlights thank you lol*</p><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></template></prismic-body></astro-island>
+		</main>
+	</article></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>

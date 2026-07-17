@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>I Moved! | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" />
+<link rel="stylesheet" href="/assets/index.a90d95f7.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><featured-image><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.centerCrop {
+			object-position: center;
+		}
+
+		.topCrop {
+			object-position: center top;
+		}
+
+		.bottomCrop {
+			object-position: center bottom;
+		}
+
+		.wrapper {
+			height: min(75vh, calc(100vw * 9 / 16));
+			position: relative;
+			width: 100%;
+		}
+
+		.fullWrapper {
+			height: auto;
+		}
+
+		.fullWrapper .image {
+			height: auto;
+		}
+	</style><!--lit-part 7ECSEfhLqWA=-->
+			<div class="fullWrapper"><!--lit-node 0-->
+				<img
+					alt=""
+					class="image centerCrop"
+					src="https://images.prismic.io/annyeongthaovi/bf6e08b0-599d-4327-8e94-1e1d2db7ee60_sava-bobov-eVa2FK83K6w-unsplash.jpg?auto=compress,format"
+				/><!--lit-node 1-->
+			</div>
+		<!--/lit-part--></template></featured-image><article>
+		<header class="_header_1cgre_8">
+			<h1 class="_title_1cgre_1">I Moved!</h1>
+			<time datetime="2021-02-19">
+				February 19, 2021
+			</time>
+		</header>
+
+		<main>
+			<astro-island uid="J8jUV" component-url="/index.2464379d.js" ssr="" client="idle" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;PrismicBody&quot;,&quot;value&quot;:true}" await-children=""><prismic-body><template shadowroot="open"><style>
+		.youtube {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.youtube-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.tiktok-wrapper {
+			text-align: center;
+		}
+
+		.embed {
+			box-sizing: border-box;
+			margin: 4em auto;
+			max-width: 1000px;
+			padding: 0 2em;
+			width: 100%;
+		}
+
+		.gallery-image {
+			height: 300px;
+		}
+
+		.gallery-caption {
+			font-size: 0.9em;
+			text-align: center;
+		}
+
+		.gallery-figure {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			margin: 0;
+		}
+
+		.gallery-list {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 2em;
+			list-style: none;
+			margin: 0;
+			padding: 0 2em;
+		}
+
+		.gallery {
+			display: block;
+			margin: 4em 0;
+			overflow-x: auto;
+			overflow-y: hidden;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colors--link);
+		}
+
+		h2, h3, h4, p, ul, ol {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 700px;
+		}
+
+		p, ul, ol {
+			line-height: 1.666;
+		}
+
+		ul, ol {
+			box-sizing: border-box;
+			padding-left: 2.5em;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		@media (max-width: 767px) {
+			p, ul, ol {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			ul, ol {
+				padding-left: 3.5rem;
+			}
+		}
+	</style><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part Y3LHVQ4JasA=--><p>Surprise! I moved to South Korea and I could not be more excited to start my career here as an English teacher. Since we’re still living in a pandemic, I’ve been in quarantine for the past 2 weeks so I haven’t seen any of Korea; only movies, tv shows, and the view outside my dorm room.</p><p>Many of you are wondering how I got here so I’ll save you the novel and tell you the short story: I applied to a program called EPIK in August, got accepted, and then booked my one way plane ticket to Incheon International Airport. Packed my life away and now I am currently sitting here in the Hae Oreum Dorm at Konkuk University in Chungju writing this post on my last night of quarantine before I start orientation tomorrow and teaching in March.</p><h3>Some notable things since I arrived in Korea:</h3><ol><li>I got covid symptom flagged at the airport for having “too high” of a temperature (37.5°C – the threshold to get held back). They even stickered my passport and made me wear a covid symptom badge necklace to make sure the airport officials knew. Lucky me, I know. This also made my travel from Seattle to my quarantine site go from 14-15 hours max to 27 hours (I slept 3 hours the entire 27 hours and continued to stay away for an additional day since I arrived at my quarantine site at 5:30 am…we love to see it).</li><li>I turned 23 in quarantine! And it wasn’t as lonely as you’d expect. My best friend from college, Jamie, threw me an online birthday party and created a party room where whenever someone would enter the call a new little character she created would join the ‘house party.’ It was so cute and thoughtful! Plus the food I got on my birthday was stellar. Even though I wasn’t at home, my younger brother decided to make Korean fried chicken for my birthday…how sweet and I had to just watch them eat it over a video call #torture.</li><li>Anyone who knows me well knows I cannot tolerate anything above 0 stars but since I can’t pick what I eat during quarantine, I can confidently say that I tolerate spicy food a <strong>little </strong>bit better now – thanks 고추장 (gochujang (Korean red chili paste/sauce))!</li><li>I have survived without a fridge and microwave (the outside ledge of my window acts as a fridge and the heater on blast as a microwave).</li><li>I learned what the difference between sushi and kimbap is.</li><li>The Chungju quarantine staff are the sole reason for my happiness during quarantine. They are so generous and have kept all 100+ of us safe and well-fed over the last 14 days. I truly am so thankful and have so much gratitude for them and all their cute/yummy food surprises. I love them and they have my heart. Chungju over Seoul (quarantine) forever!!!!!</li><li>Two years ago, I watched seasons 1-7 of Game of Thrones in 18 days, which I finished just before season 8 premiered, and I wasn’t sure how much TV I could watch again after that, but anything is possible. So, I watched 7-8 shows/movies in 14 days. And yes, I am ashamed I didn’t finish any K-dramas.</li><li>I used a wet room for the first time, and it’s not as bad as you think it would be.</li><li>I completed a 28 lecture Korean course for beginners, but I still suck at it so I better figure it out soon!</li><li>I made 5 friends at the airport!!!</li></ol><p>Anyways, stay tuned for more updates :).</p><p><em>xoxo from KR ♡</em></p><h4>If you’re interested in the shows/films I watched:</h4><ul><li><strong>I May Destroy You</strong> (12 episodes) – Michaela Coel – 10/10 must watch but don’t binge</li><li><strong>BlacKkKlansman</strong> – Spike Lee – 9/10</li><li><strong>Mulholland Drive </strong>– David Lynch – 7/10 until you watch this <a href="https://www.youtube.com/watch?fbclid=IwAR3ckUSKlm-BGtuwWySnk4FPoaeCtEhVqPT7dAuW8wE5Ols4eufsgj5EkmM&amp;v=VvgRLTP3U5Y&amp;feature=youtu.be" target="_blank" rel="noopener noreferrer">YouTube video explanation</a> AFTER watching the film, then it’s a 9/10 for me LOL.</li><li><strong>The Royal Tenenbaums </strong>– Wes Anderson – 7/10</li><li><strong>Lovestruck in the City</strong> (only watched 5 episodes) – I didn’t finish obvi, but 5/10, I’ve heard both that it gets better and that it doesn’t so I’m not so sure if I will continue.</li><li><strong>Bridgerton</strong> (8 episodes) – 10/10 yep</li><li><strong>Twin Peaks</strong> season 1 (8 episodes) – David Lynch – 10/10</li><li><strong>Twin Peaks</strong> season 2 (22 episodes) – up until episode 12 or 14((?) you’ll know when you watch) 9/10, the rest is a 5/10</li></ul><!--/lit-part--><?><!--/lit-part--><!--/lit-part--></template></prismic-body></astro-island>
+		</main>
+	</article></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>

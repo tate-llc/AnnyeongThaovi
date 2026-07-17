@@ -1,0 +1,2986 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1" name="viewport">
+		<meta name="msapplication-TileColor" content="#605a4c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e4d1a9">
+		<title>Halfway There! | Teaching & Traveling with Thaovi</title>
+	<link rel="stylesheet" href="/assets/index.41481571.css" />
+<link rel="stylesheet" href="/assets/index.a90d95f7.css" /><script>/** @license Copyright 2020 Google LLC (BSD-3-Clause) */
+/** Bundled JS generated from "@astrojs/lit/client-shim.js" */
+var N = Object.defineProperty;
+var i = (t, n) => () => (t && (n = t((t = 0))), n);
+var b = (t, n) => {
+	for (var a in n) N(t, a, { get: n[a], enumerable: !0 });
+};
+function s() {
+	if (d === void 0) {
+		let t = document.createElement('div');
+		(t.innerHTML = '<div><template shadowroot="open"></template></div>'),
+			(d = !!t.firstElementChild.shadowRoot);
+	}
+	return d;
+}
+var d,
+	m = i(() => {});
+var p,
+	c,
+	f,
+	u = i(() => {
+		(p = (t) => t.parentElement === null),
+			(c = (t) => t.tagName === 'TEMPLATE'),
+			(f = (t) => t.nodeType === Node.ELEMENT_NODE);
+	});
+var h,
+	E = i(() => {
+		m();
+		u();
+		h = (t) => {
+			var n;
+			if (s()) return;
+			let a = [],
+				e = t.firstElementChild;
+			for (; e !== t && e !== null; )
+				if (c(e)) a.push(e), (e = e.content);
+				else if (e.firstElementChild !== null) e = e.firstElementChild;
+				else if (f(e) && e.nextElementSibling !== null) e = e.nextElementSibling;
+				else {
+					let o;
+					for (; e !== t && e !== null; )
+						if (p(e)) {
+							o = a.pop();
+							let r = o.parentElement,
+								l = o.getAttribute('shadowroot');
+							if (((e = o), l === 'open' || l === 'closed')) {
+								let y = o.hasAttribute('shadowrootdelegatesfocus');
+								try {
+									r.attachShadow({ mode: l, delegatesFocus: y }).append(o.content);
+								} catch {}
+							} else o = void 0;
+						} else {
+							let r = e.nextElementSibling;
+							if (r != null) {
+								(e = r), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							let l =
+								(n = e.parentElement) === null || n === void 0 ? void 0 : n.nextElementSibling;
+							if (l != null) {
+								(e = l), o !== void 0 && o.parentElement.removeChild(o);
+								break;
+							}
+							(e = e.parentElement), o !== void 0 && (o.parentElement.removeChild(o), (o = void 0));
+						}
+				}
+		};
+	});
+var w = i(() => {
+	E();
+});
+var v = {};
+b(v, { hasNativeDeclarativeShadowRoots: () => s, hydrateShadowRoots: () => h });
+var S = i(() => {
+	m();
+	w();
+});
+async function g() {
+	let { hydrateShadowRoots: t } = await Promise.resolve().then(() => (S(), v));
+	window.addEventListener('DOMContentLoaded', () => t(document.body), { once: true });
+}
+var x = new DOMParser()
+	.parseFromString('<p><template shadowroot="open"></template></p>', 'text/html', {
+		includeShadowRoots: !0,
+	})
+	.querySelector('p');
+(!x || !x.shadowRoot) && g();
+</script></head>
+	<body>
+		<style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z12D5HD" component-url="/index.3e541421.js" ssr="" client="load" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;Header&quot;,&quot;value&quot;:true}" await-children=""><my-header><template shadowroot="open"><style>
+		.branding-title {
+			font-size: 1.4em;
+		}
+
+		.branding-subtitle {
+			font-size: 1.2em;
+		}
+
+		.branding-text {
+			display: flex;
+			flex-direction: column;
+			gap: 0.6em;
+			text-align: center;
+		}
+
+		.logo {
+			height: 52px;
+			width: auto;
+		}
+
+		.branding-link {
+			align-items: center;
+			color: inherit;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			text-decoration: none;
+		}
+
+		.nav-link-icon {
+			height: 18px;
+			width: auto;
+		}
+
+		.nav-link {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		.nav-link:hover {
+			text-decoration: underline;
+		}
+
+		.nav-link[href*=http]:hover {
+			text-decoration: none;
+		}
+
+		.nav-list-item {
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+		.nav-list {
+			align-items: center;
+			display: flex;
+			gap: 1em;
+			justify-content: center;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.header {
+			background-color: var(--colors--background);
+			box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			padding: 1em;
+		}
+
+		@media only screen and (prefers-color-scheme: dark) {
+			.nav-link-icon {
+				filter: invert(1);
+			}
+
+			.header {
+				box-shadow: rgba(255, 255, 255, 0.25) 0 0 1px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.branding-text {
+				text-align: left;
+			}
+
+			.branding-link {
+				flex-direction: row;
+			}
+
+			.header {
+				align-items: center;
+				box-sizing: border-box;
+				flex-direction: row;
+				justify-content: space-between;
+				left: 0;
+				position: fixed;
+				top: 0;
+				transition: transform 0.25s ease-in-out;
+				width: 100%;
+				z-index: 1;
+			}
+
+			.header[data-hidden="true"] {
+				transform: translate3d(0, -100%, 0);
+			}
+		}
+	</style><!--lit-part t01XW+YCOe0=-->
+			<header class="header" data-hidden="false"><!--lit-node 0-->
+				<a class="branding-link" href="/">
+					<img alt="" class="logo" src="/logo.png">
+
+					<div class="branding-text">
+						<span class="branding-title"><!--lit-part-->Teaching &amp; Traveling with Thaovi<!--/lit-part--></span>
+						<span class="branding-subtitle"><!--lit-part-->타오비와 함께 가르치고 여행하기<!--/lit-part--></span>
+					</div>
+				</a>
+
+				<nav>
+					<ul class="nav-list">
+						<li class="nav-list-item">
+							<a class="nav-link" href="/posts">Posts</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/photos">Photos</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="/subscribe">Subscribe</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a
+								aria-label="@thaovinguyen6 on Instagram"
+								class="nav-link"
+								href="https://www.instagram.com/thaovinguyen6"
+								target="_blank"
+							>
+								<img
+									alt=""
+									class="nav-link-icon"
+									src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkBAMAAAATLoWrAAAAMFBMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlTPQ5AAAAD3RSTlMAA/lFNu5lfdunUhIfwJXvo6hdAAABVElEQVQoz32SsUvDUBDGv4fBoi3yAh2cQ0fhDSKCS0tBQXRTxMk46CJIOyodxEEc4yA4SQXBtR2ErkX8J5x08R9ISZoWynnXapqU4C0JP953fHffAQpbjzcOcTmHHyfQ4No2FJd/L2Q+QZgdA7pG0cPZ8yrXxsulR6GCZYIG4uq4fgULtAdbT4BWWKM7VE3djh+dN3JUQi1q8xslwF6kft4L0RyoseR9V6tcMNLNAT77ggoXjnPbnXNDXI3ghYJOxdMB1p+4Edwhkxx75Jnq3KEVwAzFrjnaef32Q6XR8mF6UAU3qgBFL+hqlH1QT3T73FBvirJMY7RMX+Jtia5j9EYVsWrRSoyqfltQ3pT+Q7/CYkKY0X7GxNSq9Wc1PRBkoJmxwWOnliOCKLVCQbzC5KLlhxediEO+EkcqNNgSWjJaZY+jzTiAjDPJOKask5scppke5g8DKfWjE34vawAAAABJRU5ErkJggg=="
+								/>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		<!--/lit-part--></template></my-header></astro-island>
+
+		<script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));</script><my-main><template shadowroot="open"><style>
+		@media (min-width: 768px) {
+			.main {
+				padding-top: 84px;
+			}
+		}
+	</style><!--lit-part 0FxSqy5i3Y8=-->
+			<main class="main">
+				<slot />
+			</main>
+		<!--/lit-part--></template><featured-image><template shadowroot="open"><style>
+		.image {
+			height: 100%;
+			object-fit: cover;
+			width: 100%;
+		}
+
+		.centerCrop {
+			object-position: center;
+		}
+
+		.topCrop {
+			object-position: center top;
+		}
+
+		.bottomCrop {
+			object-position: center bottom;
+		}
+
+		.wrapper {
+			height: min(75vh, calc(100vw * 9 / 16));
+			position: relative;
+			width: 100%;
+		}
+
+		.fullWrapper {
+			height: auto;
+		}
+
+		.fullWrapper .image {
+			height: auto;
+		}
+	</style><!--lit-part 7ECSEfhLqWA=-->
+			<div class="fullWrapper"><!--lit-node 0-->
+				<img
+					alt=""
+					class="image centerCrop"
+					src="https://images.prismic.io/annyeongthaovi/cd615b62-f347-41f6-97ec-92bff619eff1_JPEG-image-47-1.jpg?auto=compress,format"
+				/><!--lit-node 1-->
+			</div>
+		<!--/lit-part--></template></featured-image><article>
+		<header class="_header_1cgre_8">
+			<h1 class="_title_1cgre_1">Halfway There!</h1>
+			<time datetime="2021-07-21">
+				July 21, 2021
+			</time>
+		</header>
+
+		<main>
+			<astro-island uid="2dCupM" component-url="/index.2464379d.js" ssr="" client="idle" before-hydration-url="/chunks/astro_scripts/before-hydration.js.28762372.js" opts="{&quot;name&quot;:&quot;PrismicBody&quot;,&quot;value&quot;:true}" await-children=""><prismic-body><template shadowroot="open"><style>
+		.youtube {
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.youtube-wrapper {
+			height: 0;
+			padding-bottom: calc(100% * 9 / 16);
+			position: relative;
+			width: 100%;
+		}
+
+		.tiktok-wrapper {
+			text-align: center;
+		}
+
+		.embed {
+			box-sizing: border-box;
+			margin: 4em auto;
+			max-width: 1000px;
+			padding: 0 2em;
+			width: 100%;
+		}
+
+		.gallery-image {
+			height: 300px;
+		}
+
+		.gallery-caption {
+			font-size: 0.9em;
+			text-align: center;
+		}
+
+		.gallery-figure {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+			margin: 0;
+		}
+
+		.gallery-list {
+			display: flex;
+			flex-wrap: nowrap;
+			gap: 2em;
+			list-style: none;
+			margin: 0;
+			padding: 0 2em;
+		}
+
+		.gallery {
+			display: block;
+			margin: 4em 0;
+			overflow-x: auto;
+			overflow-y: hidden;
+			width: 100%;
+		}
+
+		a {
+			color: var(--colors--link);
+		}
+
+		h2, h3, h4, p, ul, ol {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 700px;
+		}
+
+		p, ul, ol {
+			line-height: 1.666;
+		}
+
+		ul, ol {
+			box-sizing: border-box;
+			padding-left: 2.5em;
+		}
+
+		li {
+			margin-bottom: 0.5em;
+		}
+
+		@media (max-width: 767px) {
+			p, ul, ol {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			ul, ol {
+				padding-left: 3.5rem;
+			}
+		}
+	</style><!--lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part LxcoMydv2JU=--><p>Hiiiiiii, blog fam~ sorry I have been MIA. Life and work have been SO busy!!! I just finished my first (very successful) semester of teaching! Besides, getting adjusted to life here in Korea took a lot longer than I expected it to. After not having a bed for two months, my apartment is all finally coming together. Thanks, money!</p><p>Time is passing by so quickly. I have done much traveling since my last post, I’ve figured out my groove for teaching students who don’t understand me and even became a weekly regular at the famous bakery in Namwon called 명문 제과 (Myeongmun); so regular that the owner doesn’t even ask me what I want to get anymore.</p><p>I keep thinking that my Korean gets worse by the day, but I pick up more words that my students say to me every day. I had a conversation with the bakery owner today for almost five minutes and she could understand me! So, I guess you could say I’m an expert now.</p><p>Some of my favorite things about work are:</p><ol><li>When I speak or write in Korean to my students, they all freak out in the best way but stop paying attention because they’re distracted by my ~spectacular, little to none~ Korean knowledge.</li><li>Every Monday and Tuesday morning at my main school, Namwon Elementary, I get greeted by four of my coworkers while I’m changing into my school slippers (in Korea, you wear “outside” shoes and “inside” shoes)—one of the four NEVER fails to say, “morning teaaaa!” to me while another coworker makes me this hot cereal because they know I don’t eat breakfast sometimes.</li><li>Hugs from my kids (if you know me well, you KNOW I love a good hug).</li><li>Every Wednesday and Thursday morning, I take the same bus as the janitor and a special needs teacher to my second school, Kyoryong Elementary. They always include me in their conversations even though they know I have no idea what they’re saying, but it makes me feel included and it’s really nice.</li><li>One of my four co-teachers (I have four (for four schools, basically like a supervisor for each school), but I teach with 19 different people). She is the best and makes me feel so comfortable around her. She has told me that I make speaking English easier because she feels comfortable around ME, and that is THE best compliment I have received from a native Korean. Which not to brag, two other Korean teachers have told me the same – I guess I just have that effect on people *hair flip*.<br />Honestly, though, everything about work I absolutely love, and I am <em><strong>so</strong></em> lucky to be able to say this.</li></ol><p>My favorite end of the semester story is of my last day of teaching one of my fourth-grade classes at Kyoryong Elementary. I was telling the kids that it was my last day seeing them before summer vacation and they all yelled out, “nooo” or in Korean, “아니!!!!” (aniiiii) or “안돼!!!!!” (andwaaaaae). One kid actually had his mask off since he was sipping on his water and he made the biggest frowny face I had ever seen and it was so precious at the same time.</p><p>Then once class was over, I said, “Have a good summer, everyone; be good to 민국 선생님” (their homeroom teacher). And my favorite kid (yes, unfortunately, I have favorites—it’s inevitable) got up from his seat, with a half-sad face, slowly walked up to me with his arms spread out, and gave me the biggest and tightest hug I had been given in a while, and wouldn’t let me go.</p><p>Not long after, the rest of the class came toward me and we were in a big class group hug that lasted over two minutes long. It was THE sweetest thing ever. It melted my heart and I was internally crying (happily of course) for the rest of the day because of that moment. When I say, I have THE BEST students, I really mean it. I thought I wanted to get out of Namwon when I first got here, but these kids are really good at convincing me to stay.</p><h2>Travel</h2><p>As for traveling, I have been to Seoul, <a href="https://www.youtube.com/watch?v=7YJ3YT_0ihY" rel="noopener noreferrer">Busan</a>, Daegu, <a href="https://www.tiktok.com/@alwayshungrylydia/video/6963983521786367237?_d=secCgYIASAHKAESMgow3M0WD%2B5wFAK1DFQ2lpID4KMKAKAJM22j6jk0eCiWeC5E4W9Pwk2hXzvOyIZCM1kVGgA%3D&amp;language=en&amp;mid=6777274113254754306&amp;preview_pb=0&amp;region=KR&amp;sec_user_id=MS4wLjABAAAAaxR5IxNKADE_QmoHkktgdp51G_fzuPuL8xZkA_ccf81DiQQ_VansyvK4NqJI7pMn&amp;share_app_id=1233&amp;share_item_id=6963983521786367237&amp;share_link_id=AD8A7E5E-4071-407D-A393-D09BFBBC2AF5&amp;source=h5_t&amp;timestamp=1621428774&amp;tt_from=copy&amp;u_code=daj3g6727eiakd&amp;user_id=6789875926915826694&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;_r=1" rel="noopener noreferrer">Jeonju</a>,<a href="https://www.tiktok.com/@alwayshungrylydia/video/6955046013879045381?_d=secCgYIASAHKAESMgowLTofIkYXPGoqBy%2Bqk8L9sz8rrhYkma%2FmOPVH15bzDIQKfb2RyCvAF7IJ9Ljcx4uaGgA%3D&amp;language=en&amp;mid=6722656094272883458&amp;preview_pb=0&amp;region=US&amp;sec_user_id=MS4wLjABAAAAVSzdZ3mBfaZqoXPxZPvXPtveJ7zWRJO81XU8id6f3ZmQgq0VK_nHjkDWNZwXPCdW&amp;share_app_id=1233&amp;share_item_id=6955046013879045381&amp;share_link_id=CD8768C9-2A4B-440E-A950-E97AC838CA31&amp;source=h5_t&amp;timestamp=1619353660&amp;tt_from=copy&amp;u_code=dg9cf13i3fgb9g&amp;user_id=6912206210545927173&amp;utm_campaign=client_share&amp;utm_medium=ios&amp;utm_source=copy&amp;_r=1" rel="noopener noreferrer">Gwangju</a>, Suncheon, Gokseong, <a href="https://www.youtube.com/watch?v=8yJ-krle0HE" rel="noopener noreferrer">Boseong, Damyang</a>, and Gochang (I’ve linked vlogs to some locations that my friend, Lydia, has made, so be sure to watch those and follow/subscribe to her channel because she’s super awesome, cute, basically another version of me and we are always together). This summer, I will be heading back to Busan to surf (I’ll be careful mom &amp; dad, don’t worry!!) and then to Jeju Island and Yeosu! Korea is so breathtaking. Nature here is so different from home, and coming from Washington, we are all so lucky, but Korea is truly a beauty. I am always in awe wherever I go, even in Namwon.</p><h2>Busan</h2><p>My absolute favorite place that I have traveled to so far is <strong>Busan</strong>. Before I came to Korea, I wanted to move there, but obviously, I don’t live there. I think if I would have gotten placed there, I would never go back home to America… Busan is the perfect mix of a big city, peaceful sceneries, ocean and mountains views, and the nicest and most beautiful people I have encountered in Korea. One of my coworkers and I are pretty good friends now and before I left for Busan, he said that he knows I’ll love it a lot, and he was not wrong— this place exceeded all expectations; from food to views and everything in between.</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/cd615b62-f347-41f6-97ec-92bff619eff1_JPEG-image-47-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/694de4fb-2e3d-4b05-b3ff-bb3a7c5e5a54_JPEG-image-45-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2f554861-8048-4760-9506-6641e44a2c12_JPEG-image-53.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/0cff83ee-79ce-443d-bd84-9923d266e78f_JPEG-image-63-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Lydia<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c38ef564-bef1-4024-8cda-a6dd8c3dbcf9_JPEG-image-65-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/dac71252-6d6f-4ec8-a0d8-2045ec2e9c0c_JPEG-image-46-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/8e419663-4737-42da-9680-5075dde00ea0_JPEG-image-52.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/4d6fd29a-9905-450a-a3c8-6ab4716ee643_JPEG-image-64-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Sabrina, Lydia, Jane<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/dae670e3-e9c1-4afc-a2ae-2415f96bbca7_JPEG-image-54-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Happy Sabrina<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/547c1332-fa68-4ed3-8654-4acf6b062f96_JPEG-image-55-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/a8b72463-f1fc-4c98-8a73-875552ece988_img_7856.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/9d374077-dca5-4a28-8ad6-46e7941a9701_JPEG-image-81-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d8252d88-4de1-45f3-9e1d-0f805c500a82_JPEG-image-57.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/4a3a1979-b7dd-470f-9dbb-9d979f580873_JPEG-image-56.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/71acf443-3764-4850-897c-ea5953e2afe6_JPEG-image-58-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/14b40a15-a5da-4a38-bc19-99f2e9779e0e_JPEG-image-66-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Lydia<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c913c9cd-148d-4337-bf92-0b7b6e9236d0_JPEG-image-59.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Sabrina, Lydia<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/0fbad29b-4976-4a78-b0ee-c6b30945e311_JPEG-image-61.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/93900661-cf64-4f49-a256-a720688e2789_JPEG-image-62-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/b02b718f-5b4d-445c-8d2c-a8261754e529_JPEG-image-67-3.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/a484b87b-0db6-4514-8ece-4ffa541f8aa8_JPEG-image-69.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/fcc7c483-02f8-49c6-95b9-9250a6a4d6e3_JPEG-image-68.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e2bcc189-0a5f-4098-bbad-e6762c7d16ab_JPEG-image-70-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Sabrina<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/24e39e42-ef03-4b82-ab8c-a319e8c30c19_JPEG-image-75.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d0e22c41-2f26-4e07-bceb-c6d50d3bc6c6_JPEG-image-73-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/cd934f18-2e78-46e8-87d5-75b632bdb7c0_JPEG-image-78-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/1ff9c847-7e57-4633-8886-c99187428446_JPEG-image-79-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/a3c1e7f5-e736-4060-872c-a83658f2b5ee_JPEG-image-77.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c4263ad9-ed7a-4723-9607-2ef740da5d7f_JPEG-image-80-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/5112b8e3-6857-4524-9ff8-d5d00e20cb58_JPEG-image-82-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/dbd9305b-4f80-4d31-b676-ba55d33bc81d_JPEG-image-85.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/bc898186-8682-4a86-b5d4-f43830ef2844_JPEG-image-87.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c8c35f73-6418-4ec5-98a7-ab6f51b34ad6_JPEG-image-84-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/8e977bb0-6b33-429d-be88-43536b4150a6_JPEG-image-83-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part wlMzD6rGdCk=-->
+						<div class="align-wide embed">
+							<!--lit-part 3icHhYy8tkI=-->
+					<div class="youtube-wrapper">
+						<iframe
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen="true"
+							class="youtube"
+							frameborder="0"
+							src="https://www.youtube.com/embed/7YJ3YT_0ihY?feature=oembed"
+							title="YouTube video player"
+						><!--lit-node 1--></iframe>
+					</div>
+				<!--/lit-part-->
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part F8vrt57MnY4=--><h2>Boseong &amp; Damyang</h2><p><strong>Boseong </strong>and <strong>Damyang </strong>are also top favorites! These places are pretty rural but when I went, I felt like I was actually on vacation and not just exploring on the weekend. Boseong is known for its green tea fields. And Damyang has the biggest bamboo forest in Korea. It was so cool to look up and just see these sticks of bamboo trees so high up in the sky.</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/9d372030-66c3-4cc0-a103-c654625efe98_JPEG-image-49-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/60aa92a1-42fb-4942-88e2-8c58f4e5009d_JPEG-image-15.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/46640fdf-2d3a-4ee2-8b8c-7f4037d27c1f_JPEG-image-14-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/cba61cfe-0b88-4e89-a7a6-888d0d82fbb6_JPEG-image-16.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/f04c3f45-dc18-4244-b35c-99755ffe7d3a_JPEG-image-18-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d3c872a8-bed4-443a-a4f3-0184e41bd0a1_JPEG-image-19-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/a54f935b-8f41-49ce-970e-157fedc4b5fb_JPEG-image-20-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Green Tea Bibimbap<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/03700087-a733-4e76-b06a-9308afedf352_JPEG-image-21-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Green Tea Ice Cream<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/3734490b-4db7-4e8d-9dd5-ddfa05ff06bd_JPEG-image-22-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/bb8a7fab-ea9a-44cf-bcac-d857c0f754c1_JPEG-image-23-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Green Iced Tea<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/03053df9-a0f4-4583-9092-aaae2d66ae30_JPEG-image-24-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/bda12a84-ee33-4eba-bf0e-acec79aefd78_JPEG-image-25-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/74218a6f-4f9d-4922-aaf6-b445dd04c189_JPEG-image-27-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->My Bus Besties, Lydia &amp; Jane<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/60ce41bc-bb08-4017-8d8d-98c86eb2db7e_JPEG-image-26-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/3e2c55a7-b4b9-4d00-929a-81b0c3c66971_JPEG-image-28-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Carrot Cake + Tiramisu<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/32d04886-22e4-454b-8cd0-064397c116b5_JPEG-image-30-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Lydia again…<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/fdd33df8-a23a-42a5-9933-fb5e76dba53d_JPEG-image-32-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/f4b4d582-1ce7-491a-8f0e-4c461087b24a_JPEG-image-34-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/6d6b8429-bac2-4577-9787-72202cec34c2_JPEG-image-35-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d31b644a-ab3a-4ba7-882a-b2652844ed1f_JPEG-image-39-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d7b8ab3e-f4f8-4345-99e9-99219b0c40a2_JPEG-image-41-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/065736cf-b9c7-4e0d-a218-862a8af3eed6_JPEG-image-37-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part--><!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/116aceb3-845a-4615-b430-694715a8c5f9_JPEG-image-33-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/84058696-e01e-453e-b5e9-d1344abae90a_JPEG-image-36-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/a79e5f7c-17d8-4271-92f9-1720c84f583f_JPEG-image-38-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/998dea7b-419d-464e-867f-439b146fbdbb_JPEG-image-31-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ab126049-ec39-4d44-b4d5-4235007a6aba_JPEG-image-42-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part wlMzD6rGdCk=-->
+						<div class="align-wide embed">
+							<!--lit-part 3icHhYy8tkI=-->
+					<div class="youtube-wrapper">
+						<iframe
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen="true"
+							class="youtube"
+							frameborder="0"
+							src="https://www.youtube.com/embed/8yJ-krle0HE?feature=oembed"
+							title="YouTube video player"
+						><!--lit-node 1--></iframe>
+					</div>
+				<!--/lit-part-->
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part ZftHRY+qwSI=--><h2>Seoul &amp; Daegu</h2><p><strong>Seoul </strong>is everything you’d expect it to be and more. Although I’ve only been there a couple of times; once with my family, and for a weekend with my friend, and probably won’t be back until I’m fully vaccinated (and yes, I know what you’re thinking… ‘you’re not vaccinated yet?!’ Yeah, I am not, unfortunately—July 28th can’t come soon enough (when I get my first dose of Pfizer)!!!!!). <strong>Daegu </strong>is this big city with a pretty cool view up top, but I’m not sure what Daegu’s specialty is. It took quite a bit of time to get from one place to another, but Daegu is known to be THE hottest place in the summertime, so, I won’t be going back there until at least September.</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/57d7f149-b690-4f64-8963-e3fe5f00f5bd_JPEG-image-61-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Duryu Park<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/8099b4ed-c98e-44d8-ac85-83beb2d74c1b_JPEG-image-32.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Duryu Park + friends, Ofeira &amp; Brenda<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ac8528ca-952b-43a1-a17f-06c0ee3ba92c_JPEG-image-27-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Gyeongbokgung Palace<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/1ccb22dd-b69e-49af-933b-cd7d1ab1005d_JPEG-image-50-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/402902ab-52f0-4575-887d-1a8cc3760383_JPEG-image-42.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/9bf441f2-0a95-47ca-9fbe-dcdbb76211af_JPEG-image-26-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2461e64c-52ce-4fac-88f7-ffee0d2ebeb6_JPEG-image-74-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/4cf5c5f2-3112-4efd-936d-a1dceceb7281_JPEG-image-18.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/96f44ef5-fe04-43b5-aa3b-a02491fe0675_JPEG-image-23-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Namsan Tower<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c8101058-9d4b-4eb5-8769-a794dfacbd6a_JPEG-image-22-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/b2feeb58-2491-4c3f-bc02-7f2520226fda_JPEG-image-63.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c68600ed-5c13-4ae9-a478-bc932a56bb04_JPEG-image-65.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/8cd8453b-6cc4-4d0c-b4e3-f5dc3a078730_JPEG-image-79.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/25c92a5e-ad5e-4664-8b51-733e793f217a_JPEG-image-24.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2e7a986d-7e3d-421d-afee-c41be68b76a0_JPEG-image-67-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c586b0a2-9bf9-4990-81e9-531f79c62d19_JPEG-image-25-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Han River<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ae2e82ea-7a27-4e75-8660-669561b143c3_JPEG-image-54.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Apsan Mountain Cable Car<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e867e708-e9a4-474c-b0d5-da978c4ebd88_JPEG-image-55.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Apsan Mountain Park<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d4772861-82ce-44fb-9ad4-577d5f4dc53e_JPEG-image-30.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/5a22cd7b-635c-459b-bd9f-affcd0d8227c_JPEG-image-90.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e1c8ad4b-cc54-4c0a-abb5-c88333295ba0_JPEG-image-34.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/fef7f436-fd85-4e2f-81eb-608845838126_JPEG-image-84.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/bd593424-55c0-45e5-bc9f-d036fd5c9e03_JPEG-image-62.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Daegu<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ee99d8dd-22ca-40ca-8301-e763001ed52d_JPEG-image-31.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/6c70947d-6d8a-412d-baa8-5e1d2f7ee440_JPEG-image-21.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/93ec8012-6f9e-46f0-bcc9-f5fbc583bfac_JPEG-image-33.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part bTsPqcniqPo=--><h2>Jeonju &amp; Gwangju</h2><p><strong>Jeonju </strong>has the biggest Hanok Village in all of Korea. Here, you can rent hanbok’s (traditional Korean dresses for men and women) and wear them for the day around the Hanok Village! Bibimbap, a mixed-up vegetable rice dish with this awesome sauce called gochujang, originated from Jeonju as well! <strong>Gwangju </strong>is a big city where I just go to shop and eat.</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/9f2f8cfa-c61c-47ac-ab9a-8db34143eb46_JPEG-image-10.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Hanok Village<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/542056a0-dbe6-4e58-ad14-1c030dc24215_JPEG-image-11.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Hanok Village<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/66e9d956-3c13-4e19-8233-08f619f709a7_JPEG-image-12.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Jeonju<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/aad233b2-0f24-40ff-b541-07680b41ee24_JPEG-image-13.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Hanok Village<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/369c1da3-fae6-4487-ae45-498032c2266d_JPEG-image-9.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Traditional Kakao Store<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/6f54463f-dbba-4df3-ac2c-e30107d9f58d_JPEG-image-4.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Jeonju<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/7c054767-150a-44f8-a999-5bc93373fa7d_JPEG-image-83.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Gwangju Shopping Street<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2b5809b1-7df6-4610-821b-6c4ce27dc7fb_JPEG-image-4-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/dc5c48f9-581f-4ce9-9974-6dc7777fc33c_JPEG-image-3-3.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e4bea630-0b87-4502-b875-99be991ac422_JPEG-image-7-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/0c2882a0-879e-45db-9b44-2b07ee9b224a_JPEG-image-9-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/f1c15dbf-322e-43ee-9302-5a9fd9246cdd_JPEG-image-43-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/45a4e9ad-1ce1-4c44-88be-4b163104feba_JPEG-image-44-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e95e066b-ca50-40a7-be11-28c8ec06e052_JPEG-image-88-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/35c14c4a-aacf-4ecc-a8b0-fd8663b69af1_JPEG-image-91-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Sabrina and I made this backdrop for our friend’s 27th birthday!<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part wlMzD6rGdCk=-->
+						<div class="align-wide embed">
+							<!--lit-part o9kB7c0Dh/k=-->
+					<div class="tiktok-wrapper" data-url="https://www.tiktok.com/@alwayshungrylydia/video/6955046013879045381"><!--lit-node 0-->
+						<span>Loading TikTok...</span>
+					</div>
+				<!--/lit-part-->
+						</div>
+					<!--/lit-part--><!--lit-part wlMzD6rGdCk=-->
+						<div class="align-wide embed">
+							<!--lit-part o9kB7c0Dh/k=-->
+					<div class="tiktok-wrapper" data-url="https://www.tiktok.com/@alwayshungrylydia/video/6963983521786367237"><!--lit-node 0-->
+						<span>Loading TikTok...</span>
+					</div>
+				<!--/lit-part-->
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part vOLc1DZjOCg=--><h2>Suncheon</h2><p>Suncheon is another good-sized city with a national garden and a famous movie set to try on clothes and take pictures. Something I have yet to do. They also have this really yummy brewery there with this awesome salad dish. Something about Korea that I personally do not like is their lack of vegetables. Maybe I haven’t found the right dishes, but GREEN vegetables in dishes are pretty much nonexistent, and growing up in a home where I was always well-fed in every food group, my body has definitely been vegetable deprived (so now I have to buy vegetables…crazy!!!).</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/20fbab03-0dbd-4a4b-a985-534d62173bb7_JPEG-image-38.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/876e6e19-d5b6-4a61-9a12-7e88840be143_JPEG-image-35.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/55d46776-ec39-4bda-8883-2b31bedecb81_JPEG-image-64.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/00416cdd-add1-402e-aa6f-7386c48b8cf8_JPEG-image-66.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/7f0c98c3-0000-452d-9dd5-0c5e4c8d5a79_JPEG-image-36.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part 94+l18N4Bc8=--><h2>Gokseong</h2><p>Gokseong is this tiny train town. The first KTX train is located in this town. Everything about this town has trains written all over it. It’s so cute but there’s not much else to do here. But the train village is actually pretty big! It definitely gave me Disneyland vibes (it’s a lot smaller than Disneyland but still fun)! At the peak of Spring, all the flowers in this train town bloom so beautifully so it is a must-go in the springtime. Gokseong has this cafe called, ’01 DORA’ with THE BEST little blueberry puff pastry thing I’ve ever had. It looks beautiful on the outside and is even tastier when you bite into all of its crunchy layers!!! My friend Sabrina and I went there two weekends in a row just to get that pastry.</p><h3>Story Time!!</h3><p>The weather forecast said it would rain the second time Sabrina and I went to Gokseong. All I had was my half-almost-broken umbrella so I brought that with me, but Sabrina brought me another umbrella to keep. I was holding two umbrellas throughout the day and all day long, I was trying to figure out where to get rid of my broken umbrella because I didn’t want to take it home with me; especially since now, I got a new umbrella from Sabrina. Then it started POURING rain for ten minutes so I was able to use the umbrella that Sabrina gave me and then I saw these super unprepared ladies who seemed to be running for their lives to get out of this rain. So of course in my head, I’m like, “this is perfect! I can get rid of it by giving it to them!” So, I ran over to these strangers, yelled, “저기요!!!” (jogiyoooo) then handed them my spare umbrella. They took it, said thank you a bunch, and then happily ran away under an umbrella to more cover. The End.</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/f12dd487-c10a-4f47-aec4-812bd0e5f4f9_JPEG-image-102.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2d9c7660-756e-4587-9da8-69fffb03728e_JPEG-image-47.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d68d0415-4089-478a-b83f-758bad0a8c98_JPEG-image-82.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/7d58631c-d88a-425a-a53f-b4ea901d0a2f_JPEG-image-40.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2a1d87b6-fc09-45f0-9cbb-41253d80a96b_JPEG-image-99.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/1274e3cc-0cc8-41c9-9c9d-fe295cbd7bf5_JPEG-image-45.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/89c8b455-b7bc-42c2-950d-823a634429af_img_6054.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/824e7468-4a67-4942-9851-1d5a339d5ff6_JPEG-image-43.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/aa66aea4-7029-41af-b31d-f620a5dfd3a1_JPEG-image-104.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/3215ef8e-b9c0-4cac-8bec-024eda24eabd_JPEG-image-88.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/dd738d14-3fef-4381-b057-991c637be99f_JPEG-image-49.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/dfe0419f-3669-4195-8f13-4e2803bca01e_JPEG-image-48.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/1d976695-a7ca-43ae-a9b1-04aa5466182a_JPEG-image-98.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c625fdbc-bf72-4054-829b-d31e1fb2b121_JPEG-image-106.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ab5be698-74e1-4970-bac6-a019085d9766_JPEG-image-107.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part Sg2TVRE4hxg=--><h2>Gochang</h2><p>Gochang is another tiny town located in Jeollabuk-do province (the province in which I reside). Lydia lives there so of course, I’m going to go see her and her tiny town! I call it, ‘Lydia’s Land of Nothing.’ Tiny, but it has this really BIG flower cafe with yummy pizza and so many pretty plants inside and outside of the cafe. Gochang is famous for rocks (HAHA), okay they’re famous for these dolmen which is a little better than just <em>rocks</em>. Gochang also has this gigantic fortress called Moyangseong Fortress, which is right behind Lydia’s apartment (her backyard, if you may). It’s believed that you’ll live a long and healthy life if you walk across the entire fortress path. I only walked halfway… so I guess I need to go back to walk the rest of it because I’m too young to die!</p><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/bcd54faf-69ad-4bfc-adb4-04b8a4d6cbb8_JPEG-image-98-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/6e4a5d72-9cbe-418c-8e68-16cc3c162023_JPEG-image-95-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e1bc2904-f36b-47a6-a04c-b5c85ca2352e_JPEG-image-97.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c0b079f0-0b51-4461-adcb-97c288b68d42_JPEG-image-94.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ab970ed3-1dc1-4c2e-887d-4f7832309f95_JPEG-image-93.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/7e6b2fc5-d550-4598-98de-c752c83bfe33_JPEG-image-90-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/c7873106-98ec-4ae3-a8f3-0252f65f5730_JPEG-image-92-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--lit-part BRUAAAUVAAA=--><!--lit-part BYiwW+jiAMo=--><h2>When I say Nam, you say won!<br />Nam!<strong>—</strong></h2><!--/lit-part--><?><!--/lit-part--><!--lit-part VxB3lsJRI9M=-->
+						<div class="gallery align-full">
+							<ul class="gallery-list">
+								<!--lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2b7fd492-cd11-41e6-ab33-e5410aa61bb2_JPEG-image-12-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Lantern decorations for Buddha’s birthday<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/73e69d6a-4b9d-42e3-a8dc-dd51128e66ef_JPEG-image-6-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/e075e6ff-bc0c-4d42-aab2-99c234178887_JPEG-image-2.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/350ea1e2-b18f-4472-9443-8ec9b03c0d87_JPEG-image-10-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->at the “Korean Ballet”<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/0df67a2d-435b-4fea-bc85-80c13ae68149_JPEG-image-13-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/542836e9-d165-4327-8830-0b95b4297af4_JPEG-image-11-1.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/ddb7e950-647d-4d2f-a249-49973c0e8b01_JPEG-image-37.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->The Famous Myeongmun Bakery<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/2445d712-3a6c-4171-9530-cf988b0b719c_JPEG-image-80.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/b57f09ec-39cf-4d5e-8ad8-d118db000aad_JPEG-image-81.jpg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/23a10eca-80ce-4686-af6b-7e5f50c11b53_JPEG-image-1.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->Me at the Namwon Art Museum<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/076c5e53-64df-4d7c-9fb4-e3409245feae_JPEG-image-2.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/d4179efa-40b2-46ea-b8d6-73a6a803d28c_JPEG-image-3.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->THE<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/faac0bbd-b4f3-4cfd-99df-50774714e26f_JPEG-image-4.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->SUNSET<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/5ff4fe5d-a3cc-4ac3-901a-7d307e987841_JPEG-image-6.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->IN<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/1479ee3f-b2ef-42d0-8f0b-da4670381cf4_JPEG-image-5.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part-->NAMWON<!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--lit-part z68XM+zyJh4=-->
+									<li class="gallery-list-item">
+										<!--lit-part fD1DtbvL230=-->
+			<figure class="gallery-figure">
+				<img
+					alt=""
+					class="gallery-image"
+					loading="lazy"
+					src="https://images.prismic.io/annyeongthaovi/a25cb34e-fe4a-4417-886d-d8ad9aadea2b_JPEG-image.jpeg?auto=compress,format"
+				><!--lit-node 1-->
+
+				<!--lit-part Tg453dBIPLs=-->
+					<figcaption class="gallery-caption"><!--lit-part--><!--/lit-part--></figcaption>
+				<!--/lit-part-->
+			</figure>
+		<!--/lit-part-->
+									</li>
+								<!--/lit-part--><!--/lit-part-->
+							</ul>
+						</div>
+					<!--/lit-part--><!--/lit-part--></template></prismic-body></astro-island>
+		</main>
+	</article></my-main>
+
+		<my-footer><template shadowroot="open"><style>
+		.footer {
+			margin: 4em 1em;
+			text-align: center;
+		}
+	</style><!--lit-part GMaB1g7SrNM=-->
+			<footer class="footer">
+				Copyright © <!--lit-part-->2021–2026<!--/lit-part--> Thaovi Nguyen
+			</footer>
+		<!--/lit-part--></template></my-footer>
+	</body></html>
